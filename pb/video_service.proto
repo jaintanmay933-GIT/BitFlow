@@ -1,0 +1,21 @@
+syntax = "proto3";
+
+package bitflow;
+
+// The real-time communication bridge from the C++ Engine back to the Node.js API
+service BitFlowCallbackService {
+  rpc UpdateProgress (ProgressRequest) returns (ProgressResponse);
+}
+
+// The exact data payload structure sent out by your C++ worker nodes
+message ProgressRequest {
+  string job_id = 1;
+  int32 percentage = 2;
+  string status = 3;          // Can be: "PROCESSING", "COMPLETED", or "FAILED"
+  string error_message = 4;   // Populated only if the transcoder crashes
+}
+
+// The simple acknowledgement response sent back by the Node.js API
+message ProgressResponse {
+  bool success = 1;
+}

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BitFlow // Video Pipeline Control Center</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-slate-950 text-slate-100 min-h-screen font-sans antialiased">
+
+    <div class="max-w-4xl mx-auto py-12 px-4">
+        <header class="border-b border-slate-800 pb-6 mb-8">
+            <h1 class="text-3xl font-extrabold tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-500">BitFlow</h1>
+            <p class="text-slate-400 text-sm mt-1">Distributed High-Performance Video Transcoding System Architecture</p>
+        </header>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="md:col-span-1 bg-slate-900 border border-slate-800 p-6 rounded-xl shadow-xl h-fit">
+                <h2 class="text-lg font-bold mb-4 text-cyan-400">Ingest Media</h2>
+                <form id="transcodeForm" class="space-y-4">
+                    <div>
+                        <label class="block text-xs font-semibold tracking-wider uppercase text-slate-400 mb-1">Video Title</label>
+                        <input type="text" id="videoTitle" required placeholder="Big Buck Bunny" 
+                               class="w-full bg-slate-950 border border-slate-800 rounded-lg px-3 py-2 text-sm text-slate-200 placeholder-slate-600 focus:outline-none focus:border-cyan-500 transition">
+                    </div>
+                    <div>
+                        <label class="block text-xs font-semibold tracking-wider uppercase text-slate-400 mb-1">Target Filename</label>
+                        <input type="text" id="filename" required placeholder="bunny_raw.mp4" 
+                               class="w-full bg-slate-950 border border-slate-800 rounded-lg px-3 py-2 text-sm text-slate-200 placeholder-slate-600 focus:outline-none focus:border-cyan-500 transition">
+                    </div>
+                    <button type="submit" 
+                            class="w-full bg-cyan-600 hover:bg-cyan-500 text-slate-950 font-bold py-2 rounded-lg text-sm tracking-wide transition active:scale-[0.98]">
+                        Dispatch to Cluster
+                    </button>
+                </form>
+            </div>
+
+            <div class="md:col-span-2 bg-slate-900 border border-slate-800 p-6 rounded-xl shadow-xl">
+                <h2 class="text-lg font-bold mb-4 text-cyan-400">Active Node Cluster Tasks</h2>
+                <div id="jobQueue" class="space-y-4">
+                    <p id="emptyState" class="text-sm text-slate-500 text-center py-8">No tasks in current pipeline. Queue a file on the left panel to initialize.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const form = document.getElementById('transcodeForm');
+        const queueContainer = document.getElementById('jobQueue');
+        const emptyState = document.getElementById('emptyState');
+
+        form.addEventListener('submit', async (e) => {
+            e.preventDefault();
+            
+            const title = document.getElementById('videoTitle').value;
+            const filename = document.getElementById('filename').value;
+
+            try {
+                const response = await fetch('http://localhost:5000/api/transcode', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ title, filename })
+                });
+
+                const data = await response.json();
+                
+                if (data.success) {
+                    form.reset();
+                    appendJobToDashboard(data.videoId, title);
+                }
+            } catch (err) {
+                console.error("Pipeline target connection error:", err);
+            }
+        });
+
+        function appendJobToDashboard(id, title) {
+            if (emptyState) emptyState.remove();
+
+            const card = document.createElement('div');
+            card.id = `job-${id}`;
+            card.className = "bg-slate-950 border border-slate-800 p-4 rounded-lg space-y-3 shadow-inner";
+            card.innerHTML = `
+                <div class="flex items-center justify-between">
+                    <div>
+                        <h4 class="text-sm font-semibold text-slate-200">${title}</h4>
+                        <span class="text-[10px] font-mono text-slate-500">${id}</span>
+                    </div>
+                    <span id="status-${id}" class="text-[10px] font-bold tracking-wider uppercase bg-amber-500/10 text-amber-400 px-2 py-0.5 rounded border border-amber-500/20">
+                        PENDING
+                    </span>
+                </div>
+                <div class="w-full bg-slate-900 rounded-full h-1.5 overflow-hidden">
+                    <div id="progress-${id}" class="bg-cyan-500 h-1.5 w-0 transition-all duration-300"></div>
+                </div>
+            `;
+            queueContainer.prepend(card);
+            
+            // Poll for database progress changes
+            // (In our final step tomorrow, we will map a quick check back to our express state route)
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,48 @@
+
+
+services:
+  bitflow-postgres:
+    image: postgres:15-alpine
+    container_name: bitflow-postgres
+    environment:
+      POSTGRES_USER: root
+      POSTGRES_PASSWORD: secretpassword
+      POSTGRES_DB: bitflow_db
+    ports:
+      - "5432:5432"
+    volumes:
+      - bitflow_postgres_data:/var/lib/postgresql/data
+    restart: always
+
+  bitflow-redis:
+    image: redis:7-alpine
+    container_name: bitflow-redis
+    ports:
+      - "6379:6379"
+    restart: always
+
+  bitflow-rabbitmq:
+    image: rabbitmq:3-management-alpine
+    container_name: bitflow-rabbitmq
+    ports:
+      - "5672:5672"     # Worker API connection
+      - "15672:15672"   # Management Web Console URL
+    restart: always
+
+  bitflow-minio:
+    image: minio/minio:latest
+    container_name: bitflow-minio
+    ports:
+      - "9000:9000"     # Local S3 API Endpoint
+      - "9001:9001"     # Cloud UI Management Panel
+    environment:
+      MINIO_ROOT_USER: bitflow_admin
+      MINIO_ROOT_PASSWORD: bitflow_secret_password
+    volumes:
+      - bitflow_minio_data:/data
+    command: server /data --console-address ":9001"
+    restart: always
+
+volumes:
+  bitflow_postgres_data:
+  bitflow_minio_data:

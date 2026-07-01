@@ -1,0 +1,2 @@
+# Hashes of file build rules.
+27304accc579a05a7e298e6b9bdebcc4 generated/video_service.pb.cc
