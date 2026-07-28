@@ -191,6 +191,7 @@ video_worker: CMakeFiles/video_worker.dir/build.make
 video_worker: CMakeFiles/video_worker.dir/compiler_depend.ts
 video_worker: /usr/lib/x86_64-linux-gnu/libgrpc++.so.1.51.1
 video_worker: /usr/lib/x86_64-linux-gnu/libprotobuf.so
+video_worker: /usr/local/lib/libSimpleAmqpClient.so
 video_worker: /usr/lib/x86_64-linux-gnu/libgrpc.so.29.0.0
 video_worker: /usr/lib/x86_64-linux-gnu/libz.so
 video_worker: /usr/lib/x86_64-linux-gnu/libcares.so.2.19.5

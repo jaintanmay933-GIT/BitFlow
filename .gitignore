@@ -1,0 +1,18 @@
+# Node.js
+node_modules/
+.env
+
+# C++ Build & Binaries
+worker-cpp/build/
+*.o
+video_worker
+
+# Shared Storage Videos (keep empty folders)
+shared_storage/inputs/*
+!shared_storage/inputs/.gitkeep
+shared_storage/outputs/*
+!shared_storage/outputs/.gitkeep
+
+# System & IDE
+.vscode/
+*.log

@@ -10,6 +10,7 @@ video_worker: \
   CMakeFiles/video_worker.dir/generated/video_service.grpc.pb.cc.o \
   /usr/lib/x86_64-linux-gnu/libgrpc++.so.1.51.1 \
   /usr/lib/x86_64-linux-gnu/libprotobuf.so \
+  /usr/local/lib/libSimpleAmqpClient.so \
   /usr/lib/x86_64-linux-gnu/libgrpc.so.29.0.0 \
   /usr/lib/x86_64-linux-gnu/libz.so \
   /usr/lib/x86_64-linux-gnu/libcares.so.2.19.5 \
@@ -177,6 +178,8 @@ video_worker: \
   /usr/lib/x86_64-linux-gnu/libabsl_status.so.20260107.0.0 \
   /lib64/ld-linux-x86-64.so.2 \
   /usr/lib/x86_64-linux-gnu/libz.so \
+  /usr/lib/x86_64-linux-gnu/librabbitmq.so.4 \
+  /usr/lib/x86_64-linux-gnu/libboost_chrono.so.1.90.0 \
   /usr/lib/x86_64-linux-gnu/libabsl_graphcycles_internal.so \
   /usr/lib/x86_64-linux-gnu/libabsl_kernel_timeout_internal.so \
   /usr/lib/x86_64-linux-gnu/libabsl_stacktrace.so \
@@ -256,6 +259,8 @@ CMakeFiles/video_worker.dir/generated/video_service.grpc.pb.cc.o:
 /usr/lib/x86_64-linux-gnu/libgrpc++.so.1.51.1:
 
 /usr/lib/x86_64-linux-gnu/libprotobuf.so:
+
+/usr/local/lib/libSimpleAmqpClient.so:
 
 /usr/lib/x86_64-linux-gnu/libgrpc.so.29.0.0:
 
@@ -590,6 +595,10 @@ CMakeFiles/video_worker.dir/generated/video_service.grpc.pb.cc.o:
 /lib64/ld-linux-x86-64.so.2:
 
 /usr/lib/x86_64-linux-gnu/libz.so:
+
+/usr/lib/x86_64-linux-gnu/librabbitmq.so.4:
+
+/usr/lib/x86_64-linux-gnu/libboost_chrono.so.1.90.0:
 
 /usr/lib/x86_64-linux-gnu/libabsl_graphcycles_internal.so:
 

@@ -22,7 +22,7 @@ events:
     candidate_directories:
       - "/home/tanmay_jain/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand/"
       - "/home/tanmay_jain/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli/"
-      - "/home/tanmay_jain/.vscode-server/bin/fcf604774b9f2674b473065736ee75077e256353/bin/remote-cli/"
+      - "/home/tanmay_jain/.vscode-server/bin/1b6a188127eeaf9194f945eb6eb89a657e93c54c/bin/remote-cli/"
       - "/usr/local/sbin/"
       - "/usr/local/bin/"
       - "/usr/sbin/"
@@ -60,7 +60,7 @@ events:
     searched_directories:
       - "/home/tanmay_jain/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand/uname"
       - "/home/tanmay_jain/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli/uname"
-      - "/home/tanmay_jain/.vscode-server/bin/fcf604774b9f2674b473065736ee75077e256353/bin/remote-cli/uname"
+      - "/home/tanmay_jain/.vscode-server/bin/1b6a188127eeaf9194f945eb6eb89a657e93c54c/bin/remote-cli/uname"
       - "/usr/local/sbin/uname"
       - "/usr/local/bin/uname"
       - "/usr/sbin/uname"
@@ -69,7 +69,7 @@ events:
       ENV{PATH}:
         - "/home/tanmay_jain/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand"
         - "/home/tanmay_jain/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli"
-        - "/home/tanmay_jain/.vscode-server/bin/fcf604774b9f2674b473065736ee75077e256353/bin/remote-cli"
+        - "/home/tanmay_jain/.vscode-server/bin/1b6a188127eeaf9194f945eb6eb89a657e93c54c/bin/remote-cli"
         - "/usr/local/sbin"
         - "/usr/local/bin"
         - "/usr/sbin"
@@ -134,7 +134,7 @@ events:
     candidate_directories:
       - "/home/tanmay_jain/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand/"
       - "/home/tanmay_jain/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli/"
-      - "/home/tanmay_jain/.vscode-server/bin/fcf604774b9f2674b473065736ee75077e256353/bin/remote-cli/"
+      - "/home/tanmay_jain/.vscode-server/bin/1b6a188127eeaf9194f945eb6eb89a657e93c54c/bin/remote-cli/"
       - "/usr/local/sbin/"
       - "/usr/local/bin/"
       - "/usr/sbin/"
@@ -172,7 +172,7 @@ events:
     searched_directories:
       - "/home/tanmay_jain/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand/gmake"
       - "/home/tanmay_jain/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli/gmake"
-      - "/home/tanmay_jain/.vscode-server/bin/fcf604774b9f2674b473065736ee75077e256353/bin/remote-cli/gmake"
+      - "/home/tanmay_jain/.vscode-server/bin/1b6a188127eeaf9194f945eb6eb89a657e93c54c/bin/remote-cli/gmake"
       - "/usr/local/sbin/gmake"
       - "/usr/local/bin/gmake"
       - "/usr/sbin/gmake"
@@ -181,7 +181,7 @@ events:
       ENV{PATH}:
         - "/home/tanmay_jain/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand"
         - "/home/tanmay_jain/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli"
-        - "/home/tanmay_jain/.vscode-server/bin/fcf604774b9f2674b473065736ee75077e256353/bin/remote-cli"
+        - "/home/tanmay_jain/.vscode-server/bin/1b6a188127eeaf9194f945eb6eb89a657e93c54c/bin/remote-cli"
         - "/usr/local/sbin"
         - "/usr/local/bin"
         - "/usr/sbin"
@@ -247,7 +247,7 @@ events:
     candidate_directories:
       - "/home/tanmay_jain/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand/"
       - "/home/tanmay_jain/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli/"
-      - "/home/tanmay_jain/.vscode-server/bin/fcf604774b9f2674b473065736ee75077e256353/bin/remote-cli/"
+      - "/home/tanmay_jain/.vscode-server/bin/1b6a188127eeaf9194f945eb6eb89a657e93c54c/bin/remote-cli/"
       - "/usr/local/sbin/"
       - "/usr/local/bin/"
       - "/usr/sbin/"
@@ -285,7 +285,7 @@ events:
     searched_directories:
       - "/home/tanmay_jain/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand/c++"
       - "/home/tanmay_jain/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli/c++"
-      - "/home/tanmay_jain/.vscode-server/bin/fcf604774b9f2674b473065736ee75077e256353/bin/remote-cli/c++"
+      - "/home/tanmay_jain/.vscode-server/bin/1b6a188127eeaf9194f945eb6eb89a657e93c54c/bin/remote-cli/c++"
       - "/usr/local/sbin/c++"
       - "/usr/local/bin/c++"
       - "/usr/sbin/c++"
@@ -294,7 +294,7 @@ events:
       ENV{PATH}:
         - "/home/tanmay_jain/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand"
         - "/home/tanmay_jain/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli"
-        - "/home/tanmay_jain/.vscode-server/bin/fcf604774b9f2674b473065736ee75077e256353/bin/remote-cli"
+        - "/home/tanmay_jain/.vscode-server/bin/1b6a188127eeaf9194f945eb6eb89a657e93c54c/bin/remote-cli"
         - "/usr/local/sbin"
         - "/usr/local/bin"
         - "/usr/sbin"
@@ -358,7 +358,7 @@ events:
       ENV{PATH}:
         - "/home/tanmay_jain/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand"
         - "/home/tanmay_jain/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli"
-        - "/home/tanmay_jain/.vscode-server/bin/fcf604774b9f2674b473065736ee75077e256353/bin/remote-cli"
+        - "/home/tanmay_jain/.vscode-server/bin/1b6a188127eeaf9194f945eb6eb89a657e93c54c/bin/remote-cli"
         - "/usr/local/sbin"
         - "/usr/local/bin"
         - "/usr/sbin"
@@ -438,7 +438,7 @@ events:
       - "/usr/bin/"
       - "/home/tanmay_jain/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand/"
       - "/home/tanmay_jain/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli/"
-      - "/home/tanmay_jain/.vscode-server/bin/fcf604774b9f2674b473065736ee75077e256353/bin/remote-cli/"
+      - "/home/tanmay_jain/.vscode-server/bin/1b6a188127eeaf9194f945eb6eb89a657e93c54c/bin/remote-cli/"
       - "/usr/local/sbin/"
       - "/usr/local/bin/"
       - "/usr/sbin/"
@@ -477,7 +477,7 @@ events:
       ENV{PATH}:
         - "/home/tanmay_jain/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand"
         - "/home/tanmay_jain/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli"
-        - "/home/tanmay_jain/.vscode-server/bin/fcf604774b9f2674b473065736ee75077e256353/bin/remote-cli"
+        - "/home/tanmay_jain/.vscode-server/bin/1b6a188127eeaf9194f945eb6eb89a657e93c54c/bin/remote-cli"
         - "/usr/local/sbin"
         - "/usr/local/bin"
         - "/usr/sbin"
@@ -535,7 +535,7 @@ events:
       - "/usr/bin/"
       - "/home/tanmay_jain/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand/"
       - "/home/tanmay_jain/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli/"
-      - "/home/tanmay_jain/.vscode-server/bin/fcf604774b9f2674b473065736ee75077e256353/bin/remote-cli/"
+      - "/home/tanmay_jain/.vscode-server/bin/1b6a188127eeaf9194f945eb6eb89a657e93c54c/bin/remote-cli/"
       - "/usr/local/sbin/"
       - "/usr/local/bin/"
       - "/usr/sbin/"
@@ -574,7 +574,7 @@ events:
       ENV{PATH}:
         - "/home/tanmay_jain/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand"
         - "/home/tanmay_jain/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli"
-        - "/home/tanmay_jain/.vscode-server/bin/fcf604774b9f2674b473065736ee75077e256353/bin/remote-cli"
+        - "/home/tanmay_jain/.vscode-server/bin/1b6a188127eeaf9194f945eb6eb89a657e93c54c/bin/remote-cli"
         - "/usr/local/sbin"
         - "/usr/local/bin"
         - "/usr/sbin"
@@ -632,7 +632,7 @@ events:
       - "/usr/bin/"
       - "/home/tanmay_jain/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand/"
       - "/home/tanmay_jain/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli/"
-      - "/home/tanmay_jain/.vscode-server/bin/fcf604774b9f2674b473065736ee75077e256353/bin/remote-cli/"
+      - "/home/tanmay_jain/.vscode-server/bin/1b6a188127eeaf9194f945eb6eb89a657e93c54c/bin/remote-cli/"
       - "/usr/local/sbin/"
       - "/usr/local/bin/"
       - "/usr/sbin/"
@@ -671,7 +671,7 @@ events:
       ENV{PATH}:
         - "/home/tanmay_jain/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand"
         - "/home/tanmay_jain/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli"
-        - "/home/tanmay_jain/.vscode-server/bin/fcf604774b9f2674b473065736ee75077e256353/bin/remote-cli"
+        - "/home/tanmay_jain/.vscode-server/bin/1b6a188127eeaf9194f945eb6eb89a657e93c54c/bin/remote-cli"
         - "/usr/local/sbin"
         - "/usr/local/bin"
         - "/usr/sbin"
@@ -729,7 +729,7 @@ events:
       - "/usr/bin/"
       - "/home/tanmay_jain/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand/"
       - "/home/tanmay_jain/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli/"
-      - "/home/tanmay_jain/.vscode-server/bin/fcf604774b9f2674b473065736ee75077e256353/bin/remote-cli/"
+      - "/home/tanmay_jain/.vscode-server/bin/1b6a188127eeaf9194f945eb6eb89a657e93c54c/bin/remote-cli/"
       - "/usr/local/sbin/"
       - "/usr/local/bin/"
       - "/usr/sbin/"
@@ -768,7 +768,7 @@ events:
       ENV{PATH}:
         - "/home/tanmay_jain/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand"
         - "/home/tanmay_jain/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli"
-        - "/home/tanmay_jain/.vscode-server/bin/fcf604774b9f2674b473065736ee75077e256353/bin/remote-cli"
+        - "/home/tanmay_jain/.vscode-server/bin/1b6a188127eeaf9194f945eb6eb89a657e93c54c/bin/remote-cli"
         - "/usr/local/sbin"
         - "/usr/local/bin"
         - "/usr/sbin"
@@ -826,7 +826,7 @@ events:
       - "/usr/bin/"
       - "/home/tanmay_jain/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand/"
       - "/home/tanmay_jain/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli/"
-      - "/home/tanmay_jain/.vscode-server/bin/fcf604774b9f2674b473065736ee75077e256353/bin/remote-cli/"
+      - "/home/tanmay_jain/.vscode-server/bin/1b6a188127eeaf9194f945eb6eb89a657e93c54c/bin/remote-cli/"
       - "/usr/local/sbin/"
       - "/usr/local/bin/"
       - "/usr/sbin/"
@@ -865,7 +865,7 @@ events:
       ENV{PATH}:
         - "/home/tanmay_jain/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand"
         - "/home/tanmay_jain/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli"
-        - "/home/tanmay_jain/.vscode-server/bin/fcf604774b9f2674b473065736ee75077e256353/bin/remote-cli"
+        - "/home/tanmay_jain/.vscode-server/bin/1b6a188127eeaf9194f945eb6eb89a657e93c54c/bin/remote-cli"
         - "/usr/local/sbin"
         - "/usr/local/bin"
         - "/usr/sbin"
@@ -923,7 +923,7 @@ events:
       - "/usr/bin/"
       - "/home/tanmay_jain/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand/"
       - "/home/tanmay_jain/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli/"
-      - "/home/tanmay_jain/.vscode-server/bin/fcf604774b9f2674b473065736ee75077e256353/bin/remote-cli/"
+      - "/home/tanmay_jain/.vscode-server/bin/1b6a188127eeaf9194f945eb6eb89a657e93c54c/bin/remote-cli/"
       - "/usr/local/sbin/"
       - "/usr/local/bin/"
       - "/usr/sbin/"
@@ -962,7 +962,7 @@ events:
       ENV{PATH}:
         - "/home/tanmay_jain/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand"
         - "/home/tanmay_jain/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli"
-        - "/home/tanmay_jain/.vscode-server/bin/fcf604774b9f2674b473065736ee75077e256353/bin/remote-cli"
+        - "/home/tanmay_jain/.vscode-server/bin/1b6a188127eeaf9194f945eb6eb89a657e93c54c/bin/remote-cli"
         - "/usr/local/sbin"
         - "/usr/local/bin"
         - "/usr/sbin"
@@ -1020,7 +1020,7 @@ events:
       - "/usr/bin/"
       - "/home/tanmay_jain/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand/"
       - "/home/tanmay_jain/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli/"
-      - "/home/tanmay_jain/.vscode-server/bin/fcf604774b9f2674b473065736ee75077e256353/bin/remote-cli/"
+      - "/home/tanmay_jain/.vscode-server/bin/1b6a188127eeaf9194f945eb6eb89a657e93c54c/bin/remote-cli/"
       - "/usr/local/sbin/"
       - "/usr/local/bin/"
       - "/usr/sbin/"
@@ -1059,7 +1059,7 @@ events:
       ENV{PATH}:
         - "/home/tanmay_jain/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand"
         - "/home/tanmay_jain/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli"
-        - "/home/tanmay_jain/.vscode-server/bin/fcf604774b9f2674b473065736ee75077e256353/bin/remote-cli"
+        - "/home/tanmay_jain/.vscode-server/bin/1b6a188127eeaf9194f945eb6eb89a657e93c54c/bin/remote-cli"
         - "/usr/local/sbin"
         - "/usr/local/bin"
         - "/usr/sbin"
@@ -1117,7 +1117,7 @@ events:
       - "/usr/bin/"
       - "/home/tanmay_jain/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand/"
       - "/home/tanmay_jain/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli/"
-      - "/home/tanmay_jain/.vscode-server/bin/fcf604774b9f2674b473065736ee75077e256353/bin/remote-cli/"
+      - "/home/tanmay_jain/.vscode-server/bin/1b6a188127eeaf9194f945eb6eb89a657e93c54c/bin/remote-cli/"
       - "/usr/local/sbin/"
       - "/usr/local/bin/"
       - "/usr/sbin/"
@@ -1156,7 +1156,7 @@ events:
       ENV{PATH}:
         - "/home/tanmay_jain/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand"
         - "/home/tanmay_jain/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli"
-        - "/home/tanmay_jain/.vscode-server/bin/fcf604774b9f2674b473065736ee75077e256353/bin/remote-cli"
+        - "/home/tanmay_jain/.vscode-server/bin/1b6a188127eeaf9194f945eb6eb89a657e93c54c/bin/remote-cli"
         - "/usr/local/sbin"
         - "/usr/local/bin"
         - "/usr/sbin"
@@ -1214,7 +1214,7 @@ events:
       - "/usr/bin/"
       - "/home/tanmay_jain/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand/"
       - "/home/tanmay_jain/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli/"
-      - "/home/tanmay_jain/.vscode-server/bin/fcf604774b9f2674b473065736ee75077e256353/bin/remote-cli/"
+      - "/home/tanmay_jain/.vscode-server/bin/1b6a188127eeaf9194f945eb6eb89a657e93c54c/bin/remote-cli/"
       - "/usr/local/sbin/"
       - "/usr/local/bin/"
       - "/usr/sbin/"
@@ -1252,7 +1252,7 @@ events:
       - "/usr/bin/dlltool"
       - "/home/tanmay_jain/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand/dlltool"
       - "/home/tanmay_jain/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli/dlltool"
-      - "/home/tanmay_jain/.vscode-server/bin/fcf604774b9f2674b473065736ee75077e256353/bin/remote-cli/dlltool"
+      - "/home/tanmay_jain/.vscode-server/bin/1b6a188127eeaf9194f945eb6eb89a657e93c54c/bin/remote-cli/dlltool"
       - "/usr/local/sbin/dlltool"
       - "/usr/local/bin/dlltool"
       - "/usr/sbin/dlltool"
@@ -1291,7 +1291,7 @@ events:
       ENV{PATH}:
         - "/home/tanmay_jain/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand"
         - "/home/tanmay_jain/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli"
-        - "/home/tanmay_jain/.vscode-server/bin/fcf604774b9f2674b473065736ee75077e256353/bin/remote-cli"
+        - "/home/tanmay_jain/.vscode-server/bin/1b6a188127eeaf9194f945eb6eb89a657e93c54c/bin/remote-cli"
         - "/usr/local/sbin"
         - "/usr/local/bin"
         - "/usr/sbin"
@@ -1349,7 +1349,7 @@ events:
       - "/usr/bin/"
       - "/home/tanmay_jain/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand/"
       - "/home/tanmay_jain/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli/"
-      - "/home/tanmay_jain/.vscode-server/bin/fcf604774b9f2674b473065736ee75077e256353/bin/remote-cli/"
+      - "/home/tanmay_jain/.vscode-server/bin/1b6a188127eeaf9194f945eb6eb89a657e93c54c/bin/remote-cli/"
       - "/usr/local/sbin/"
       - "/usr/local/bin/"
       - "/usr/sbin/"
@@ -1388,7 +1388,7 @@ events:
       ENV{PATH}:
         - "/home/tanmay_jain/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand"
         - "/home/tanmay_jain/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli"
-        - "/home/tanmay_jain/.vscode-server/bin/fcf604774b9f2674b473065736ee75077e256353/bin/remote-cli"
+        - "/home/tanmay_jain/.vscode-server/bin/1b6a188127eeaf9194f945eb6eb89a657e93c54c/bin/remote-cli"
         - "/usr/local/sbin"
         - "/usr/local/bin"
         - "/usr/sbin"
@@ -1446,7 +1446,7 @@ events:
       - "/usr/bin/"
       - "/home/tanmay_jain/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand/"
       - "/home/tanmay_jain/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli/"
-      - "/home/tanmay_jain/.vscode-server/bin/fcf604774b9f2674b473065736ee75077e256353/bin/remote-cli/"
+      - "/home/tanmay_jain/.vscode-server/bin/1b6a188127eeaf9194f945eb6eb89a657e93c54c/bin/remote-cli/"
       - "/usr/local/sbin/"
       - "/usr/local/bin/"
       - "/usr/sbin/"
@@ -1484,7 +1484,7 @@ events:
       - "/usr/bin/tapi"
       - "/home/tanmay_jain/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand/tapi"
       - "/home/tanmay_jain/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli/tapi"
-      - "/home/tanmay_jain/.vscode-server/bin/fcf604774b9f2674b473065736ee75077e256353/bin/remote-cli/tapi"
+      - "/home/tanmay_jain/.vscode-server/bin/1b6a188127eeaf9194f945eb6eb89a657e93c54c/bin/remote-cli/tapi"
       - "/usr/local/sbin/tapi"
       - "/usr/local/bin/tapi"
       - "/usr/sbin/tapi"
@@ -1523,7 +1523,7 @@ events:
       ENV{PATH}:
         - "/home/tanmay_jain/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand"
         - "/home/tanmay_jain/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli"
-        - "/home/tanmay_jain/.vscode-server/bin/fcf604774b9f2674b473065736ee75077e256353/bin/remote-cli"
+        - "/home/tanmay_jain/.vscode-server/bin/1b6a188127eeaf9194f945eb6eb89a657e93c54c/bin/remote-cli"
         - "/usr/local/sbin"
         - "/usr/local/bin"
         - "/usr/sbin"
@@ -1584,7 +1584,7 @@ events:
       - "/usr/bin/"
       - "/home/tanmay_jain/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand/"
       - "/home/tanmay_jain/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli/"
-      - "/home/tanmay_jain/.vscode-server/bin/fcf604774b9f2674b473065736ee75077e256353/bin/remote-cli/"
+      - "/home/tanmay_jain/.vscode-server/bin/1b6a188127eeaf9194f945eb6eb89a657e93c54c/bin/remote-cli/"
       - "/usr/local/sbin/"
       - "/usr/local/bin/"
       - "/usr/sbin/"
@@ -1622,7 +1622,7 @@ events:
       - "/usr/bin/gcc-ar-15.2"
       - "/home/tanmay_jain/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand/gcc-ar-15.2"
       - "/home/tanmay_jain/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli/gcc-ar-15.2"
-      - "/home/tanmay_jain/.vscode-server/bin/fcf604774b9f2674b473065736ee75077e256353/bin/remote-cli/gcc-ar-15.2"
+      - "/home/tanmay_jain/.vscode-server/bin/1b6a188127eeaf9194f945eb6eb89a657e93c54c/bin/remote-cli/gcc-ar-15.2"
       - "/usr/local/sbin/gcc-ar-15.2"
       - "/usr/local/bin/gcc-ar-15.2"
       - "/usr/sbin/gcc-ar-15.2"
@@ -1661,7 +1661,7 @@ events:
       ENV{PATH}:
         - "/home/tanmay_jain/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand"
         - "/home/tanmay_jain/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli"
-        - "/home/tanmay_jain/.vscode-server/bin/fcf604774b9f2674b473065736ee75077e256353/bin/remote-cli"
+        - "/home/tanmay_jain/.vscode-server/bin/1b6a188127eeaf9194f945eb6eb89a657e93c54c/bin/remote-cli"
         - "/usr/local/sbin"
         - "/usr/local/bin"
         - "/usr/sbin"
@@ -1722,7 +1722,7 @@ events:
       - "/usr/bin/"
       - "/home/tanmay_jain/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand/"
       - "/home/tanmay_jain/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli/"
-      - "/home/tanmay_jain/.vscode-server/bin/fcf604774b9f2674b473065736ee75077e256353/bin/remote-cli/"
+      - "/home/tanmay_jain/.vscode-server/bin/1b6a188127eeaf9194f945eb6eb89a657e93c54c/bin/remote-cli/"
       - "/usr/local/sbin/"
       - "/usr/local/bin/"
       - "/usr/sbin/"
@@ -1760,7 +1760,7 @@ events:
       - "/usr/bin/gcc-ranlib-15.2"
       - "/home/tanmay_jain/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand/gcc-ranlib-15.2"
       - "/home/tanmay_jain/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli/gcc-ranlib-15.2"
-      - "/home/tanmay_jain/.vscode-server/bin/fcf604774b9f2674b473065736ee75077e256353/bin/remote-cli/gcc-ranlib-15.2"
+      - "/home/tanmay_jain/.vscode-server/bin/1b6a188127eeaf9194f945eb6eb89a657e93c54c/bin/remote-cli/gcc-ranlib-15.2"
       - "/usr/local/sbin/gcc-ranlib-15.2"
       - "/usr/local/bin/gcc-ranlib-15.2"
       - "/usr/sbin/gcc-ranlib-15.2"
@@ -1799,7 +1799,7 @@ events:
       ENV{PATH}:
         - "/home/tanmay_jain/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand"
         - "/home/tanmay_jain/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli"
-        - "/home/tanmay_jain/.vscode-server/bin/fcf604774b9f2674b473065736ee75077e256353/bin/remote-cli"
+        - "/home/tanmay_jain/.vscode-server/bin/1b6a188127eeaf9194f945eb6eb89a657e93c54c/bin/remote-cli"
         - "/usr/local/sbin"
         - "/usr/local/bin"
         - "/usr/sbin"
@@ -1843,8 +1843,8 @@ events:
     checks:
       - "Detecting CXX compiler ABI info"
     directories:
-      source: "/mnt/c/Tanmay/BitFlow/worker-cpp/build/CMakeFiles/CMakeScratch/TryCompile-fl0T0y"
-      binary: "/mnt/c/Tanmay/BitFlow/worker-cpp/build/CMakeFiles/CMakeScratch/TryCompile-fl0T0y"
+      source: "/mnt/c/Tanmay/BitFlow/worker-cpp/build/CMakeFiles/CMakeScratch/TryCompile-7hWfOe"
+      binary: "/mnt/c/Tanmay/BitFlow/worker-cpp/build/CMakeFiles/CMakeScratch/TryCompile-7hWfOe"
     cmakeVariables:
       CMAKE_CXX_FLAGS: ""
       CMAKE_CXX_FLAGS_DEBUG: "-g"
@@ -1854,13 +1854,13 @@ events:
       variable: "CMAKE_CXX_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: '/mnt/c/Tanmay/BitFlow/worker-cpp/build/CMakeFiles/CMakeScratch/TryCompile-fl0T0y'
+        Change Dir: '/mnt/c/Tanmay/BitFlow/worker-cpp/build/CMakeFiles/CMakeScratch/TryCompile-7hWfOe'
         
-        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_69c80/fast
-        /usr/bin/gmake  -f CMakeFiles/cmTC_69c80.dir/build.make CMakeFiles/cmTC_69c80.dir/build
-        gmake[1]: Entering directory '/mnt/c/Tanmay/BitFlow/worker-cpp/build/CMakeFiles/CMakeScratch/TryCompile-fl0T0y'
-        Building CXX object CMakeFiles/cmTC_69c80.dir/CMakeCXXCompilerABI.cpp.o
-        /usr/bin/c++   -v -o CMakeFiles/cmTC_69c80.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-4.2/Modules/CMakeCXXCompilerABI.cpp
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_78edf/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_78edf.dir/build.make CMakeFiles/cmTC_78edf.dir/build
+        gmake[1]: Entering directory '/mnt/c/Tanmay/BitFlow/worker-cpp/build/CMakeFiles/CMakeScratch/TryCompile-7hWfOe'
+        Building CXX object CMakeFiles/cmTC_78edf.dir/CMakeCXXCompilerABI.cpp.o
+        /usr/bin/c++   -v -o CMakeFiles/cmTC_78edf.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-4.2/Modules/CMakeCXXCompilerABI.cpp
         Using built-in specs.
         COLLECT_GCC=/usr/bin/c++
         OFFLOAD_TARGET_NAMES=nvptx-none:amdgcn-amdhsa
@@ -1870,8 +1870,8 @@ events:
         Thread model: posix
         Supported LTO compression algorithms: zlib zstd
         gcc version 15.2.0 (Ubuntu 15.2.0-16ubuntu1) 
-        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_69c80.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_69c80.dir/'
-         /usr/libexec/gcc/x86_64-linux-gnu/15/cc1plus -quiet -v -imultiarch x86_64-linux-gnu -D_GNU_SOURCE /usr/share/cmake-4.2/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_69c80.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=x86-64 -version -fasynchronous-unwind-tables -fstack-protector-strong -Wformat -Wformat-security -fstack-clash-protection -fcf-protection -fzero-init-padding-bits=all -Wbidi-chars=any -o /tmp/ccPFpNZS.s
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_78edf.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_78edf.dir/'
+         /usr/libexec/gcc/x86_64-linux-gnu/15/cc1plus -quiet -v -imultiarch x86_64-linux-gnu -D_GNU_SOURCE /usr/share/cmake-4.2/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_78edf.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=x86-64 -version -fasynchronous-unwind-tables -fstack-protector-strong -Wformat -Wformat-security -fstack-clash-protection -fcf-protection -fzero-init-padding-bits=all -Wbidi-chars=any -o /tmp/ccYQr0Mn.s
         GNU C++17 (Ubuntu 15.2.0-16ubuntu1) version 15.2.0 (x86_64-linux-gnu)
         	compiled by GNU C version 15.2.0, GMP version 6.3.0, MPFR version 4.2.2, MPC version 1.3.1, isl version isl-0.27-GMP
         
@@ -1892,14 +1892,14 @@ events:
          /usr/include
         End of search list.
         Compiler executable checksum: b661a74662ad7cf413c4193391ab5290
-        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_69c80.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_69c80.dir/'
-         /usr/bin/x86_64-linux-gnu-as -v --64 -o CMakeFiles/cmTC_69c80.dir/CMakeCXXCompilerABI.cpp.o /tmp/ccPFpNZS.s
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_78edf.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_78edf.dir/'
+         /usr/bin/x86_64-linux-gnu-as -v --64 -o CMakeFiles/cmTC_78edf.dir/CMakeCXXCompilerABI.cpp.o /tmp/ccYQr0Mn.s
         GNU assembler version 2.46 (x86_64-linux-gnu) using BFD version (GNU Binutils for Ubuntu) 2.46
         COMPILER_PATH=/usr/libexec/gcc/x86_64-linux-gnu/15/:/usr/libexec/gcc/x86_64-linux-gnu/15/:/usr/libexec/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/15/:/usr/lib/gcc/x86_64-linux-gnu/
         LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/15/:/usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/15/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/15/../../../:/lib/:/usr/lib/
-        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_69c80.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_69c80.dir/CMakeCXXCompilerABI.cpp.'
-        Linking CXX executable cmTC_69c80
-        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_69c80.dir/link.txt --verbose=1
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_78edf.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_78edf.dir/CMakeCXXCompilerABI.cpp.'
+        Linking CXX executable cmTC_78edf
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_78edf.dir/link.txt --verbose=1
         Using built-in specs.
         COLLECT_GCC=/usr/bin/c++
         COLLECT_LTO_WRAPPER=/usr/libexec/gcc/x86_64-linux-gnu/15/lto-wrapper
@@ -1912,14 +1912,14 @@ events:
         gcc version 15.2.0 (Ubuntu 15.2.0-16ubuntu1) 
         COMPILER_PATH=/usr/libexec/gcc/x86_64-linux-gnu/15/:/usr/libexec/gcc/x86_64-linux-gnu/15/:/usr/libexec/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/15/:/usr/lib/gcc/x86_64-linux-gnu/
         LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/15/:/usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/15/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/15/../../../:/lib/:/usr/lib/
-        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_69c80' '-foffload-options=-l_GCC_stdc++' '-foffload-options=-l_GCC_m' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_69c80.'
-         /usr/libexec/gcc/x86_64-linux-gnu/15/collect2 -plugin /usr/libexec/gcc/x86_64-linux-gnu/15/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/x86_64-linux-gnu/15/lto-wrapper -plugin-opt=-fresolution=/tmp/ccU5pMwj.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_69c80 /usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/15/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/15 -L/usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/15/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/15/../../.. -L/lib -L/usr/lib -v CMakeFiles/cmTC_69c80.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/15/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu/crtn.o
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_78edf' '-foffload-options=-l_GCC_stdc++' '-foffload-options=-l_GCC_m' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_78edf.'
+         /usr/libexec/gcc/x86_64-linux-gnu/15/collect2 -plugin /usr/libexec/gcc/x86_64-linux-gnu/15/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/x86_64-linux-gnu/15/lto-wrapper -plugin-opt=-fresolution=/tmp/ccrupJRX.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_78edf /usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/15/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/15 -L/usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/15/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/15/../../.. -L/lib -L/usr/lib -v CMakeFiles/cmTC_78edf.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/15/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu/crtn.o
         collect2 version 15.2.0
-        /usr/bin/ld -plugin /usr/libexec/gcc/x86_64-linux-gnu/15/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/x86_64-linux-gnu/15/lto-wrapper -plugin-opt=-fresolution=/tmp/ccU5pMwj.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_69c80 /usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/15/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/15 -L/usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/15/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/15/../../.. -L/lib -L/usr/lib -v CMakeFiles/cmTC_69c80.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/15/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu/crtn.o
+        /usr/bin/ld -plugin /usr/libexec/gcc/x86_64-linux-gnu/15/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/x86_64-linux-gnu/15/lto-wrapper -plugin-opt=-fresolution=/tmp/ccrupJRX.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_78edf /usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/15/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/15 -L/usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/15/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/15/../../.. -L/lib -L/usr/lib -v CMakeFiles/cmTC_78edf.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/15/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu/crtn.o
         GNU ld (GNU Binutils for Ubuntu) 2.46
-        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_69c80' '-foffload-options=-l_GCC_stdc++' '-foffload-options=-l_GCC_m' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_69c80.'
-        /usr/bin/c++  -v -Wl,-v CMakeFiles/cmTC_69c80.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_69c80
-        gmake[1]: Leaving directory '/mnt/c/Tanmay/BitFlow/worker-cpp/build/CMakeFiles/CMakeScratch/TryCompile-fl0T0y'
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_78edf' '-foffload-options=-l_GCC_stdc++' '-foffload-options=-l_GCC_m' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_78edf.'
+        /usr/bin/c++  -v -Wl,-v CMakeFiles/cmTC_78edf.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_78edf
+        gmake[1]: Leaving directory '/mnt/c/Tanmay/BitFlow/worker-cpp/build/CMakeFiles/CMakeScratch/TryCompile-7hWfOe'
         
       exitCode: 0
   -
@@ -1960,13 +1960,13 @@ events:
       Parsed CXX implicit link information:
         link line regex: [^( *|.*[/\\])(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
         linker tool regex: [^[ 	]*(->|"|[0-9]+>[ 	-]*Build:[ 	0-9]+ ms[ 	]*)?[ 	]*(([^"]*[/\\])?(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)))("|,| |$)]
-        ignore line: [Change Dir: '/mnt/c/Tanmay/BitFlow/worker-cpp/build/CMakeFiles/CMakeScratch/TryCompile-fl0T0y']
+        ignore line: [Change Dir: '/mnt/c/Tanmay/BitFlow/worker-cpp/build/CMakeFiles/CMakeScratch/TryCompile-7hWfOe']
         ignore line: []
-        ignore line: [Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_69c80/fast]
-        ignore line: [/usr/bin/gmake  -f CMakeFiles/cmTC_69c80.dir/build.make CMakeFiles/cmTC_69c80.dir/build]
-        ignore line: [gmake[1]: Entering directory '/mnt/c/Tanmay/BitFlow/worker-cpp/build/CMakeFiles/CMakeScratch/TryCompile-fl0T0y']
-        ignore line: [Building CXX object CMakeFiles/cmTC_69c80.dir/CMakeCXXCompilerABI.cpp.o]
-        ignore line: [/usr/bin/c++   -v -o CMakeFiles/cmTC_69c80.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-4.2/Modules/CMakeCXXCompilerABI.cpp]
+        ignore line: [Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_78edf/fast]
+        ignore line: [/usr/bin/gmake  -f CMakeFiles/cmTC_78edf.dir/build.make CMakeFiles/cmTC_78edf.dir/build]
+        ignore line: [gmake[1]: Entering directory '/mnt/c/Tanmay/BitFlow/worker-cpp/build/CMakeFiles/CMakeScratch/TryCompile-7hWfOe']
+        ignore line: [Building CXX object CMakeFiles/cmTC_78edf.dir/CMakeCXXCompilerABI.cpp.o]
+        ignore line: [/usr/bin/c++   -v -o CMakeFiles/cmTC_78edf.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-4.2/Modules/CMakeCXXCompilerABI.cpp]
         ignore line: [Using built-in specs.]
         ignore line: [COLLECT_GCC=/usr/bin/c++]
         ignore line: [OFFLOAD_TARGET_NAMES=nvptx-none:amdgcn-amdhsa]
@@ -1976,8 +1976,8 @@ events:
         ignore line: [Thread model: posix]
         ignore line: [Supported LTO compression algorithms: zlib zstd]
         ignore line: [gcc version 15.2.0 (Ubuntu 15.2.0-16ubuntu1) ]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_69c80.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_69c80.dir/']
-        ignore line: [ /usr/libexec/gcc/x86_64-linux-gnu/15/cc1plus -quiet -v -imultiarch x86_64-linux-gnu -D_GNU_SOURCE /usr/share/cmake-4.2/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_69c80.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=x86-64 -version -fasynchronous-unwind-tables -fstack-protector-strong -Wformat -Wformat-security -fstack-clash-protection -fcf-protection -fzero-init-padding-bits=all -Wbidi-chars=any -o /tmp/ccPFpNZS.s]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_78edf.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_78edf.dir/']
+        ignore line: [ /usr/libexec/gcc/x86_64-linux-gnu/15/cc1plus -quiet -v -imultiarch x86_64-linux-gnu -D_GNU_SOURCE /usr/share/cmake-4.2/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_78edf.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=x86-64 -version -fasynchronous-unwind-tables -fstack-protector-strong -Wformat -Wformat-security -fstack-clash-protection -fcf-protection -fzero-init-padding-bits=all -Wbidi-chars=any -o /tmp/ccYQr0Mn.s]
         ignore line: [GNU C++17 (Ubuntu 15.2.0-16ubuntu1) version 15.2.0 (x86_64-linux-gnu)]
         ignore line: [	compiled by GNU C version 15.2.0  GMP version 6.3.0  MPFR version 4.2.2  MPC version 1.3.1  isl version isl-0.27-GMP]
         ignore line: []
@@ -1998,14 +1998,14 @@ events:
         ignore line: [ /usr/include]
         ignore line: [End of search list.]
         ignore line: [Compiler executable checksum: b661a74662ad7cf413c4193391ab5290]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_69c80.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_69c80.dir/']
-        ignore line: [ /usr/bin/x86_64-linux-gnu-as -v --64 -o CMakeFiles/cmTC_69c80.dir/CMakeCXXCompilerABI.cpp.o /tmp/ccPFpNZS.s]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_78edf.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_78edf.dir/']
+        ignore line: [ /usr/bin/x86_64-linux-gnu-as -v --64 -o CMakeFiles/cmTC_78edf.dir/CMakeCXXCompilerABI.cpp.o /tmp/ccYQr0Mn.s]
         ignore line: [GNU assembler version 2.46 (x86_64-linux-gnu) using BFD version (GNU Binutils for Ubuntu) 2.46]
         ignore line: [COMPILER_PATH=/usr/libexec/gcc/x86_64-linux-gnu/15/:/usr/libexec/gcc/x86_64-linux-gnu/15/:/usr/libexec/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/15/:/usr/lib/gcc/x86_64-linux-gnu/]
         ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/15/:/usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/15/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/15/../../../:/lib/:/usr/lib/]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_69c80.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_69c80.dir/CMakeCXXCompilerABI.cpp.']
-        ignore line: [Linking CXX executable cmTC_69c80]
-        ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_69c80.dir/link.txt --verbose=1]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_78edf.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_78edf.dir/CMakeCXXCompilerABI.cpp.']
+        ignore line: [Linking CXX executable cmTC_78edf]
+        ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_78edf.dir/link.txt --verbose=1]
         ignore line: [Using built-in specs.]
         ignore line: [COLLECT_GCC=/usr/bin/c++]
         ignore line: [COLLECT_LTO_WRAPPER=/usr/libexec/gcc/x86_64-linux-gnu/15/lto-wrapper]
@@ -2018,13 +2018,13 @@ events:
         ignore line: [gcc version 15.2.0 (Ubuntu 15.2.0-16ubuntu1) ]
         ignore line: [COMPILER_PATH=/usr/libexec/gcc/x86_64-linux-gnu/15/:/usr/libexec/gcc/x86_64-linux-gnu/15/:/usr/libexec/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/15/:/usr/lib/gcc/x86_64-linux-gnu/]
         ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/15/:/usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/15/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/15/../../../:/lib/:/usr/lib/]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_69c80' '-foffload-options=-l_GCC_stdc++' '-foffload-options=-l_GCC_m' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_69c80.']
-        link line: [ /usr/libexec/gcc/x86_64-linux-gnu/15/collect2 -plugin /usr/libexec/gcc/x86_64-linux-gnu/15/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/x86_64-linux-gnu/15/lto-wrapper -plugin-opt=-fresolution=/tmp/ccU5pMwj.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_69c80 /usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/15/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/15 -L/usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/15/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/15/../../.. -L/lib -L/usr/lib -v CMakeFiles/cmTC_69c80.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/15/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu/crtn.o]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_78edf' '-foffload-options=-l_GCC_stdc++' '-foffload-options=-l_GCC_m' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_78edf.']
+        link line: [ /usr/libexec/gcc/x86_64-linux-gnu/15/collect2 -plugin /usr/libexec/gcc/x86_64-linux-gnu/15/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/x86_64-linux-gnu/15/lto-wrapper -plugin-opt=-fresolution=/tmp/ccrupJRX.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_78edf /usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/15/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/15 -L/usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/15/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/15/../../.. -L/lib -L/usr/lib -v CMakeFiles/cmTC_78edf.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/15/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu/crtn.o]
           arg [/usr/libexec/gcc/x86_64-linux-gnu/15/collect2] ==> ignore
           arg [-plugin] ==> ignore
           arg [/usr/libexec/gcc/x86_64-linux-gnu/15/liblto_plugin.so] ==> ignore
           arg [-plugin-opt=/usr/libexec/gcc/x86_64-linux-gnu/15/lto-wrapper] ==> ignore
-          arg [-plugin-opt=-fresolution=/tmp/ccU5pMwj.res] ==> ignore
+          arg [-plugin-opt=-fresolution=/tmp/ccrupJRX.res] ==> ignore
           arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
           arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
           arg [-plugin-opt=-pass-through=-lc] ==> ignore
@@ -2042,7 +2042,7 @@ events:
           arg [-znow] ==> ignore
           arg [-zrelro] ==> ignore
           arg [-o] ==> ignore
-          arg [cmTC_69c80] ==> ignore
+          arg [cmTC_78edf] ==> ignore
           arg [/usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu/Scrt1.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu/Scrt1.o]
           arg [/usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu/crti.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu/crti.o]
           arg [/usr/lib/gcc/x86_64-linux-gnu/15/crtbeginS.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/15/crtbeginS.o]
@@ -2057,7 +2057,7 @@ events:
           arg [-L/lib] ==> dir [/lib]
           arg [-L/usr/lib] ==> dir [/usr/lib]
           arg [-v] ==> ignore
-          arg [CMakeFiles/cmTC_69c80.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+          arg [CMakeFiles/cmTC_78edf.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
           arg [-lstdc++] ==> lib [stdc++]
           arg [-lm] ==> lib [m]
           arg [-lgcc_s] ==> lib [gcc_s]
@@ -2068,7 +2068,7 @@ events:
           arg [/usr/lib/gcc/x86_64-linux-gnu/15/crtendS.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/15/crtendS.o]
           arg [/usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu/crtn.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu/crtn.o]
         ignore line: [collect2 version 15.2.0]
-        ignore line: [/usr/bin/ld -plugin /usr/libexec/gcc/x86_64-linux-gnu/15/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/x86_64-linux-gnu/15/lto-wrapper -plugin-opt=-fresolution=/tmp/ccU5pMwj.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_69c80 /usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/15/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/15 -L/usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/15/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/15/../../.. -L/lib -L/usr/lib -v CMakeFiles/cmTC_69c80.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/15/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu/crtn.o]
+        ignore line: [/usr/bin/ld -plugin /usr/libexec/gcc/x86_64-linux-gnu/15/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/x86_64-linux-gnu/15/lto-wrapper -plugin-opt=-fresolution=/tmp/ccrupJRX.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_78edf /usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/15/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/15 -L/usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/15/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/15/../../.. -L/lib -L/usr/lib -v CMakeFiles/cmTC_78edf.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/15/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu/crtn.o]
         linker tool for 'CXX': /usr/bin/ld
         collapse obj [/usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu/Scrt1.o] ==> [/usr/lib/x86_64-linux-gnu/Scrt1.o]
         collapse obj [/usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu/crti.o] ==> [/usr/lib/x86_64-linux-gnu/crti.o]
@@ -2110,8 +2110,8 @@ events:
     checks:
       - "Performing Test CMAKE_HAVE_LIBC_PTHREAD"
     directories:
-      source: "/mnt/c/Tanmay/BitFlow/worker-cpp/build/CMakeFiles/CMakeScratch/TryCompile-cqmgaR"
-      binary: "/mnt/c/Tanmay/BitFlow/worker-cpp/build/CMakeFiles/CMakeScratch/TryCompile-cqmgaR"
+      source: "/mnt/c/Tanmay/BitFlow/worker-cpp/build/CMakeFiles/CMakeScratch/TryCompile-EI1upC"
+      binary: "/mnt/c/Tanmay/BitFlow/worker-cpp/build/CMakeFiles/CMakeScratch/TryCompile-EI1upC"
     cmakeVariables:
       CMAKE_CXX_FLAGS: ""
       CMAKE_CXX_FLAGS_DEBUG: "-g"
@@ -2120,17 +2120,17 @@ events:
       variable: "CMAKE_HAVE_LIBC_PTHREAD"
       cached: true
       stdout: |
-        Change Dir: '/mnt/c/Tanmay/BitFlow/worker-cpp/build/CMakeFiles/CMakeScratch/TryCompile-cqmgaR'
+        Change Dir: '/mnt/c/Tanmay/BitFlow/worker-cpp/build/CMakeFiles/CMakeScratch/TryCompile-EI1upC'
         
-        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_581eb/fast
-        /usr/bin/gmake  -f CMakeFiles/cmTC_581eb.dir/build.make CMakeFiles/cmTC_581eb.dir/build
-        gmake[1]: Entering directory '/mnt/c/Tanmay/BitFlow/worker-cpp/build/CMakeFiles/CMakeScratch/TryCompile-cqmgaR'
-        Building CXX object CMakeFiles/cmTC_581eb.dir/src.cxx.o
-        /usr/bin/c++ -DCMAKE_HAVE_LIBC_PTHREAD  -std=gnu++17 -o CMakeFiles/cmTC_581eb.dir/src.cxx.o -c /mnt/c/Tanmay/BitFlow/worker-cpp/build/CMakeFiles/CMakeScratch/TryCompile-cqmgaR/src.cxx
-        Linking CXX executable cmTC_581eb
-        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_581eb.dir/link.txt --verbose=1
-        /usr/bin/c++ CMakeFiles/cmTC_581eb.dir/src.cxx.o -o cmTC_581eb
-        gmake[1]: Leaving directory '/mnt/c/Tanmay/BitFlow/worker-cpp/build/CMakeFiles/CMakeScratch/TryCompile-cqmgaR'
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_9cefd/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_9cefd.dir/build.make CMakeFiles/cmTC_9cefd.dir/build
+        gmake[1]: Entering directory '/mnt/c/Tanmay/BitFlow/worker-cpp/build/CMakeFiles/CMakeScratch/TryCompile-EI1upC'
+        Building CXX object CMakeFiles/cmTC_9cefd.dir/src.cxx.o
+        /usr/bin/c++ -DCMAKE_HAVE_LIBC_PTHREAD  -std=gnu++17 -o CMakeFiles/cmTC_9cefd.dir/src.cxx.o -c /mnt/c/Tanmay/BitFlow/worker-cpp/build/CMakeFiles/CMakeScratch/TryCompile-EI1upC/src.cxx
+        Linking CXX executable cmTC_9cefd
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_9cefd.dir/link.txt --verbose=1
+        /usr/bin/c++ CMakeFiles/cmTC_9cefd.dir/src.cxx.o -o cmTC_9cefd
+        gmake[1]: Leaving directory '/mnt/c/Tanmay/BitFlow/worker-cpp/build/CMakeFiles/CMakeScratch/TryCompile-EI1upC'
         
       exitCode: 0
   -
@@ -2155,7 +2155,7 @@ events:
     candidate_directories:
       - "/home/tanmay_jain/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand/"
       - "/home/tanmay_jain/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli/"
-      - "/home/tanmay_jain/.vscode-server/bin/fcf604774b9f2674b473065736ee75077e256353/bin/remote-cli/"
+      - "/home/tanmay_jain/.vscode-server/bin/1b6a188127eeaf9194f945eb6eb89a657e93c54c/bin/remote-cli/"
       - "/usr/local/sbin/"
       - "/usr/local/bin/"
       - "/usr/sbin/"
@@ -2212,7 +2212,7 @@ events:
     searched_directories:
       - "/home/tanmay_jain/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand/"
       - "/home/tanmay_jain/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli/"
-      - "/home/tanmay_jain/.vscode-server/bin/fcf604774b9f2674b473065736ee75077e256353/bin/remote-cli/"
+      - "/home/tanmay_jain/.vscode-server/bin/1b6a188127eeaf9194f945eb6eb89a657e93c54c/bin/remote-cli/"
       - "/usr/local/sbin/"
       - "/usr/local/bin/"
       - "/usr/sbin/"
@@ -2255,7 +2255,7 @@ events:
       ENV{PATH}:
         - "/home/tanmay_jain/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand"
         - "/home/tanmay_jain/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli"
-        - "/home/tanmay_jain/.vscode-server/bin/fcf604774b9f2674b473065736ee75077e256353/bin/remote-cli"
+        - "/home/tanmay_jain/.vscode-server/bin/1b6a188127eeaf9194f945eb6eb89a657e93c54c/bin/remote-cli"
         - "/usr/local/sbin"
         - "/usr/local/bin"
         - "/usr/sbin"
@@ -2325,7 +2325,7 @@ events:
     candidate_directories:
       - "/home/tanmay_jain/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand/"
       - "/home/tanmay_jain/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli/"
-      - "/home/tanmay_jain/.vscode-server/bin/fcf604774b9f2674b473065736ee75077e256353/bin/remote-cli/"
+      - "/home/tanmay_jain/.vscode-server/bin/1b6a188127eeaf9194f945eb6eb89a657e93c54c/bin/remote-cli/"
       - "/usr/local/sbin/"
       - "/usr/local/bin/"
       - "/usr/sbin/"
@@ -2384,8 +2384,8 @@ events:
       - "/home/tanmay_jain/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand/"
       - "/home/tanmay_jain/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli/"
       - "/home/tanmay_jain/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli/"
-      - "/home/tanmay_jain/.vscode-server/bin/fcf604774b9f2674b473065736ee75077e256353/bin/remote-cli/"
-      - "/home/tanmay_jain/.vscode-server/bin/fcf604774b9f2674b473065736ee75077e256353/bin/remote-cli/"
+      - "/home/tanmay_jain/.vscode-server/bin/1b6a188127eeaf9194f945eb6eb89a657e93c54c/bin/remote-cli/"
+      - "/home/tanmay_jain/.vscode-server/bin/1b6a188127eeaf9194f945eb6eb89a657e93c54c/bin/remote-cli/"
       - "/usr/local/sbin/"
       - "/usr/local/sbin/"
       - "/usr/local/bin/"
@@ -2466,7 +2466,7 @@ events:
       ENV{PATH}:
         - "/home/tanmay_jain/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand"
         - "/home/tanmay_jain/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli"
-        - "/home/tanmay_jain/.vscode-server/bin/fcf604774b9f2674b473065736ee75077e256353/bin/remote-cli"
+        - "/home/tanmay_jain/.vscode-server/bin/1b6a188127eeaf9194f945eb6eb89a657e93c54c/bin/remote-cli"
         - "/usr/local/sbin"
         - "/usr/local/bin"
         - "/usr/sbin"
@@ -2535,7 +2535,7 @@ events:
     candidate_directories:
       - "/home/tanmay_jain/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand/"
       - "/home/tanmay_jain/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli/"
-      - "/home/tanmay_jain/.vscode-server/bin/fcf604774b9f2674b473065736ee75077e256353/bin/remote-cli/"
+      - "/home/tanmay_jain/.vscode-server/bin/1b6a188127eeaf9194f945eb6eb89a657e93c54c/bin/remote-cli/"
       - "/usr/local/sbin/"
       - "/usr/local/bin/"
       - "/usr/sbin/"
@@ -2592,7 +2592,7 @@ events:
     searched_directories:
       - "/home/tanmay_jain/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand/"
       - "/home/tanmay_jain/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli/"
-      - "/home/tanmay_jain/.vscode-server/bin/fcf604774b9f2674b473065736ee75077e256353/bin/remote-cli/"
+      - "/home/tanmay_jain/.vscode-server/bin/1b6a188127eeaf9194f945eb6eb89a657e93c54c/bin/remote-cli/"
       - "/usr/local/sbin/"
       - "/usr/local/bin/"
       - "/usr/sbin/"
@@ -2635,7 +2635,7 @@ events:
       ENV{PATH}:
         - "/home/tanmay_jain/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand"
         - "/home/tanmay_jain/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli"
-        - "/home/tanmay_jain/.vscode-server/bin/fcf604774b9f2674b473065736ee75077e256353/bin/remote-cli"
+        - "/home/tanmay_jain/.vscode-server/bin/1b6a188127eeaf9194f945eb6eb89a657e93c54c/bin/remote-cli"
         - "/usr/local/sbin"
         - "/usr/local/bin"
         - "/usr/sbin"
@@ -2705,7 +2705,7 @@ events:
     candidate_directories:
       - "/home/tanmay_jain/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand/"
       - "/home/tanmay_jain/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli/"
-      - "/home/tanmay_jain/.vscode-server/bin/fcf604774b9f2674b473065736ee75077e256353/bin/remote-cli/"
+      - "/home/tanmay_jain/.vscode-server/bin/1b6a188127eeaf9194f945eb6eb89a657e93c54c/bin/remote-cli/"
       - "/usr/local/sbin/"
       - "/usr/local/bin/"
       - "/usr/sbin/"
@@ -2764,8 +2764,8 @@ events:
       - "/home/tanmay_jain/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand/"
       - "/home/tanmay_jain/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli/"
       - "/home/tanmay_jain/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli/"
-      - "/home/tanmay_jain/.vscode-server/bin/fcf604774b9f2674b473065736ee75077e256353/bin/remote-cli/"
-      - "/home/tanmay_jain/.vscode-server/bin/fcf604774b9f2674b473065736ee75077e256353/bin/remote-cli/"
+      - "/home/tanmay_jain/.vscode-server/bin/1b6a188127eeaf9194f945eb6eb89a657e93c54c/bin/remote-cli/"
+      - "/home/tanmay_jain/.vscode-server/bin/1b6a188127eeaf9194f945eb6eb89a657e93c54c/bin/remote-cli/"
       - "/usr/local/sbin/"
       - "/usr/local/sbin/"
       - "/usr/local/bin/"
@@ -2846,7 +2846,7 @@ events:
       ENV{PATH}:
         - "/home/tanmay_jain/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand"
         - "/home/tanmay_jain/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli"
-        - "/home/tanmay_jain/.vscode-server/bin/fcf604774b9f2674b473065736ee75077e256353/bin/remote-cli"
+        - "/home/tanmay_jain/.vscode-server/bin/1b6a188127eeaf9194f945eb6eb89a657e93c54c/bin/remote-cli"
         - "/usr/local/sbin"
         - "/usr/local/bin"
         - "/usr/sbin"
@@ -2915,7 +2915,7 @@ events:
     candidate_directories:
       - "/home/tanmay_jain/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand/"
       - "/home/tanmay_jain/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli/"
-      - "/home/tanmay_jain/.vscode-server/bin/fcf604774b9f2674b473065736ee75077e256353/bin/remote-cli/"
+      - "/home/tanmay_jain/.vscode-server/bin/1b6a188127eeaf9194f945eb6eb89a657e93c54c/bin/remote-cli/"
       - "/usr/local/sbin/"
       - "/usr/local/bin/"
       - "/usr/sbin/"
@@ -2972,7 +2972,7 @@ events:
     searched_directories:
       - "/home/tanmay_jain/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand/"
       - "/home/tanmay_jain/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli/"
-      - "/home/tanmay_jain/.vscode-server/bin/fcf604774b9f2674b473065736ee75077e256353/bin/remote-cli/"
+      - "/home/tanmay_jain/.vscode-server/bin/1b6a188127eeaf9194f945eb6eb89a657e93c54c/bin/remote-cli/"
       - "/usr/local/sbin/"
       - "/usr/local/bin/"
       - "/usr/sbin/"
@@ -3031,7 +3031,7 @@ events:
       ENV{PATH}:
         - "/home/tanmay_jain/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand"
         - "/home/tanmay_jain/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli"
-        - "/home/tanmay_jain/.vscode-server/bin/fcf604774b9f2674b473065736ee75077e256353/bin/remote-cli"
+        - "/home/tanmay_jain/.vscode-server/bin/1b6a188127eeaf9194f945eb6eb89a657e93c54c/bin/remote-cli"
         - "/usr/local/sbin"
         - "/usr/local/bin"
         - "/usr/sbin"
@@ -3101,7 +3101,7 @@ events:
     candidate_directories:
       - "/home/tanmay_jain/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand/"
       - "/home/tanmay_jain/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli/"
-      - "/home/tanmay_jain/.vscode-server/bin/fcf604774b9f2674b473065736ee75077e256353/bin/remote-cli/"
+      - "/home/tanmay_jain/.vscode-server/bin/1b6a188127eeaf9194f945eb6eb89a657e93c54c/bin/remote-cli/"
       - "/usr/local/sbin/"
       - "/usr/local/bin/"
       - "/usr/sbin/"
@@ -3160,8 +3160,8 @@ events:
       - "/home/tanmay_jain/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand/"
       - "/home/tanmay_jain/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli/"
       - "/home/tanmay_jain/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli/"
-      - "/home/tanmay_jain/.vscode-server/bin/fcf604774b9f2674b473065736ee75077e256353/bin/remote-cli/"
-      - "/home/tanmay_jain/.vscode-server/bin/fcf604774b9f2674b473065736ee75077e256353/bin/remote-cli/"
+      - "/home/tanmay_jain/.vscode-server/bin/1b6a188127eeaf9194f945eb6eb89a657e93c54c/bin/remote-cli/"
+      - "/home/tanmay_jain/.vscode-server/bin/1b6a188127eeaf9194f945eb6eb89a657e93c54c/bin/remote-cli/"
       - "/usr/local/sbin/"
       - "/usr/local/sbin/"
       - "/usr/local/bin/"
@@ -3273,7 +3273,7 @@ events:
       ENV{PATH}:
         - "/home/tanmay_jain/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand"
         - "/home/tanmay_jain/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli"
-        - "/home/tanmay_jain/.vscode-server/bin/fcf604774b9f2674b473065736ee75077e256353/bin/remote-cli"
+        - "/home/tanmay_jain/.vscode-server/bin/1b6a188127eeaf9194f945eb6eb89a657e93c54c/bin/remote-cli"
         - "/usr/local/sbin"
         - "/usr/local/bin"
         - "/usr/sbin"
@@ -3341,7 +3341,7 @@ events:
     candidate_directories:
       - "/home/tanmay_jain/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand/"
       - "/home/tanmay_jain/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli/"
-      - "/home/tanmay_jain/.vscode-server/bin/fcf604774b9f2674b473065736ee75077e256353/bin/remote-cli/"
+      - "/home/tanmay_jain/.vscode-server/bin/1b6a188127eeaf9194f945eb6eb89a657e93c54c/bin/remote-cli/"
       - "/usr/local/sbin/"
       - "/usr/local/bin/"
       - "/usr/sbin/"
@@ -3398,7 +3398,7 @@ events:
     searched_directories:
       - "/home/tanmay_jain/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand/google/protobuf/service.h"
       - "/home/tanmay_jain/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli/google/protobuf/service.h"
-      - "/home/tanmay_jain/.vscode-server/bin/fcf604774b9f2674b473065736ee75077e256353/bin/remote-cli/google/protobuf/service.h"
+      - "/home/tanmay_jain/.vscode-server/bin/1b6a188127eeaf9194f945eb6eb89a657e93c54c/bin/remote-cli/google/protobuf/service.h"
       - "/usr/local/sbin/google/protobuf/service.h"
       - "/usr/local/bin/google/protobuf/service.h"
       - "/usr/sbin/google/protobuf/service.h"
@@ -3442,7 +3442,7 @@ events:
       ENV{PATH}:
         - "/home/tanmay_jain/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand"
         - "/home/tanmay_jain/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli"
-        - "/home/tanmay_jain/.vscode-server/bin/fcf604774b9f2674b473065736ee75077e256353/bin/remote-cli"
+        - "/home/tanmay_jain/.vscode-server/bin/1b6a188127eeaf9194f945eb6eb89a657e93c54c/bin/remote-cli"
         - "/usr/local/sbin"
         - "/usr/local/bin"
         - "/usr/sbin"
@@ -3510,7 +3510,7 @@ events:
     candidate_directories:
       - "/home/tanmay_jain/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand/"
       - "/home/tanmay_jain/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli/"
-      - "/home/tanmay_jain/.vscode-server/bin/fcf604774b9f2674b473065736ee75077e256353/bin/remote-cli/"
+      - "/home/tanmay_jain/.vscode-server/bin/1b6a188127eeaf9194f945eb6eb89a657e93c54c/bin/remote-cli/"
       - "/usr/local/sbin/"
       - "/usr/local/bin/"
       - "/usr/sbin/"
@@ -3567,7 +3567,7 @@ events:
     searched_directories:
       - "/home/tanmay_jain/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand/protoc"
       - "/home/tanmay_jain/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli/protoc"
-      - "/home/tanmay_jain/.vscode-server/bin/fcf604774b9f2674b473065736ee75077e256353/bin/remote-cli/protoc"
+      - "/home/tanmay_jain/.vscode-server/bin/1b6a188127eeaf9194f945eb6eb89a657e93c54c/bin/remote-cli/protoc"
       - "/usr/local/sbin/protoc"
       - "/usr/local/bin/protoc"
       - "/usr/sbin/protoc"
@@ -3576,7 +3576,7 @@ events:
       ENV{PATH}:
         - "/home/tanmay_jain/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand"
         - "/home/tanmay_jain/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli"
-        - "/home/tanmay_jain/.vscode-server/bin/fcf604774b9f2674b473065736ee75077e256353/bin/remote-cli"
+        - "/home/tanmay_jain/.vscode-server/bin/1b6a188127eeaf9194f945eb6eb89a657e93c54c/bin/remote-cli"
         - "/usr/local/sbin"
         - "/usr/local/bin"
         - "/usr/sbin"
@@ -3645,8 +3645,8 @@ events:
       - "/home/tanmay_jain/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand/"
       - "/home/tanmay_jain/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli/include/"
       - "/home/tanmay_jain/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli/"
-      - "/home/tanmay_jain/.vscode-server/bin/fcf604774b9f2674b473065736ee75077e256353/bin/remote-cli/include/"
-      - "/home/tanmay_jain/.vscode-server/bin/fcf604774b9f2674b473065736ee75077e256353/bin/remote-cli/"
+      - "/home/tanmay_jain/.vscode-server/bin/1b6a188127eeaf9194f945eb6eb89a657e93c54c/bin/remote-cli/include/"
+      - "/home/tanmay_jain/.vscode-server/bin/1b6a188127eeaf9194f945eb6eb89a657e93c54c/bin/remote-cli/"
       - "/usr/local/sbin/include/"
       - "/usr/local/sbin/"
       - "/usr/local/bin/include/"
@@ -3758,8 +3758,8 @@ events:
       - "/home/tanmay_jain/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand/zlib.h"
       - "/home/tanmay_jain/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli/include/zlib.h"
       - "/home/tanmay_jain/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli/zlib.h"
-      - "/home/tanmay_jain/.vscode-server/bin/fcf604774b9f2674b473065736ee75077e256353/bin/remote-cli/include/zlib.h"
-      - "/home/tanmay_jain/.vscode-server/bin/fcf604774b9f2674b473065736ee75077e256353/bin/remote-cli/zlib.h"
+      - "/home/tanmay_jain/.vscode-server/bin/1b6a188127eeaf9194f945eb6eb89a657e93c54c/bin/remote-cli/include/zlib.h"
+      - "/home/tanmay_jain/.vscode-server/bin/1b6a188127eeaf9194f945eb6eb89a657e93c54c/bin/remote-cli/zlib.h"
       - "/usr/local/sbin/include/zlib.h"
       - "/usr/local/sbin/zlib.h"
       - "/usr/local/bin/include/zlib.h"
@@ -3842,7 +3842,7 @@ events:
       ENV{PATH}:
         - "/home/tanmay_jain/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand"
         - "/home/tanmay_jain/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli"
-        - "/home/tanmay_jain/.vscode-server/bin/fcf604774b9f2674b473065736ee75077e256353/bin/remote-cli"
+        - "/home/tanmay_jain/.vscode-server/bin/1b6a188127eeaf9194f945eb6eb89a657e93c54c/bin/remote-cli"
         - "/usr/local/sbin"
         - "/usr/local/bin"
         - "/usr/sbin"
@@ -3920,8 +3920,8 @@ events:
       - "/home/tanmay_jain/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand/"
       - "/home/tanmay_jain/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli/lib/"
       - "/home/tanmay_jain/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli/"
-      - "/home/tanmay_jain/.vscode-server/bin/fcf604774b9f2674b473065736ee75077e256353/bin/remote-cli/lib/"
-      - "/home/tanmay_jain/.vscode-server/bin/fcf604774b9f2674b473065736ee75077e256353/bin/remote-cli/"
+      - "/home/tanmay_jain/.vscode-server/bin/1b6a188127eeaf9194f945eb6eb89a657e93c54c/bin/remote-cli/lib/"
+      - "/home/tanmay_jain/.vscode-server/bin/1b6a188127eeaf9194f945eb6eb89a657e93c54c/bin/remote-cli/"
       - "/usr/local/sbin/lib/"
       - "/usr/local/sbin/"
       - "/usr/local/bin/lib/"
@@ -4061,22 +4061,22 @@ events:
       - "/home/tanmay_jain/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli/"
       - "/home/tanmay_jain/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli/"
       - "/home/tanmay_jain/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli/"
-      - "/home/tanmay_jain/.vscode-server/bin/fcf604774b9f2674b473065736ee75077e256353/bin/remote-cli/lib/"
-      - "/home/tanmay_jain/.vscode-server/bin/fcf604774b9f2674b473065736ee75077e256353/bin/remote-cli/lib/"
-      - "/home/tanmay_jain/.vscode-server/bin/fcf604774b9f2674b473065736ee75077e256353/bin/remote-cli/lib/"
-      - "/home/tanmay_jain/.vscode-server/bin/fcf604774b9f2674b473065736ee75077e256353/bin/remote-cli/lib/"
-      - "/home/tanmay_jain/.vscode-server/bin/fcf604774b9f2674b473065736ee75077e256353/bin/remote-cli/lib/"
-      - "/home/tanmay_jain/.vscode-server/bin/fcf604774b9f2674b473065736ee75077e256353/bin/remote-cli/lib/"
-      - "/home/tanmay_jain/.vscode-server/bin/fcf604774b9f2674b473065736ee75077e256353/bin/remote-cli/lib/"
-      - "/home/tanmay_jain/.vscode-server/bin/fcf604774b9f2674b473065736ee75077e256353/bin/remote-cli/lib/"
-      - "/home/tanmay_jain/.vscode-server/bin/fcf604774b9f2674b473065736ee75077e256353/bin/remote-cli/"
-      - "/home/tanmay_jain/.vscode-server/bin/fcf604774b9f2674b473065736ee75077e256353/bin/remote-cli/"
-      - "/home/tanmay_jain/.vscode-server/bin/fcf604774b9f2674b473065736ee75077e256353/bin/remote-cli/"
-      - "/home/tanmay_jain/.vscode-server/bin/fcf604774b9f2674b473065736ee75077e256353/bin/remote-cli/"
-      - "/home/tanmay_jain/.vscode-server/bin/fcf604774b9f2674b473065736ee75077e256353/bin/remote-cli/"
-      - "/home/tanmay_jain/.vscode-server/bin/fcf604774b9f2674b473065736ee75077e256353/bin/remote-cli/"
-      - "/home/tanmay_jain/.vscode-server/bin/fcf604774b9f2674b473065736ee75077e256353/bin/remote-cli/"
-      - "/home/tanmay_jain/.vscode-server/bin/fcf604774b9f2674b473065736ee75077e256353/bin/remote-cli/"
+      - "/home/tanmay_jain/.vscode-server/bin/1b6a188127eeaf9194f945eb6eb89a657e93c54c/bin/remote-cli/lib/"
+      - "/home/tanmay_jain/.vscode-server/bin/1b6a188127eeaf9194f945eb6eb89a657e93c54c/bin/remote-cli/lib/"
+      - "/home/tanmay_jain/.vscode-server/bin/1b6a188127eeaf9194f945eb6eb89a657e93c54c/bin/remote-cli/lib/"
+      - "/home/tanmay_jain/.vscode-server/bin/1b6a188127eeaf9194f945eb6eb89a657e93c54c/bin/remote-cli/lib/"
+      - "/home/tanmay_jain/.vscode-server/bin/1b6a188127eeaf9194f945eb6eb89a657e93c54c/bin/remote-cli/lib/"
+      - "/home/tanmay_jain/.vscode-server/bin/1b6a188127eeaf9194f945eb6eb89a657e93c54c/bin/remote-cli/lib/"
+      - "/home/tanmay_jain/.vscode-server/bin/1b6a188127eeaf9194f945eb6eb89a657e93c54c/bin/remote-cli/lib/"
+      - "/home/tanmay_jain/.vscode-server/bin/1b6a188127eeaf9194f945eb6eb89a657e93c54c/bin/remote-cli/lib/"
+      - "/home/tanmay_jain/.vscode-server/bin/1b6a188127eeaf9194f945eb6eb89a657e93c54c/bin/remote-cli/"
+      - "/home/tanmay_jain/.vscode-server/bin/1b6a188127eeaf9194f945eb6eb89a657e93c54c/bin/remote-cli/"
+      - "/home/tanmay_jain/.vscode-server/bin/1b6a188127eeaf9194f945eb6eb89a657e93c54c/bin/remote-cli/"
+      - "/home/tanmay_jain/.vscode-server/bin/1b6a188127eeaf9194f945eb6eb89a657e93c54c/bin/remote-cli/"
+      - "/home/tanmay_jain/.vscode-server/bin/1b6a188127eeaf9194f945eb6eb89a657e93c54c/bin/remote-cli/"
+      - "/home/tanmay_jain/.vscode-server/bin/1b6a188127eeaf9194f945eb6eb89a657e93c54c/bin/remote-cli/"
+      - "/home/tanmay_jain/.vscode-server/bin/1b6a188127eeaf9194f945eb6eb89a657e93c54c/bin/remote-cli/"
+      - "/home/tanmay_jain/.vscode-server/bin/1b6a188127eeaf9194f945eb6eb89a657e93c54c/bin/remote-cli/"
       - "/usr/local/sbin/lib/"
       - "/usr/local/sbin/lib/"
       - "/usr/local/sbin/lib/"
@@ -4682,7 +4682,7 @@ events:
       ENV{PATH}:
         - "/home/tanmay_jain/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand"
         - "/home/tanmay_jain/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli"
-        - "/home/tanmay_jain/.vscode-server/bin/fcf604774b9f2674b473065736ee75077e256353/bin/remote-cli"
+        - "/home/tanmay_jain/.vscode-server/bin/1b6a188127eeaf9194f945eb6eb89a657e93c54c/bin/remote-cli"
         - "/usr/local/sbin"
         - "/usr/local/bin"
         - "/usr/sbin"
@@ -4761,8 +4761,8 @@ events:
       - "/home/tanmay_jain/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand/"
       - "/home/tanmay_jain/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli/lib/"
       - "/home/tanmay_jain/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli/"
-      - "/home/tanmay_jain/.vscode-server/bin/fcf604774b9f2674b473065736ee75077e256353/bin/remote-cli/lib/"
-      - "/home/tanmay_jain/.vscode-server/bin/fcf604774b9f2674b473065736ee75077e256353/bin/remote-cli/"
+      - "/home/tanmay_jain/.vscode-server/bin/1b6a188127eeaf9194f945eb6eb89a657e93c54c/bin/remote-cli/lib/"
+      - "/home/tanmay_jain/.vscode-server/bin/1b6a188127eeaf9194f945eb6eb89a657e93c54c/bin/remote-cli/"
       - "/usr/local/sbin/lib/"
       - "/usr/local/sbin/"
       - "/usr/local/bin/lib/"
@@ -4906,24 +4906,24 @@ events:
       - "/home/tanmay_jain/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli/"
       - "/home/tanmay_jain/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli/"
       - "/home/tanmay_jain/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli/"
-      - "/home/tanmay_jain/.vscode-server/bin/fcf604774b9f2674b473065736ee75077e256353/bin/remote-cli/lib/"
-      - "/home/tanmay_jain/.vscode-server/bin/fcf604774b9f2674b473065736ee75077e256353/bin/remote-cli/lib/"
-      - "/home/tanmay_jain/.vscode-server/bin/fcf604774b9f2674b473065736ee75077e256353/bin/remote-cli/lib/"
-      - "/home/tanmay_jain/.vscode-server/bin/fcf604774b9f2674b473065736ee75077e256353/bin/remote-cli/lib/"
-      - "/home/tanmay_jain/.vscode-server/bin/fcf604774b9f2674b473065736ee75077e256353/bin/remote-cli/lib/"
-      - "/home/tanmay_jain/.vscode-server/bin/fcf604774b9f2674b473065736ee75077e256353/bin/remote-cli/lib/"
-      - "/home/tanmay_jain/.vscode-server/bin/fcf604774b9f2674b473065736ee75077e256353/bin/remote-cli/lib/"
-      - "/home/tanmay_jain/.vscode-server/bin/fcf604774b9f2674b473065736ee75077e256353/bin/remote-cli/lib/"
-      - "/home/tanmay_jain/.vscode-server/bin/fcf604774b9f2674b473065736ee75077e256353/bin/remote-cli/lib/"
-      - "/home/tanmay_jain/.vscode-server/bin/fcf604774b9f2674b473065736ee75077e256353/bin/remote-cli/"
-      - "/home/tanmay_jain/.vscode-server/bin/fcf604774b9f2674b473065736ee75077e256353/bin/remote-cli/"
-      - "/home/tanmay_jain/.vscode-server/bin/fcf604774b9f2674b473065736ee75077e256353/bin/remote-cli/"
-      - "/home/tanmay_jain/.vscode-server/bin/fcf604774b9f2674b473065736ee75077e256353/bin/remote-cli/"
-      - "/home/tanmay_jain/.vscode-server/bin/fcf604774b9f2674b473065736ee75077e256353/bin/remote-cli/"
-      - "/home/tanmay_jain/.vscode-server/bin/fcf604774b9f2674b473065736ee75077e256353/bin/remote-cli/"
-      - "/home/tanmay_jain/.vscode-server/bin/fcf604774b9f2674b473065736ee75077e256353/bin/remote-cli/"
-      - "/home/tanmay_jain/.vscode-server/bin/fcf604774b9f2674b473065736ee75077e256353/bin/remote-cli/"
-      - "/home/tanmay_jain/.vscode-server/bin/fcf604774b9f2674b473065736ee75077e256353/bin/remote-cli/"
+      - "/home/tanmay_jain/.vscode-server/bin/1b6a188127eeaf9194f945eb6eb89a657e93c54c/bin/remote-cli/lib/"
+      - "/home/tanmay_jain/.vscode-server/bin/1b6a188127eeaf9194f945eb6eb89a657e93c54c/bin/remote-cli/lib/"
+      - "/home/tanmay_jain/.vscode-server/bin/1b6a188127eeaf9194f945eb6eb89a657e93c54c/bin/remote-cli/lib/"
+      - "/home/tanmay_jain/.vscode-server/bin/1b6a188127eeaf9194f945eb6eb89a657e93c54c/bin/remote-cli/lib/"
+      - "/home/tanmay_jain/.vscode-server/bin/1b6a188127eeaf9194f945eb6eb89a657e93c54c/bin/remote-cli/lib/"
+      - "/home/tanmay_jain/.vscode-server/bin/1b6a188127eeaf9194f945eb6eb89a657e93c54c/bin/remote-cli/lib/"
+      - "/home/tanmay_jain/.vscode-server/bin/1b6a188127eeaf9194f945eb6eb89a657e93c54c/bin/remote-cli/lib/"
+      - "/home/tanmay_jain/.vscode-server/bin/1b6a188127eeaf9194f945eb6eb89a657e93c54c/bin/remote-cli/lib/"
+      - "/home/tanmay_jain/.vscode-server/bin/1b6a188127eeaf9194f945eb6eb89a657e93c54c/bin/remote-cli/lib/"
+      - "/home/tanmay_jain/.vscode-server/bin/1b6a188127eeaf9194f945eb6eb89a657e93c54c/bin/remote-cli/"
+      - "/home/tanmay_jain/.vscode-server/bin/1b6a188127eeaf9194f945eb6eb89a657e93c54c/bin/remote-cli/"
+      - "/home/tanmay_jain/.vscode-server/bin/1b6a188127eeaf9194f945eb6eb89a657e93c54c/bin/remote-cli/"
+      - "/home/tanmay_jain/.vscode-server/bin/1b6a188127eeaf9194f945eb6eb89a657e93c54c/bin/remote-cli/"
+      - "/home/tanmay_jain/.vscode-server/bin/1b6a188127eeaf9194f945eb6eb89a657e93c54c/bin/remote-cli/"
+      - "/home/tanmay_jain/.vscode-server/bin/1b6a188127eeaf9194f945eb6eb89a657e93c54c/bin/remote-cli/"
+      - "/home/tanmay_jain/.vscode-server/bin/1b6a188127eeaf9194f945eb6eb89a657e93c54c/bin/remote-cli/"
+      - "/home/tanmay_jain/.vscode-server/bin/1b6a188127eeaf9194f945eb6eb89a657e93c54c/bin/remote-cli/"
+      - "/home/tanmay_jain/.vscode-server/bin/1b6a188127eeaf9194f945eb6eb89a657e93c54c/bin/remote-cli/"
       - "/usr/local/sbin/lib/"
       - "/usr/local/sbin/lib/"
       - "/usr/local/sbin/lib/"
@@ -5883,7 +5883,7 @@ events:
       ENV{PATH}:
         - "/home/tanmay_jain/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand"
         - "/home/tanmay_jain/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli"
-        - "/home/tanmay_jain/.vscode-server/bin/fcf604774b9f2674b473065736ee75077e256353/bin/remote-cli"
+        - "/home/tanmay_jain/.vscode-server/bin/1b6a188127eeaf9194f945eb6eb89a657e93c54c/bin/remote-cli"
         - "/usr/local/sbin"
         - "/usr/local/bin"
         - "/usr/sbin"
@@ -5954,7 +5954,7 @@ events:
     candidate_directories:
       - "/home/tanmay_jain/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand/"
       - "/home/tanmay_jain/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli/"
-      - "/home/tanmay_jain/.vscode-server/bin/fcf604774b9f2674b473065736ee75077e256353/bin/remote-cli/"
+      - "/home/tanmay_jain/.vscode-server/bin/1b6a188127eeaf9194f945eb6eb89a657e93c54c/bin/remote-cli/"
       - "/usr/local/sbin/"
       - "/usr/local/bin/"
       - "/usr/sbin/"
@@ -6011,8 +6011,8 @@ events:
       - "/home/tanmay_jain/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand/pkgconf"
       - "/home/tanmay_jain/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli/pkg-config"
       - "/home/tanmay_jain/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli/pkgconf"
-      - "/home/tanmay_jain/.vscode-server/bin/fcf604774b9f2674b473065736ee75077e256353/bin/remote-cli/pkg-config"
-      - "/home/tanmay_jain/.vscode-server/bin/fcf604774b9f2674b473065736ee75077e256353/bin/remote-cli/pkgconf"
+      - "/home/tanmay_jain/.vscode-server/bin/1b6a188127eeaf9194f945eb6eb89a657e93c54c/bin/remote-cli/pkg-config"
+      - "/home/tanmay_jain/.vscode-server/bin/1b6a188127eeaf9194f945eb6eb89a657e93c54c/bin/remote-cli/pkgconf"
       - "/usr/local/sbin/pkg-config"
       - "/usr/local/sbin/pkgconf"
       - "/usr/local/bin/pkg-config"
@@ -6024,7 +6024,7 @@ events:
       ENV{PATH}:
         - "/home/tanmay_jain/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand"
         - "/home/tanmay_jain/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli"
-        - "/home/tanmay_jain/.vscode-server/bin/fcf604774b9f2674b473065736ee75077e256353/bin/remote-cli"
+        - "/home/tanmay_jain/.vscode-server/bin/1b6a188127eeaf9194f945eb6eb89a657e93c54c/bin/remote-cli"
         - "/usr/local/sbin"
         - "/usr/local/bin"
         - "/usr/sbin"
@@ -6099,7 +6099,7 @@ events:
       ENV{PATH}:
         - "/home/tanmay_jain/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand"
         - "/home/tanmay_jain/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli"
-        - "/home/tanmay_jain/.vscode-server/bin/fcf604774b9f2674b473065736ee75077e256353/bin/remote-cli"
+        - "/home/tanmay_jain/.vscode-server/bin/1b6a188127eeaf9194f945eb6eb89a657e93c54c/bin/remote-cli"
         - "/usr/local/sbin"
         - "/usr/local/bin"
         - "/usr/sbin"
@@ -6176,7 +6176,7 @@ events:
       ENV{PATH}:
         - "/home/tanmay_jain/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand"
         - "/home/tanmay_jain/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli"
-        - "/home/tanmay_jain/.vscode-server/bin/fcf604774b9f2674b473065736ee75077e256353/bin/remote-cli"
+        - "/home/tanmay_jain/.vscode-server/bin/1b6a188127eeaf9194f945eb6eb89a657e93c54c/bin/remote-cli"
         - "/usr/local/sbin"
         - "/usr/local/bin"
         - "/usr/sbin"
@@ -6249,8 +6249,8 @@ events:
       - "/home/tanmay_jain/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand/"
       - "/home/tanmay_jain/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli/include/"
       - "/home/tanmay_jain/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli/"
-      - "/home/tanmay_jain/.vscode-server/bin/fcf604774b9f2674b473065736ee75077e256353/bin/remote-cli/include/"
-      - "/home/tanmay_jain/.vscode-server/bin/fcf604774b9f2674b473065736ee75077e256353/bin/remote-cli/"
+      - "/home/tanmay_jain/.vscode-server/bin/1b6a188127eeaf9194f945eb6eb89a657e93c54c/bin/remote-cli/include/"
+      - "/home/tanmay_jain/.vscode-server/bin/1b6a188127eeaf9194f945eb6eb89a657e93c54c/bin/remote-cli/"
       - "/usr/local/sbin/include/"
       - "/usr/local/sbin/"
       - "/usr/local/bin/include/"
@@ -6362,7 +6362,7 @@ events:
       ENV{PATH}:
         - "/home/tanmay_jain/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand"
         - "/home/tanmay_jain/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli"
-        - "/home/tanmay_jain/.vscode-server/bin/fcf604774b9f2674b473065736ee75077e256353/bin/remote-cli"
+        - "/home/tanmay_jain/.vscode-server/bin/1b6a188127eeaf9194f945eb6eb89a657e93c54c/bin/remote-cli"
         - "/usr/local/sbin"
         - "/usr/local/bin"
         - "/usr/sbin"
@@ -6440,9 +6440,9 @@ events:
       - "/home/tanmay_jain/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli/lib/"
       - "/home/tanmay_jain/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli/lib64/"
       - "/home/tanmay_jain/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli/"
-      - "/home/tanmay_jain/.vscode-server/bin/fcf604774b9f2674b473065736ee75077e256353/bin/remote-cli/lib/"
-      - "/home/tanmay_jain/.vscode-server/bin/fcf604774b9f2674b473065736ee75077e256353/bin/remote-cli/lib64/"
-      - "/home/tanmay_jain/.vscode-server/bin/fcf604774b9f2674b473065736ee75077e256353/bin/remote-cli/"
+      - "/home/tanmay_jain/.vscode-server/bin/1b6a188127eeaf9194f945eb6eb89a657e93c54c/bin/remote-cli/lib/"
+      - "/home/tanmay_jain/.vscode-server/bin/1b6a188127eeaf9194f945eb6eb89a657e93c54c/bin/remote-cli/lib64/"
+      - "/home/tanmay_jain/.vscode-server/bin/1b6a188127eeaf9194f945eb6eb89a657e93c54c/bin/remote-cli/"
       - "/usr/local/sbin/lib/"
       - "/usr/local/sbin/lib64/"
       - "/usr/local/sbin/"
@@ -6611,7 +6611,7 @@ events:
       ENV{PATH}:
         - "/home/tanmay_jain/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand"
         - "/home/tanmay_jain/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli"
-        - "/home/tanmay_jain/.vscode-server/bin/fcf604774b9f2674b473065736ee75077e256353/bin/remote-cli"
+        - "/home/tanmay_jain/.vscode-server/bin/1b6a188127eeaf9194f945eb6eb89a657e93c54c/bin/remote-cli"
         - "/usr/local/sbin"
         - "/usr/local/bin"
         - "/usr/sbin"
@@ -6687,9 +6687,9 @@ events:
       - "/home/tanmay_jain/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli/lib/"
       - "/home/tanmay_jain/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli/lib64/"
       - "/home/tanmay_jain/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli/"
-      - "/home/tanmay_jain/.vscode-server/bin/fcf604774b9f2674b473065736ee75077e256353/bin/remote-cli/lib/"
-      - "/home/tanmay_jain/.vscode-server/bin/fcf604774b9f2674b473065736ee75077e256353/bin/remote-cli/lib64/"
-      - "/home/tanmay_jain/.vscode-server/bin/fcf604774b9f2674b473065736ee75077e256353/bin/remote-cli/"
+      - "/home/tanmay_jain/.vscode-server/bin/1b6a188127eeaf9194f945eb6eb89a657e93c54c/bin/remote-cli/lib/"
+      - "/home/tanmay_jain/.vscode-server/bin/1b6a188127eeaf9194f945eb6eb89a657e93c54c/bin/remote-cli/lib64/"
+      - "/home/tanmay_jain/.vscode-server/bin/1b6a188127eeaf9194f945eb6eb89a657e93c54c/bin/remote-cli/"
       - "/usr/local/sbin/lib/"
       - "/usr/local/sbin/lib64/"
       - "/usr/local/sbin/"
@@ -6854,7 +6854,7 @@ events:
       ENV{PATH}:
         - "/home/tanmay_jain/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand"
         - "/home/tanmay_jain/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli"
-        - "/home/tanmay_jain/.vscode-server/bin/fcf604774b9f2674b473065736ee75077e256353/bin/remote-cli"
+        - "/home/tanmay_jain/.vscode-server/bin/1b6a188127eeaf9194f945eb6eb89a657e93c54c/bin/remote-cli"
         - "/usr/local/sbin"
         - "/usr/local/bin"
         - "/usr/sbin"
@@ -6963,11 +6963,11 @@ events:
         mode: "config"
         reason: "no_exist"
       -
-        path: "/home/tanmay_jain/.vscode-server/bin/fcf604774b9f2674b473065736ee75077e256353/bin/remote-cli/c-aresConfig.cmake"
+        path: "/home/tanmay_jain/.vscode-server/bin/1b6a188127eeaf9194f945eb6eb89a657e93c54c/bin/remote-cli/c-aresConfig.cmake"
         mode: "config"
         reason: "no_exist"
       -
-        path: "/home/tanmay_jain/.vscode-server/bin/fcf604774b9f2674b473065736ee75077e256353/bin/remote-cli/c-ares-config.cmake"
+        path: "/home/tanmay_jain/.vscode-server/bin/1b6a188127eeaf9194f945eb6eb89a657e93c54c/bin/remote-cli/c-ares-config.cmake"
         mode: "config"
         reason: "no_exist"
       -
@@ -6998,7 +6998,7 @@ events:
       ENV{PATH}:
         - "/home/tanmay_jain/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand"
         - "/home/tanmay_jain/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli"
-        - "/home/tanmay_jain/.vscode-server/bin/fcf604774b9f2674b473065736ee75077e256353/bin/remote-cli"
+        - "/home/tanmay_jain/.vscode-server/bin/1b6a188127eeaf9194f945eb6eb89a657e93c54c/bin/remote-cli"
         - "/usr/local/sbin"
         - "/usr/local/bin"
         - "/usr/sbin"
@@ -7104,11 +7104,11 @@ events:
         mode: "config"
         reason: "no_exist"
       -
-        path: "/home/tanmay_jain/.vscode-server/bin/fcf604774b9f2674b473065736ee75077e256353/bin/remote-cli/abslConfig.cmake"
+        path: "/home/tanmay_jain/.vscode-server/bin/1b6a188127eeaf9194f945eb6eb89a657e93c54c/bin/remote-cli/abslConfig.cmake"
         mode: "config"
         reason: "no_exist"
       -
-        path: "/home/tanmay_jain/.vscode-server/bin/fcf604774b9f2674b473065736ee75077e256353/bin/remote-cli/absl-config.cmake"
+        path: "/home/tanmay_jain/.vscode-server/bin/1b6a188127eeaf9194f945eb6eb89a657e93c54c/bin/remote-cli/absl-config.cmake"
         mode: "config"
         reason: "no_exist"
       -
@@ -7135,7 +7135,7 @@ events:
       ENV{PATH}:
         - "/home/tanmay_jain/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand"
         - "/home/tanmay_jain/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli"
-        - "/home/tanmay_jain/.vscode-server/bin/fcf604774b9f2674b473065736ee75077e256353/bin/remote-cli"
+        - "/home/tanmay_jain/.vscode-server/bin/1b6a188127eeaf9194f945eb6eb89a657e93c54c/bin/remote-cli"
         - "/usr/local/sbin"
         - "/usr/local/bin"
         - "/usr/sbin"
@@ -7242,11 +7242,11 @@ events:
         mode: "config"
         reason: "no_exist"
       -
-        path: "/home/tanmay_jain/.vscode-server/bin/fcf604774b9f2674b473065736ee75077e256353/bin/remote-cli/re2Config.cmake"
+        path: "/home/tanmay_jain/.vscode-server/bin/1b6a188127eeaf9194f945eb6eb89a657e93c54c/bin/remote-cli/re2Config.cmake"
         mode: "config"
         reason: "no_exist"
       -
-        path: "/home/tanmay_jain/.vscode-server/bin/fcf604774b9f2674b473065736ee75077e256353/bin/remote-cli/re2-config.cmake"
+        path: "/home/tanmay_jain/.vscode-server/bin/1b6a188127eeaf9194f945eb6eb89a657e93c54c/bin/remote-cli/re2-config.cmake"
         mode: "config"
         reason: "no_exist"
       -
@@ -7502,7 +7502,7 @@ events:
       ENV{PATH}:
         - "/home/tanmay_jain/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand"
         - "/home/tanmay_jain/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli"
-        - "/home/tanmay_jain/.vscode-server/bin/fcf604774b9f2674b473065736ee75077e256353/bin/remote-cli"
+        - "/home/tanmay_jain/.vscode-server/bin/1b6a188127eeaf9194f945eb6eb89a657e93c54c/bin/remote-cli"
         - "/usr/local/sbin"
         - "/usr/local/bin"
         - "/usr/sbin"
@@ -7577,7 +7577,7 @@ events:
       ENV{PATH}:
         - "/home/tanmay_jain/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand"
         - "/home/tanmay_jain/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli"
-        - "/home/tanmay_jain/.vscode-server/bin/fcf604774b9f2674b473065736ee75077e256353/bin/remote-cli"
+        - "/home/tanmay_jain/.vscode-server/bin/1b6a188127eeaf9194f945eb6eb89a657e93c54c/bin/remote-cli"
         - "/usr/local/sbin"
         - "/usr/local/bin"
         - "/usr/sbin"
@@ -7654,7 +7654,7 @@ events:
       ENV{PATH}:
         - "/home/tanmay_jain/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand"
         - "/home/tanmay_jain/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli"
-        - "/home/tanmay_jain/.vscode-server/bin/fcf604774b9f2674b473065736ee75077e256353/bin/remote-cli"
+        - "/home/tanmay_jain/.vscode-server/bin/1b6a188127eeaf9194f945eb6eb89a657e93c54c/bin/remote-cli"
         - "/usr/local/sbin"
         - "/usr/local/bin"
         - "/usr/sbin"
@@ -7731,7 +7731,7 @@ events:
       ENV{PATH}:
         - "/home/tanmay_jain/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand"
         - "/home/tanmay_jain/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli"
-        - "/home/tanmay_jain/.vscode-server/bin/fcf604774b9f2674b473065736ee75077e256353/bin/remote-cli"
+        - "/home/tanmay_jain/.vscode-server/bin/1b6a188127eeaf9194f945eb6eb89a657e93c54c/bin/remote-cli"
         - "/usr/local/sbin"
         - "/usr/local/bin"
         - "/usr/sbin"
@@ -7808,7 +7808,7 @@ events:
       ENV{PATH}:
         - "/home/tanmay_jain/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand"
         - "/home/tanmay_jain/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli"
-        - "/home/tanmay_jain/.vscode-server/bin/fcf604774b9f2674b473065736ee75077e256353/bin/remote-cli"
+        - "/home/tanmay_jain/.vscode-server/bin/1b6a188127eeaf9194f945eb6eb89a657e93c54c/bin/remote-cli"
         - "/usr/local/sbin"
         - "/usr/local/bin"
         - "/usr/sbin"
@@ -7885,7 +7885,7 @@ events:
       ENV{PATH}:
         - "/home/tanmay_jain/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand"
         - "/home/tanmay_jain/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli"
-        - "/home/tanmay_jain/.vscode-server/bin/fcf604774b9f2674b473065736ee75077e256353/bin/remote-cli"
+        - "/home/tanmay_jain/.vscode-server/bin/1b6a188127eeaf9194f945eb6eb89a657e93c54c/bin/remote-cli"
         - "/usr/local/sbin"
         - "/usr/local/bin"
         - "/usr/sbin"
@@ -7962,7 +7962,7 @@ events:
       ENV{PATH}:
         - "/home/tanmay_jain/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand"
         - "/home/tanmay_jain/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli"
-        - "/home/tanmay_jain/.vscode-server/bin/fcf604774b9f2674b473065736ee75077e256353/bin/remote-cli"
+        - "/home/tanmay_jain/.vscode-server/bin/1b6a188127eeaf9194f945eb6eb89a657e93c54c/bin/remote-cli"
         - "/usr/local/sbin"
         - "/usr/local/bin"
         - "/usr/sbin"
@@ -8039,7 +8039,7 @@ events:
       ENV{PATH}:
         - "/home/tanmay_jain/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand"
         - "/home/tanmay_jain/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli"
-        - "/home/tanmay_jain/.vscode-server/bin/fcf604774b9f2674b473065736ee75077e256353/bin/remote-cli"
+        - "/home/tanmay_jain/.vscode-server/bin/1b6a188127eeaf9194f945eb6eb89a657e93c54c/bin/remote-cli"
         - "/usr/local/sbin"
         - "/usr/local/bin"
         - "/usr/sbin"
@@ -8116,7 +8116,7 @@ events:
       ENV{PATH}:
         - "/home/tanmay_jain/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand"
         - "/home/tanmay_jain/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli"
-        - "/home/tanmay_jain/.vscode-server/bin/fcf604774b9f2674b473065736ee75077e256353/bin/remote-cli"
+        - "/home/tanmay_jain/.vscode-server/bin/1b6a188127eeaf9194f945eb6eb89a657e93c54c/bin/remote-cli"
         - "/usr/local/sbin"
         - "/usr/local/bin"
         - "/usr/sbin"
@@ -8193,7 +8193,7 @@ events:
       ENV{PATH}:
         - "/home/tanmay_jain/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand"
         - "/home/tanmay_jain/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli"
-        - "/home/tanmay_jain/.vscode-server/bin/fcf604774b9f2674b473065736ee75077e256353/bin/remote-cli"
+        - "/home/tanmay_jain/.vscode-server/bin/1b6a188127eeaf9194f945eb6eb89a657e93c54c/bin/remote-cli"
         - "/usr/local/sbin"
         - "/usr/local/bin"
         - "/usr/sbin"
@@ -8270,7 +8270,7 @@ events:
       ENV{PATH}:
         - "/home/tanmay_jain/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand"
         - "/home/tanmay_jain/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli"
-        - "/home/tanmay_jain/.vscode-server/bin/fcf604774b9f2674b473065736ee75077e256353/bin/remote-cli"
+        - "/home/tanmay_jain/.vscode-server/bin/1b6a188127eeaf9194f945eb6eb89a657e93c54c/bin/remote-cli"
         - "/usr/local/sbin"
         - "/usr/local/bin"
         - "/usr/sbin"
@@ -8347,7 +8347,7 @@ events:
       ENV{PATH}:
         - "/home/tanmay_jain/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand"
         - "/home/tanmay_jain/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli"
-        - "/home/tanmay_jain/.vscode-server/bin/fcf604774b9f2674b473065736ee75077e256353/bin/remote-cli"
+        - "/home/tanmay_jain/.vscode-server/bin/1b6a188127eeaf9194f945eb6eb89a657e93c54c/bin/remote-cli"
         - "/usr/local/sbin"
         - "/usr/local/bin"
         - "/usr/sbin"
@@ -8424,7 +8424,7 @@ events:
       ENV{PATH}:
         - "/home/tanmay_jain/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand"
         - "/home/tanmay_jain/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli"
-        - "/home/tanmay_jain/.vscode-server/bin/fcf604774b9f2674b473065736ee75077e256353/bin/remote-cli"
+        - "/home/tanmay_jain/.vscode-server/bin/1b6a188127eeaf9194f945eb6eb89a657e93c54c/bin/remote-cli"
         - "/usr/local/sbin"
         - "/usr/local/bin"
         - "/usr/sbin"
@@ -8501,7 +8501,7 @@ events:
       ENV{PATH}:
         - "/home/tanmay_jain/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand"
         - "/home/tanmay_jain/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli"
-        - "/home/tanmay_jain/.vscode-server/bin/fcf604774b9f2674b473065736ee75077e256353/bin/remote-cli"
+        - "/home/tanmay_jain/.vscode-server/bin/1b6a188127eeaf9194f945eb6eb89a657e93c54c/bin/remote-cli"
         - "/usr/local/sbin"
         - "/usr/local/bin"
         - "/usr/sbin"
@@ -8578,7 +8578,7 @@ events:
       ENV{PATH}:
         - "/home/tanmay_jain/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand"
         - "/home/tanmay_jain/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli"
-        - "/home/tanmay_jain/.vscode-server/bin/fcf604774b9f2674b473065736ee75077e256353/bin/remote-cli"
+        - "/home/tanmay_jain/.vscode-server/bin/1b6a188127eeaf9194f945eb6eb89a657e93c54c/bin/remote-cli"
         - "/usr/local/sbin"
         - "/usr/local/bin"
         - "/usr/sbin"
@@ -8655,7 +8655,7 @@ events:
       ENV{PATH}:
         - "/home/tanmay_jain/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand"
         - "/home/tanmay_jain/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli"
-        - "/home/tanmay_jain/.vscode-server/bin/fcf604774b9f2674b473065736ee75077e256353/bin/remote-cli"
+        - "/home/tanmay_jain/.vscode-server/bin/1b6a188127eeaf9194f945eb6eb89a657e93c54c/bin/remote-cli"
         - "/usr/local/sbin"
         - "/usr/local/bin"
         - "/usr/sbin"
@@ -8732,7 +8732,7 @@ events:
       ENV{PATH}:
         - "/home/tanmay_jain/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand"
         - "/home/tanmay_jain/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli"
-        - "/home/tanmay_jain/.vscode-server/bin/fcf604774b9f2674b473065736ee75077e256353/bin/remote-cli"
+        - "/home/tanmay_jain/.vscode-server/bin/1b6a188127eeaf9194f945eb6eb89a657e93c54c/bin/remote-cli"
         - "/usr/local/sbin"
         - "/usr/local/bin"
         - "/usr/sbin"
@@ -8809,7 +8809,7 @@ events:
       ENV{PATH}:
         - "/home/tanmay_jain/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand"
         - "/home/tanmay_jain/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli"
-        - "/home/tanmay_jain/.vscode-server/bin/fcf604774b9f2674b473065736ee75077e256353/bin/remote-cli"
+        - "/home/tanmay_jain/.vscode-server/bin/1b6a188127eeaf9194f945eb6eb89a657e93c54c/bin/remote-cli"
         - "/usr/local/sbin"
         - "/usr/local/bin"
         - "/usr/sbin"
@@ -8886,7 +8886,7 @@ events:
       ENV{PATH}:
         - "/home/tanmay_jain/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand"
         - "/home/tanmay_jain/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli"
-        - "/home/tanmay_jain/.vscode-server/bin/fcf604774b9f2674b473065736ee75077e256353/bin/remote-cli"
+        - "/home/tanmay_jain/.vscode-server/bin/1b6a188127eeaf9194f945eb6eb89a657e93c54c/bin/remote-cli"
         - "/usr/local/sbin"
         - "/usr/local/bin"
         - "/usr/sbin"
@@ -8963,7 +8963,7 @@ events:
       ENV{PATH}:
         - "/home/tanmay_jain/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand"
         - "/home/tanmay_jain/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli"
-        - "/home/tanmay_jain/.vscode-server/bin/fcf604774b9f2674b473065736ee75077e256353/bin/remote-cli"
+        - "/home/tanmay_jain/.vscode-server/bin/1b6a188127eeaf9194f945eb6eb89a657e93c54c/bin/remote-cli"
         - "/usr/local/sbin"
         - "/usr/local/bin"
         - "/usr/sbin"
@@ -9040,7 +9040,7 @@ events:
       ENV{PATH}:
         - "/home/tanmay_jain/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand"
         - "/home/tanmay_jain/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli"
-        - "/home/tanmay_jain/.vscode-server/bin/fcf604774b9f2674b473065736ee75077e256353/bin/remote-cli"
+        - "/home/tanmay_jain/.vscode-server/bin/1b6a188127eeaf9194f945eb6eb89a657e93c54c/bin/remote-cli"
         - "/usr/local/sbin"
         - "/usr/local/bin"
         - "/usr/sbin"
@@ -9117,7 +9117,7 @@ events:
       ENV{PATH}:
         - "/home/tanmay_jain/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand"
         - "/home/tanmay_jain/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli"
-        - "/home/tanmay_jain/.vscode-server/bin/fcf604774b9f2674b473065736ee75077e256353/bin/remote-cli"
+        - "/home/tanmay_jain/.vscode-server/bin/1b6a188127eeaf9194f945eb6eb89a657e93c54c/bin/remote-cli"
         - "/usr/local/sbin"
         - "/usr/local/bin"
         - "/usr/sbin"
@@ -9194,7 +9194,7 @@ events:
       ENV{PATH}:
         - "/home/tanmay_jain/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand"
         - "/home/tanmay_jain/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli"
-        - "/home/tanmay_jain/.vscode-server/bin/fcf604774b9f2674b473065736ee75077e256353/bin/remote-cli"
+        - "/home/tanmay_jain/.vscode-server/bin/1b6a188127eeaf9194f945eb6eb89a657e93c54c/bin/remote-cli"
         - "/usr/local/sbin"
         - "/usr/local/bin"
         - "/usr/sbin"
@@ -9271,7 +9271,7 @@ events:
       ENV{PATH}:
         - "/home/tanmay_jain/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand"
         - "/home/tanmay_jain/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli"
-        - "/home/tanmay_jain/.vscode-server/bin/fcf604774b9f2674b473065736ee75077e256353/bin/remote-cli"
+        - "/home/tanmay_jain/.vscode-server/bin/1b6a188127eeaf9194f945eb6eb89a657e93c54c/bin/remote-cli"
         - "/usr/local/sbin"
         - "/usr/local/bin"
         - "/usr/sbin"
@@ -9348,7 +9348,7 @@ events:
       ENV{PATH}:
         - "/home/tanmay_jain/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand"
         - "/home/tanmay_jain/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli"
-        - "/home/tanmay_jain/.vscode-server/bin/fcf604774b9f2674b473065736ee75077e256353/bin/remote-cli"
+        - "/home/tanmay_jain/.vscode-server/bin/1b6a188127eeaf9194f945eb6eb89a657e93c54c/bin/remote-cli"
         - "/usr/local/sbin"
         - "/usr/local/bin"
         - "/usr/sbin"
@@ -9425,7 +9425,7 @@ events:
       ENV{PATH}:
         - "/home/tanmay_jain/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand"
         - "/home/tanmay_jain/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli"
-        - "/home/tanmay_jain/.vscode-server/bin/fcf604774b9f2674b473065736ee75077e256353/bin/remote-cli"
+        - "/home/tanmay_jain/.vscode-server/bin/1b6a188127eeaf9194f945eb6eb89a657e93c54c/bin/remote-cli"
         - "/usr/local/sbin"
         - "/usr/local/bin"
         - "/usr/sbin"
@@ -9502,7 +9502,7 @@ events:
       ENV{PATH}:
         - "/home/tanmay_jain/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand"
         - "/home/tanmay_jain/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli"
-        - "/home/tanmay_jain/.vscode-server/bin/fcf604774b9f2674b473065736ee75077e256353/bin/remote-cli"
+        - "/home/tanmay_jain/.vscode-server/bin/1b6a188127eeaf9194f945eb6eb89a657e93c54c/bin/remote-cli"
         - "/usr/local/sbin"
         - "/usr/local/bin"
         - "/usr/sbin"
@@ -9579,7 +9579,7 @@ events:
       ENV{PATH}:
         - "/home/tanmay_jain/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand"
         - "/home/tanmay_jain/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli"
-        - "/home/tanmay_jain/.vscode-server/bin/fcf604774b9f2674b473065736ee75077e256353/bin/remote-cli"
+        - "/home/tanmay_jain/.vscode-server/bin/1b6a188127eeaf9194f945eb6eb89a657e93c54c/bin/remote-cli"
         - "/usr/local/sbin"
         - "/usr/local/bin"
         - "/usr/sbin"
@@ -9656,7 +9656,7 @@ events:
       ENV{PATH}:
         - "/home/tanmay_jain/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand"
         - "/home/tanmay_jain/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli"
-        - "/home/tanmay_jain/.vscode-server/bin/fcf604774b9f2674b473065736ee75077e256353/bin/remote-cli"
+        - "/home/tanmay_jain/.vscode-server/bin/1b6a188127eeaf9194f945eb6eb89a657e93c54c/bin/remote-cli"
         - "/usr/local/sbin"
         - "/usr/local/bin"
         - "/usr/sbin"
@@ -9733,7 +9733,7 @@ events:
       ENV{PATH}:
         - "/home/tanmay_jain/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand"
         - "/home/tanmay_jain/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli"
-        - "/home/tanmay_jain/.vscode-server/bin/fcf604774b9f2674b473065736ee75077e256353/bin/remote-cli"
+        - "/home/tanmay_jain/.vscode-server/bin/1b6a188127eeaf9194f945eb6eb89a657e93c54c/bin/remote-cli"
         - "/usr/local/sbin"
         - "/usr/local/bin"
         - "/usr/sbin"
@@ -9810,7 +9810,7 @@ events:
       ENV{PATH}:
         - "/home/tanmay_jain/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand"
         - "/home/tanmay_jain/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli"
-        - "/home/tanmay_jain/.vscode-server/bin/fcf604774b9f2674b473065736ee75077e256353/bin/remote-cli"
+        - "/home/tanmay_jain/.vscode-server/bin/1b6a188127eeaf9194f945eb6eb89a657e93c54c/bin/remote-cli"
         - "/usr/local/sbin"
         - "/usr/local/bin"
         - "/usr/sbin"
@@ -9887,7 +9887,7 @@ events:
       ENV{PATH}:
         - "/home/tanmay_jain/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand"
         - "/home/tanmay_jain/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli"
-        - "/home/tanmay_jain/.vscode-server/bin/fcf604774b9f2674b473065736ee75077e256353/bin/remote-cli"
+        - "/home/tanmay_jain/.vscode-server/bin/1b6a188127eeaf9194f945eb6eb89a657e93c54c/bin/remote-cli"
         - "/usr/local/sbin"
         - "/usr/local/bin"
         - "/usr/sbin"
@@ -9964,7 +9964,7 @@ events:
       ENV{PATH}:
         - "/home/tanmay_jain/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand"
         - "/home/tanmay_jain/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli"
-        - "/home/tanmay_jain/.vscode-server/bin/fcf604774b9f2674b473065736ee75077e256353/bin/remote-cli"
+        - "/home/tanmay_jain/.vscode-server/bin/1b6a188127eeaf9194f945eb6eb89a657e93c54c/bin/remote-cli"
         - "/usr/local/sbin"
         - "/usr/local/bin"
         - "/usr/sbin"
@@ -10041,7 +10041,7 @@ events:
       ENV{PATH}:
         - "/home/tanmay_jain/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand"
         - "/home/tanmay_jain/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli"
-        - "/home/tanmay_jain/.vscode-server/bin/fcf604774b9f2674b473065736ee75077e256353/bin/remote-cli"
+        - "/home/tanmay_jain/.vscode-server/bin/1b6a188127eeaf9194f945eb6eb89a657e93c54c/bin/remote-cli"
         - "/usr/local/sbin"
         - "/usr/local/bin"
         - "/usr/sbin"
@@ -10118,7 +10118,7 @@ events:
       ENV{PATH}:
         - "/home/tanmay_jain/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand"
         - "/home/tanmay_jain/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli"
-        - "/home/tanmay_jain/.vscode-server/bin/fcf604774b9f2674b473065736ee75077e256353/bin/remote-cli"
+        - "/home/tanmay_jain/.vscode-server/bin/1b6a188127eeaf9194f945eb6eb89a657e93c54c/bin/remote-cli"
         - "/usr/local/sbin"
         - "/usr/local/bin"
         - "/usr/sbin"
@@ -10195,7 +10195,7 @@ events:
       ENV{PATH}:
         - "/home/tanmay_jain/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand"
         - "/home/tanmay_jain/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli"
-        - "/home/tanmay_jain/.vscode-server/bin/fcf604774b9f2674b473065736ee75077e256353/bin/remote-cli"
+        - "/home/tanmay_jain/.vscode-server/bin/1b6a188127eeaf9194f945eb6eb89a657e93c54c/bin/remote-cli"
         - "/usr/local/sbin"
         - "/usr/local/bin"
         - "/usr/sbin"
@@ -10272,7 +10272,7 @@ events:
       ENV{PATH}:
         - "/home/tanmay_jain/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand"
         - "/home/tanmay_jain/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli"
-        - "/home/tanmay_jain/.vscode-server/bin/fcf604774b9f2674b473065736ee75077e256353/bin/remote-cli"
+        - "/home/tanmay_jain/.vscode-server/bin/1b6a188127eeaf9194f945eb6eb89a657e93c54c/bin/remote-cli"
         - "/usr/local/sbin"
         - "/usr/local/bin"
         - "/usr/sbin"
@@ -10349,7 +10349,7 @@ events:
       ENV{PATH}:
         - "/home/tanmay_jain/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand"
         - "/home/tanmay_jain/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli"
-        - "/home/tanmay_jain/.vscode-server/bin/fcf604774b9f2674b473065736ee75077e256353/bin/remote-cli"
+        - "/home/tanmay_jain/.vscode-server/bin/1b6a188127eeaf9194f945eb6eb89a657e93c54c/bin/remote-cli"
         - "/usr/local/sbin"
         - "/usr/local/bin"
         - "/usr/sbin"
@@ -10426,7 +10426,7 @@ events:
       ENV{PATH}:
         - "/home/tanmay_jain/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand"
         - "/home/tanmay_jain/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli"
-        - "/home/tanmay_jain/.vscode-server/bin/fcf604774b9f2674b473065736ee75077e256353/bin/remote-cli"
+        - "/home/tanmay_jain/.vscode-server/bin/1b6a188127eeaf9194f945eb6eb89a657e93c54c/bin/remote-cli"
         - "/usr/local/sbin"
         - "/usr/local/bin"
         - "/usr/sbin"
@@ -10503,7 +10503,7 @@ events:
       ENV{PATH}:
         - "/home/tanmay_jain/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand"
         - "/home/tanmay_jain/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli"
-        - "/home/tanmay_jain/.vscode-server/bin/fcf604774b9f2674b473065736ee75077e256353/bin/remote-cli"
+        - "/home/tanmay_jain/.vscode-server/bin/1b6a188127eeaf9194f945eb6eb89a657e93c54c/bin/remote-cli"
         - "/usr/local/sbin"
         - "/usr/local/bin"
         - "/usr/sbin"
@@ -10580,7 +10580,7 @@ events:
       ENV{PATH}:
         - "/home/tanmay_jain/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand"
         - "/home/tanmay_jain/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli"
-        - "/home/tanmay_jain/.vscode-server/bin/fcf604774b9f2674b473065736ee75077e256353/bin/remote-cli"
+        - "/home/tanmay_jain/.vscode-server/bin/1b6a188127eeaf9194f945eb6eb89a657e93c54c/bin/remote-cli"
         - "/usr/local/sbin"
         - "/usr/local/bin"
         - "/usr/sbin"
@@ -10657,7 +10657,7 @@ events:
       ENV{PATH}:
         - "/home/tanmay_jain/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand"
         - "/home/tanmay_jain/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli"
-        - "/home/tanmay_jain/.vscode-server/bin/fcf604774b9f2674b473065736ee75077e256353/bin/remote-cli"
+        - "/home/tanmay_jain/.vscode-server/bin/1b6a188127eeaf9194f945eb6eb89a657e93c54c/bin/remote-cli"
         - "/usr/local/sbin"
         - "/usr/local/bin"
         - "/usr/sbin"
@@ -10734,7 +10734,7 @@ events:
       ENV{PATH}:
         - "/home/tanmay_jain/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand"
         - "/home/tanmay_jain/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli"
-        - "/home/tanmay_jain/.vscode-server/bin/fcf604774b9f2674b473065736ee75077e256353/bin/remote-cli"
+        - "/home/tanmay_jain/.vscode-server/bin/1b6a188127eeaf9194f945eb6eb89a657e93c54c/bin/remote-cli"
         - "/usr/local/sbin"
         - "/usr/local/bin"
         - "/usr/sbin"
@@ -10811,7 +10811,7 @@ events:
       ENV{PATH}:
         - "/home/tanmay_jain/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand"
         - "/home/tanmay_jain/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli"
-        - "/home/tanmay_jain/.vscode-server/bin/fcf604774b9f2674b473065736ee75077e256353/bin/remote-cli"
+        - "/home/tanmay_jain/.vscode-server/bin/1b6a188127eeaf9194f945eb6eb89a657e93c54c/bin/remote-cli"
         - "/usr/local/sbin"
         - "/usr/local/bin"
         - "/usr/sbin"
@@ -10888,7 +10888,7 @@ events:
       ENV{PATH}:
         - "/home/tanmay_jain/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand"
         - "/home/tanmay_jain/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli"
-        - "/home/tanmay_jain/.vscode-server/bin/fcf604774b9f2674b473065736ee75077e256353/bin/remote-cli"
+        - "/home/tanmay_jain/.vscode-server/bin/1b6a188127eeaf9194f945eb6eb89a657e93c54c/bin/remote-cli"
         - "/usr/local/sbin"
         - "/usr/local/bin"
         - "/usr/sbin"
@@ -10965,7 +10965,7 @@ events:
       ENV{PATH}:
         - "/home/tanmay_jain/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand"
         - "/home/tanmay_jain/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli"
-        - "/home/tanmay_jain/.vscode-server/bin/fcf604774b9f2674b473065736ee75077e256353/bin/remote-cli"
+        - "/home/tanmay_jain/.vscode-server/bin/1b6a188127eeaf9194f945eb6eb89a657e93c54c/bin/remote-cli"
         - "/usr/local/sbin"
         - "/usr/local/bin"
         - "/usr/sbin"
@@ -11042,7 +11042,7 @@ events:
       ENV{PATH}:
         - "/home/tanmay_jain/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand"
         - "/home/tanmay_jain/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli"
-        - "/home/tanmay_jain/.vscode-server/bin/fcf604774b9f2674b473065736ee75077e256353/bin/remote-cli"
+        - "/home/tanmay_jain/.vscode-server/bin/1b6a188127eeaf9194f945eb6eb89a657e93c54c/bin/remote-cli"
         - "/usr/local/sbin"
         - "/usr/local/bin"
         - "/usr/sbin"
@@ -11119,7 +11119,7 @@ events:
       ENV{PATH}:
         - "/home/tanmay_jain/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand"
         - "/home/tanmay_jain/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli"
-        - "/home/tanmay_jain/.vscode-server/bin/fcf604774b9f2674b473065736ee75077e256353/bin/remote-cli"
+        - "/home/tanmay_jain/.vscode-server/bin/1b6a188127eeaf9194f945eb6eb89a657e93c54c/bin/remote-cli"
         - "/usr/local/sbin"
         - "/usr/local/bin"
         - "/usr/sbin"
@@ -11196,7 +11196,7 @@ events:
       ENV{PATH}:
         - "/home/tanmay_jain/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand"
         - "/home/tanmay_jain/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli"
-        - "/home/tanmay_jain/.vscode-server/bin/fcf604774b9f2674b473065736ee75077e256353/bin/remote-cli"
+        - "/home/tanmay_jain/.vscode-server/bin/1b6a188127eeaf9194f945eb6eb89a657e93c54c/bin/remote-cli"
         - "/usr/local/sbin"
         - "/usr/local/bin"
         - "/usr/sbin"
@@ -11273,7 +11273,7 @@ events:
       ENV{PATH}:
         - "/home/tanmay_jain/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand"
         - "/home/tanmay_jain/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli"
-        - "/home/tanmay_jain/.vscode-server/bin/fcf604774b9f2674b473065736ee75077e256353/bin/remote-cli"
+        - "/home/tanmay_jain/.vscode-server/bin/1b6a188127eeaf9194f945eb6eb89a657e93c54c/bin/remote-cli"
         - "/usr/local/sbin"
         - "/usr/local/bin"
         - "/usr/sbin"
@@ -11350,7 +11350,7 @@ events:
       ENV{PATH}:
         - "/home/tanmay_jain/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand"
         - "/home/tanmay_jain/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli"
-        - "/home/tanmay_jain/.vscode-server/bin/fcf604774b9f2674b473065736ee75077e256353/bin/remote-cli"
+        - "/home/tanmay_jain/.vscode-server/bin/1b6a188127eeaf9194f945eb6eb89a657e93c54c/bin/remote-cli"
         - "/usr/local/sbin"
         - "/usr/local/bin"
         - "/usr/sbin"
@@ -11427,7 +11427,7 @@ events:
       ENV{PATH}:
         - "/home/tanmay_jain/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand"
         - "/home/tanmay_jain/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli"
-        - "/home/tanmay_jain/.vscode-server/bin/fcf604774b9f2674b473065736ee75077e256353/bin/remote-cli"
+        - "/home/tanmay_jain/.vscode-server/bin/1b6a188127eeaf9194f945eb6eb89a657e93c54c/bin/remote-cli"
         - "/usr/local/sbin"
         - "/usr/local/bin"
         - "/usr/sbin"
@@ -11504,7 +11504,7 @@ events:
       ENV{PATH}:
         - "/home/tanmay_jain/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand"
         - "/home/tanmay_jain/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli"
-        - "/home/tanmay_jain/.vscode-server/bin/fcf604774b9f2674b473065736ee75077e256353/bin/remote-cli"
+        - "/home/tanmay_jain/.vscode-server/bin/1b6a188127eeaf9194f945eb6eb89a657e93c54c/bin/remote-cli"
         - "/usr/local/sbin"
         - "/usr/local/bin"
         - "/usr/sbin"
@@ -11581,7 +11581,7 @@ events:
       ENV{PATH}:
         - "/home/tanmay_jain/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand"
         - "/home/tanmay_jain/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli"
-        - "/home/tanmay_jain/.vscode-server/bin/fcf604774b9f2674b473065736ee75077e256353/bin/remote-cli"
+        - "/home/tanmay_jain/.vscode-server/bin/1b6a188127eeaf9194f945eb6eb89a657e93c54c/bin/remote-cli"
         - "/usr/local/sbin"
         - "/usr/local/bin"
         - "/usr/sbin"
@@ -11658,7 +11658,7 @@ events:
       ENV{PATH}:
         - "/home/tanmay_jain/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand"
         - "/home/tanmay_jain/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli"
-        - "/home/tanmay_jain/.vscode-server/bin/fcf604774b9f2674b473065736ee75077e256353/bin/remote-cli"
+        - "/home/tanmay_jain/.vscode-server/bin/1b6a188127eeaf9194f945eb6eb89a657e93c54c/bin/remote-cli"
         - "/usr/local/sbin"
         - "/usr/local/bin"
         - "/usr/sbin"
@@ -11735,7 +11735,7 @@ events:
       ENV{PATH}:
         - "/home/tanmay_jain/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand"
         - "/home/tanmay_jain/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli"
-        - "/home/tanmay_jain/.vscode-server/bin/fcf604774b9f2674b473065736ee75077e256353/bin/remote-cli"
+        - "/home/tanmay_jain/.vscode-server/bin/1b6a188127eeaf9194f945eb6eb89a657e93c54c/bin/remote-cli"
         - "/usr/local/sbin"
         - "/usr/local/bin"
         - "/usr/sbin"
@@ -11812,7 +11812,7 @@ events:
       ENV{PATH}:
         - "/home/tanmay_jain/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand"
         - "/home/tanmay_jain/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli"
-        - "/home/tanmay_jain/.vscode-server/bin/fcf604774b9f2674b473065736ee75077e256353/bin/remote-cli"
+        - "/home/tanmay_jain/.vscode-server/bin/1b6a188127eeaf9194f945eb6eb89a657e93c54c/bin/remote-cli"
         - "/usr/local/sbin"
         - "/usr/local/bin"
         - "/usr/sbin"
@@ -11889,7 +11889,7 @@ events:
       ENV{PATH}:
         - "/home/tanmay_jain/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand"
         - "/home/tanmay_jain/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli"
-        - "/home/tanmay_jain/.vscode-server/bin/fcf604774b9f2674b473065736ee75077e256353/bin/remote-cli"
+        - "/home/tanmay_jain/.vscode-server/bin/1b6a188127eeaf9194f945eb6eb89a657e93c54c/bin/remote-cli"
         - "/usr/local/sbin"
         - "/usr/local/bin"
         - "/usr/sbin"
@@ -11966,7 +11966,7 @@ events:
       ENV{PATH}:
         - "/home/tanmay_jain/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand"
         - "/home/tanmay_jain/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli"
-        - "/home/tanmay_jain/.vscode-server/bin/fcf604774b9f2674b473065736ee75077e256353/bin/remote-cli"
+        - "/home/tanmay_jain/.vscode-server/bin/1b6a188127eeaf9194f945eb6eb89a657e93c54c/bin/remote-cli"
         - "/usr/local/sbin"
         - "/usr/local/bin"
         - "/usr/sbin"
@@ -12043,7 +12043,7 @@ events:
       ENV{PATH}:
         - "/home/tanmay_jain/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand"
         - "/home/tanmay_jain/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli"
-        - "/home/tanmay_jain/.vscode-server/bin/fcf604774b9f2674b473065736ee75077e256353/bin/remote-cli"
+        - "/home/tanmay_jain/.vscode-server/bin/1b6a188127eeaf9194f945eb6eb89a657e93c54c/bin/remote-cli"
         - "/usr/local/sbin"
         - "/usr/local/bin"
         - "/usr/sbin"
@@ -12120,7 +12120,7 @@ events:
       ENV{PATH}:
         - "/home/tanmay_jain/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand"
         - "/home/tanmay_jain/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli"
-        - "/home/tanmay_jain/.vscode-server/bin/fcf604774b9f2674b473065736ee75077e256353/bin/remote-cli"
+        - "/home/tanmay_jain/.vscode-server/bin/1b6a188127eeaf9194f945eb6eb89a657e93c54c/bin/remote-cli"
         - "/usr/local/sbin"
         - "/usr/local/bin"
         - "/usr/sbin"
@@ -12197,7 +12197,7 @@ events:
       ENV{PATH}:
         - "/home/tanmay_jain/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand"
         - "/home/tanmay_jain/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli"
-        - "/home/tanmay_jain/.vscode-server/bin/fcf604774b9f2674b473065736ee75077e256353/bin/remote-cli"
+        - "/home/tanmay_jain/.vscode-server/bin/1b6a188127eeaf9194f945eb6eb89a657e93c54c/bin/remote-cli"
         - "/usr/local/sbin"
         - "/usr/local/bin"
         - "/usr/sbin"
@@ -12274,7 +12274,7 @@ events:
       ENV{PATH}:
         - "/home/tanmay_jain/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand"
         - "/home/tanmay_jain/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli"
-        - "/home/tanmay_jain/.vscode-server/bin/fcf604774b9f2674b473065736ee75077e256353/bin/remote-cli"
+        - "/home/tanmay_jain/.vscode-server/bin/1b6a188127eeaf9194f945eb6eb89a657e93c54c/bin/remote-cli"
         - "/usr/local/sbin"
         - "/usr/local/bin"
         - "/usr/sbin"
@@ -12353,7 +12353,7 @@ events:
       ENV{PATH}:
         - "/home/tanmay_jain/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand"
         - "/home/tanmay_jain/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli"
-        - "/home/tanmay_jain/.vscode-server/bin/fcf604774b9f2674b473065736ee75077e256353/bin/remote-cli"
+        - "/home/tanmay_jain/.vscode-server/bin/1b6a188127eeaf9194f945eb6eb89a657e93c54c/bin/remote-cli"
         - "/usr/local/sbin"
         - "/usr/local/bin"
         - "/usr/sbin"
@@ -12430,7 +12430,7 @@ events:
       ENV{PATH}:
         - "/home/tanmay_jain/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand"
         - "/home/tanmay_jain/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli"
-        - "/home/tanmay_jain/.vscode-server/bin/fcf604774b9f2674b473065736ee75077e256353/bin/remote-cli"
+        - "/home/tanmay_jain/.vscode-server/bin/1b6a188127eeaf9194f945eb6eb89a657e93c54c/bin/remote-cli"
         - "/usr/local/sbin"
         - "/usr/local/bin"
         - "/usr/sbin"
@@ -12507,7 +12507,7 @@ events:
       ENV{PATH}:
         - "/home/tanmay_jain/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand"
         - "/home/tanmay_jain/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli"
-        - "/home/tanmay_jain/.vscode-server/bin/fcf604774b9f2674b473065736ee75077e256353/bin/remote-cli"
+        - "/home/tanmay_jain/.vscode-server/bin/1b6a188127eeaf9194f945eb6eb89a657e93c54c/bin/remote-cli"
         - "/usr/local/sbin"
         - "/usr/local/bin"
         - "/usr/sbin"
@@ -12584,7 +12584,7 @@ events:
       ENV{PATH}:
         - "/home/tanmay_jain/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand"
         - "/home/tanmay_jain/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli"
-        - "/home/tanmay_jain/.vscode-server/bin/fcf604774b9f2674b473065736ee75077e256353/bin/remote-cli"
+        - "/home/tanmay_jain/.vscode-server/bin/1b6a188127eeaf9194f945eb6eb89a657e93c54c/bin/remote-cli"
         - "/usr/local/sbin"
         - "/usr/local/bin"
         - "/usr/sbin"
@@ -12661,7 +12661,7 @@ events:
       ENV{PATH}:
         - "/home/tanmay_jain/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand"
         - "/home/tanmay_jain/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli"
-        - "/home/tanmay_jain/.vscode-server/bin/fcf604774b9f2674b473065736ee75077e256353/bin/remote-cli"
+        - "/home/tanmay_jain/.vscode-server/bin/1b6a188127eeaf9194f945eb6eb89a657e93c54c/bin/remote-cli"
         - "/usr/local/sbin"
         - "/usr/local/bin"
         - "/usr/sbin"
@@ -12768,11 +12768,11 @@ events:
         mode: "config"
         reason: "no_exist"
       -
-        path: "/home/tanmay_jain/.vscode-server/bin/fcf604774b9f2674b473065736ee75077e256353/bin/remote-cli/gRPCConfig.cmake"
+        path: "/home/tanmay_jain/.vscode-server/bin/1b6a188127eeaf9194f945eb6eb89a657e93c54c/bin/remote-cli/gRPCConfig.cmake"
         mode: "config"
         reason: "no_exist"
       -
-        path: "/home/tanmay_jain/.vscode-server/bin/fcf604774b9f2674b473065736ee75077e256353/bin/remote-cli/grpc-config.cmake"
+        path: "/home/tanmay_jain/.vscode-server/bin/1b6a188127eeaf9194f945eb6eb89a657e93c54c/bin/remote-cli/grpc-config.cmake"
         mode: "config"
         reason: "no_exist"
       -
@@ -12799,7 +12799,7 @@ events:
       ENV{PATH}:
         - "/home/tanmay_jain/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand"
         - "/home/tanmay_jain/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli"
-        - "/home/tanmay_jain/.vscode-server/bin/fcf604774b9f2674b473065736ee75077e256353/bin/remote-cli"
+        - "/home/tanmay_jain/.vscode-server/bin/1b6a188127eeaf9194f945eb6eb89a657e93c54c/bin/remote-cli"
         - "/usr/local/sbin"
         - "/usr/local/bin"
         - "/usr/sbin"
@@ -12844,8 +12844,6 @@ events:
         - "/usr/X11R6"
         - "/usr/pkg"
         - "/opt"
-      CMAKE_MODULE_PATH:
-        - "/usr/lib/x86_64-linux-gnu/cmake/grpc/modules"
   -
     kind: "find-v1"
     backtrace:
@@ -12866,7 +12864,7 @@ events:
     candidate_directories:
       - "/home/tanmay_jain/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand/"
       - "/home/tanmay_jain/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli/"
-      - "/home/tanmay_jain/.vscode-server/bin/fcf604774b9f2674b473065736ee75077e256353/bin/remote-cli/"
+      - "/home/tanmay_jain/.vscode-server/bin/1b6a188127eeaf9194f945eb6eb89a657e93c54c/bin/remote-cli/"
       - "/usr/local/sbin/"
       - "/usr/local/bin/"
       - "/usr/sbin/"
@@ -12921,7 +12919,7 @@ events:
     searched_directories:
       - "/home/tanmay_jain/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand/ffmpeg"
       - "/home/tanmay_jain/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli/ffmpeg"
-      - "/home/tanmay_jain/.vscode-server/bin/fcf604774b9f2674b473065736ee75077e256353/bin/remote-cli/ffmpeg"
+      - "/home/tanmay_jain/.vscode-server/bin/1b6a188127eeaf9194f945eb6eb89a657e93c54c/bin/remote-cli/ffmpeg"
       - "/usr/local/sbin/ffmpeg"
       - "/usr/local/bin/ffmpeg"
       - "/usr/sbin/ffmpeg"
@@ -12930,7 +12928,7 @@ events:
       ENV{PATH}:
         - "/home/tanmay_jain/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand"
         - "/home/tanmay_jain/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli"
-        - "/home/tanmay_jain/.vscode-server/bin/fcf604774b9f2674b473065736ee75077e256353/bin/remote-cli"
+        - "/home/tanmay_jain/.vscode-server/bin/1b6a188127eeaf9194f945eb6eb89a657e93c54c/bin/remote-cli"
         - "/usr/local/sbin"
         - "/usr/local/bin"
         - "/usr/sbin"
@@ -12975,4 +12973,582 @@ events:
         - "/usr/X11R6"
         - "/usr/pkg"
         - "/opt"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "CMakeLists.txt:22 (find_program)"
+    mode: "program"
+    variable: "GRPC_CPP_PLUGIN_EXECUTABLE"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "protoc-gen-grpc"
+    candidate_directories:
+      - "/home/tanmay_jain/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand/"
+      - "/home/tanmay_jain/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli/"
+      - "/home/tanmay_jain/.vscode-server/bin/1b6a188127eeaf9194f945eb6eb89a657e93c54c/bin/remote-cli/"
+      - "/usr/local/sbin/"
+      - "/usr/local/bin/"
+      - "/usr/sbin/"
+      - "/usr/bin/"
+      - "/sbin/"
+      - "/bin/"
+      - "/usr/games/"
+      - "/usr/local/games/"
+      - "/usr/lib/wsl/lib/"
+      - "/mnt/c/Program Files/Common Files/Oracle/Java/javapath/"
+      - "/mnt/c/Program Files (x86)/Common Files/Oracle/Java/java8path/"
+      - "/mnt/c/Program Files (x86)/Common Files/Oracle/Java/javapath/"
+      - "/mnt/c/windows/system32/"
+      - "/mnt/c/windows/"
+      - "/mnt/c/windows/System32/Wbem/"
+      - "/mnt/c/windows/System32/WindowsPowerShell/v1.0/"
+      - "/mnt/c/windows/System32/OpenSSH/"
+      - "/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common/"
+      - "/mnt/c/Program Files/NVIDIA Corporation/NVIDIA NvDLISR/"
+      - "/mnt/c/WINDOWS/system32/"
+      - "/mnt/c/WINDOWS/"
+      - "/mnt/c/WINDOWS/System32/Wbem/"
+      - "/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/"
+      - "/mnt/c/WINDOWS/System32/OpenSSH/"
+      - "/mnt/c/Program Files/nodejs/"
+      - "/mnt/c/Program Files/Git/cmd/"
+      - "/mnt/c/Users/TANMAY JAIN/Downloads/win_flex_bison-latest/"
+      - "/Docker/host/bin/"
+      - "/mnt/c/Program Files/MySQL/MySQL Shell 8.0/bin/"
+      - "/mnt/c/Users/TANMAY JAIN/AppData/Local/Microsoft/WindowsApps/"
+      - "/mnt/c/MinGW/bin/"
+      - "/mnt/c/Users/TANMAY JAIN/AppData/Local/Programs/Microsoft VS Code/bin/"
+      - "/mnt/c/Users/TANMAY JAIN/AppData/Roaming/npm/"
+      - "/snap/bin/"
+      - "/usr/local/bin/"
+      - "/usr/local/sbin/"
+      - "/usr/local/"
+      - "/usr/bin/"
+      - "/usr/sbin/"
+      - "/usr/"
+      - "/bin/"
+      - "/sbin/"
+      - "/usr/X11R6/bin/"
+      - "/usr/X11R6/sbin/"
+      - "/usr/X11R6/"
+      - "/usr/pkg/bin/"
+      - "/usr/pkg/sbin/"
+      - "/usr/pkg/"
+      - "/opt/bin/"
+      - "/opt/sbin/"
+      - "/opt/"
+    searched_directories:
+      - "/home/tanmay_jain/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand/protoc-gen-grpc"
+      - "/home/tanmay_jain/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli/protoc-gen-grpc"
+      - "/home/tanmay_jain/.vscode-server/bin/1b6a188127eeaf9194f945eb6eb89a657e93c54c/bin/remote-cli/protoc-gen-grpc"
+      - "/usr/local/sbin/protoc-gen-grpc"
+      - "/usr/local/bin/protoc-gen-grpc"
+      - "/usr/sbin/protoc-gen-grpc"
+      - "/usr/bin/protoc-gen-grpc"
+      - "/sbin/protoc-gen-grpc"
+      - "/bin/protoc-gen-grpc"
+      - "/usr/games/protoc-gen-grpc"
+      - "/usr/local/games/protoc-gen-grpc"
+      - "/usr/lib/wsl/lib/protoc-gen-grpc"
+      - "/mnt/c/Program Files/Common Files/Oracle/Java/javapath/protoc-gen-grpc"
+      - "/mnt/c/Program Files (x86)/Common Files/Oracle/Java/java8path/protoc-gen-grpc"
+      - "/mnt/c/Program Files (x86)/Common Files/Oracle/Java/javapath/protoc-gen-grpc"
+      - "/mnt/c/windows/system32/protoc-gen-grpc"
+      - "/mnt/c/windows/protoc-gen-grpc"
+      - "/mnt/c/windows/System32/Wbem/protoc-gen-grpc"
+      - "/mnt/c/windows/System32/WindowsPowerShell/v1.0/protoc-gen-grpc"
+      - "/mnt/c/windows/System32/OpenSSH/protoc-gen-grpc"
+      - "/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common/protoc-gen-grpc"
+      - "/mnt/c/Program Files/NVIDIA Corporation/NVIDIA NvDLISR/protoc-gen-grpc"
+      - "/mnt/c/WINDOWS/system32/protoc-gen-grpc"
+      - "/mnt/c/WINDOWS/protoc-gen-grpc"
+      - "/mnt/c/WINDOWS/System32/Wbem/protoc-gen-grpc"
+      - "/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/protoc-gen-grpc"
+      - "/mnt/c/WINDOWS/System32/OpenSSH/protoc-gen-grpc"
+      - "/mnt/c/Program Files/nodejs/protoc-gen-grpc"
+      - "/mnt/c/Program Files/Git/cmd/protoc-gen-grpc"
+      - "/mnt/c/Users/TANMAY JAIN/Downloads/win_flex_bison-latest/protoc-gen-grpc"
+      - "/Docker/host/bin/protoc-gen-grpc"
+      - "/mnt/c/Program Files/MySQL/MySQL Shell 8.0/bin/protoc-gen-grpc"
+      - "/mnt/c/Users/TANMAY JAIN/AppData/Local/Microsoft/WindowsApps/protoc-gen-grpc"
+      - "/mnt/c/MinGW/bin/protoc-gen-grpc"
+      - "/mnt/c/Users/TANMAY JAIN/AppData/Local/Programs/Microsoft VS Code/bin/protoc-gen-grpc"
+      - "/mnt/c/Users/TANMAY JAIN/AppData/Roaming/npm/protoc-gen-grpc"
+      - "/snap/bin/protoc-gen-grpc"
+      - "/usr/local/bin/protoc-gen-grpc"
+      - "/usr/local/sbin/protoc-gen-grpc"
+      - "/usr/local/protoc-gen-grpc"
+      - "/usr/bin/protoc-gen-grpc"
+      - "/usr/sbin/protoc-gen-grpc"
+      - "/usr/protoc-gen-grpc"
+      - "/bin/protoc-gen-grpc"
+      - "/sbin/protoc-gen-grpc"
+      - "/usr/X11R6/bin/protoc-gen-grpc"
+      - "/usr/X11R6/sbin/protoc-gen-grpc"
+      - "/usr/X11R6/protoc-gen-grpc"
+      - "/usr/pkg/bin/protoc-gen-grpc"
+      - "/usr/pkg/sbin/protoc-gen-grpc"
+      - "/usr/pkg/protoc-gen-grpc"
+      - "/opt/bin/protoc-gen-grpc"
+      - "/opt/sbin/protoc-gen-grpc"
+      - "/opt/protoc-gen-grpc"
+    found: false
+    search_context:
+      ENV{PATH}:
+        - "/home/tanmay_jain/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand"
+        - "/home/tanmay_jain/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli"
+        - "/home/tanmay_jain/.vscode-server/bin/1b6a188127eeaf9194f945eb6eb89a657e93c54c/bin/remote-cli"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/sbin"
+        - "/usr/bin"
+        - "/sbin"
+        - "/bin"
+        - "/usr/games"
+        - "/usr/local/games"
+        - "/usr/lib/wsl/lib"
+        - "/mnt/c/Program Files/Common Files/Oracle/Java/javapath"
+        - "/mnt/c/Program Files (x86)/Common Files/Oracle/Java/java8path"
+        - "/mnt/c/Program Files (x86)/Common Files/Oracle/Java/javapath"
+        - "/mnt/c/windows/system32"
+        - "/mnt/c/windows"
+        - "/mnt/c/windows/System32/Wbem"
+        - "/mnt/c/windows/System32/WindowsPowerShell/v1.0/"
+        - "/mnt/c/windows/System32/OpenSSH/"
+        - "/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common"
+        - "/mnt/c/Program Files/NVIDIA Corporation/NVIDIA NvDLISR"
+        - "/mnt/c/WINDOWS/system32"
+        - "/mnt/c/WINDOWS"
+        - "/mnt/c/WINDOWS/System32/Wbem"
+        - "/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/"
+        - "/mnt/c/WINDOWS/System32/OpenSSH/"
+        - "/mnt/c/Program Files/nodejs/"
+        - "/mnt/c/Program Files/Git/cmd"
+        - "/mnt/c/Users/TANMAY JAIN/Downloads/win_flex_bison-latest"
+        - "/Docker/host/bin"
+        - "/mnt/c/Program Files/MySQL/MySQL Shell 8.0/bin/"
+        - "/mnt/c/Users/TANMAY JAIN/AppData/Local/Microsoft/WindowsApps"
+        - "/mnt/c/MinGW/bin"
+        - "/mnt/c/Users/TANMAY JAIN/AppData/Local/Programs/Microsoft VS Code/bin"
+        - "/mnt/c/Users/TANMAY JAIN/AppData/Roaming/npm"
+        - "/snap/bin"
+      CMAKE_INSTALL_PREFIX: "/usr/local"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "/usr/local"
+        - "/usr"
+        - "/"
+        - "/usr"
+        - "/usr/local"
+        - "/usr/X11R6"
+        - "/usr/pkg"
+        - "/opt"
+...
+
+---
+events:
+  -
+    kind: "find_package-v1"
+    backtrace:
+      - "CMakeLists.txt:14 (find_package)"
+    name: "nlohmann_json"
+    configs:
+      -
+        filename: "nlohmann_jsonConfig.cmake"
+        kind: "cmake"
+      -
+        filename: "nlohmann_json-config.cmake"
+        kind: "cmake"
+    version_request:
+      version: "3.2.0"
+      version_complete: "3.2.0"
+      exact: false
+    settings:
+      required: "required_explicit"
+      quiet: false
+      global: false
+      policy_scope: true
+      bypass_provider: false
+      names:
+        - "nlohmann_json"
+      path_suffixes:
+        - ""
+      paths:
+        CMAKE_FIND_USE_CMAKE_PATH: true
+        CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+        CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+        CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+        CMAKE_FIND_USE_INSTALL_PREFIX: true
+        CMAKE_FIND_USE_PACKAGE_ROOT_PATH: true
+        CMAKE_FIND_USE_CMAKE_PACKAGE_REGISTRY: true
+        CMAKE_FIND_USE_SYSTEM_PACKAGE_REGISTRY: true
+        CMAKE_FIND_ROOT_PATH_MODE: "BOTH"
+    candidates:
+      -
+        path: "/mnt/c/Tanmay/BitFlow/worker-cpp/build/CMakeFiles/pkgRedirects/nlohmann_jsonConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/mnt/c/Tanmay/BitFlow/worker-cpp/build/CMakeFiles/pkgRedirects/nlohmann_json-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/home/tanmay_jain/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand/nlohmann_jsonConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/home/tanmay_jain/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand/nlohmann_json-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/home/tanmay_jain/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli/nlohmann_jsonConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/home/tanmay_jain/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli/nlohmann_json-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/home/tanmay_jain/.vscode-server/bin/1b6a188127eeaf9194f945eb6eb89a657e93c54c/bin/remote-cli/nlohmann_jsonConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/home/tanmay_jain/.vscode-server/bin/1b6a188127eeaf9194f945eb6eb89a657e93c54c/bin/remote-cli/nlohmann_json-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/usr/local/nlohmann_jsonConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/usr/local/nlohmann_json-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/usr/nlohmann_jsonConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/usr/nlohmann_json-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+    found:
+      path: "/usr/share/cmake/nlohmann_json/nlohmann_jsonConfig.cmake"
+      mode: "config"
+      version: "3.11.3"
+    search_context:
+      ENV{PATH}:
+        - "/home/tanmay_jain/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand"
+        - "/home/tanmay_jain/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli"
+        - "/home/tanmay_jain/.vscode-server/bin/1b6a188127eeaf9194f945eb6eb89a657e93c54c/bin/remote-cli"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/sbin"
+        - "/usr/bin"
+        - "/sbin"
+        - "/bin"
+        - "/usr/games"
+        - "/usr/local/games"
+        - "/usr/lib/wsl/lib"
+        - "/mnt/c/Program Files/Common Files/Oracle/Java/javapath"
+        - "/mnt/c/Program Files (x86)/Common Files/Oracle/Java/java8path"
+        - "/mnt/c/Program Files (x86)/Common Files/Oracle/Java/javapath"
+        - "/mnt/c/windows/system32"
+        - "/mnt/c/windows"
+        - "/mnt/c/windows/System32/Wbem"
+        - "/mnt/c/windows/System32/WindowsPowerShell/v1.0/"
+        - "/mnt/c/windows/System32/OpenSSH/"
+        - "/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common"
+        - "/mnt/c/Program Files/NVIDIA Corporation/NVIDIA NvDLISR"
+        - "/mnt/c/WINDOWS/system32"
+        - "/mnt/c/WINDOWS"
+        - "/mnt/c/WINDOWS/System32/Wbem"
+        - "/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/"
+        - "/mnt/c/WINDOWS/System32/OpenSSH/"
+        - "/mnt/c/Program Files/nodejs/"
+        - "/mnt/c/Program Files/Git/cmd"
+        - "/mnt/c/Users/TANMAY JAIN/Downloads/win_flex_bison-latest"
+        - "/Docker/host/bin"
+        - "/mnt/c/Program Files/MySQL/MySQL Shell 8.0/bin/"
+        - "/mnt/c/Users/TANMAY JAIN/AppData/Local/Microsoft/WindowsApps"
+        - "/mnt/c/MinGW/bin"
+        - "/mnt/c/Users/TANMAY JAIN/AppData/Local/Programs/Microsoft VS Code/bin"
+        - "/mnt/c/Users/TANMAY JAIN/AppData/Roaming/npm"
+        - "/snap/bin"
+      CMAKE_INSTALL_PREFIX: "/usr/local"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "/usr/local"
+        - "/usr"
+        - "/"
+        - "/usr"
+        - "/usr/local"
+        - "/usr/X11R6"
+        - "/usr/pkg"
+        - "/opt"
+      CMAKE_MODULE_PATH:
+        - "/usr/lib/x86_64-linux-gnu/cmake/grpc/modules"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "CMakeLists.txt:23 (find_path)"
+    mode: "path"
+    variable: "SIMPLEAMQPCLIENT_INCLUDE_DIR"
+    description: "Path to a file."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "SimpleAmqpClient/SimpleAmqpClient.h"
+    candidate_directories:
+      - "/usr/local/include/"
+      - "/usr/include/"
+      - "/home/tanmay_jain/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand/"
+      - "/home/tanmay_jain/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli/"
+      - "/home/tanmay_jain/.vscode-server/bin/1b6a188127eeaf9194f945eb6eb89a657e93c54c/bin/remote-cli/"
+      - "/usr/local/sbin/"
+      - "/usr/local/bin/"
+      - "/usr/sbin/"
+      - "/usr/bin/"
+      - "/sbin/"
+      - "/bin/"
+      - "/usr/games/"
+      - "/usr/local/games/"
+      - "/usr/lib/wsl/lib/"
+      - "/mnt/c/Program Files/Common Files/Oracle/Java/javapath/"
+      - "/mnt/c/Program Files (x86)/Common Files/Oracle/Java/java8path/"
+      - "/mnt/c/Program Files (x86)/Common Files/Oracle/Java/javapath/"
+      - "/mnt/c/windows/system32/"
+      - "/mnt/c/windows/"
+      - "/mnt/c/windows/System32/Wbem/"
+      - "/mnt/c/windows/System32/WindowsPowerShell/v1.0/"
+      - "/mnt/c/windows/System32/OpenSSH/"
+      - "/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common/"
+      - "/mnt/c/Program Files/NVIDIA Corporation/NVIDIA NvDLISR/"
+      - "/mnt/c/WINDOWS/system32/"
+      - "/mnt/c/WINDOWS/"
+      - "/mnt/c/WINDOWS/System32/Wbem/"
+      - "/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/"
+      - "/mnt/c/WINDOWS/System32/OpenSSH/"
+      - "/mnt/c/Program Files/nodejs/"
+      - "/mnt/c/Program Files/Git/cmd/"
+      - "/mnt/c/Users/TANMAY JAIN/Downloads/win_flex_bison-latest/"
+      - "/Docker/host/bin/"
+      - "/mnt/c/Program Files/MySQL/MySQL Shell 8.0/bin/"
+      - "/mnt/c/Users/TANMAY JAIN/AppData/Local/Microsoft/WindowsApps/"
+      - "/mnt/c/MinGW/bin/"
+      - "/mnt/c/Users/TANMAY JAIN/AppData/Local/Programs/Microsoft VS Code/bin/"
+      - "/mnt/c/Users/TANMAY JAIN/AppData/Roaming/npm/"
+      - "/snap/bin/"
+      - "/usr/local/include/x86_64-linux-gnu/"
+      - "/usr/local/include/"
+      - "/usr/local/"
+      - "/usr/include/x86_64-linux-gnu/"
+      - "/usr/include/"
+      - "/usr/"
+      - "/include/x86_64-linux-gnu/"
+      - "/include/"
+      - "/usr/X11R6/include/x86_64-linux-gnu/"
+      - "/usr/X11R6/include/"
+      - "/usr/X11R6/"
+      - "/usr/pkg/include/x86_64-linux-gnu/"
+      - "/usr/pkg/include/"
+      - "/usr/pkg/"
+      - "/opt/include/x86_64-linux-gnu/"
+      - "/opt/include/"
+      - "/opt/"
+      - "/usr/include/X11/"
+    found: "/usr/local/include/"
+    search_context:
+      ENV{PATH}:
+        - "/home/tanmay_jain/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand"
+        - "/home/tanmay_jain/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli"
+        - "/home/tanmay_jain/.vscode-server/bin/1b6a188127eeaf9194f945eb6eb89a657e93c54c/bin/remote-cli"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/sbin"
+        - "/usr/bin"
+        - "/sbin"
+        - "/bin"
+        - "/usr/games"
+        - "/usr/local/games"
+        - "/usr/lib/wsl/lib"
+        - "/mnt/c/Program Files/Common Files/Oracle/Java/javapath"
+        - "/mnt/c/Program Files (x86)/Common Files/Oracle/Java/java8path"
+        - "/mnt/c/Program Files (x86)/Common Files/Oracle/Java/javapath"
+        - "/mnt/c/windows/system32"
+        - "/mnt/c/windows"
+        - "/mnt/c/windows/System32/Wbem"
+        - "/mnt/c/windows/System32/WindowsPowerShell/v1.0/"
+        - "/mnt/c/windows/System32/OpenSSH/"
+        - "/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common"
+        - "/mnt/c/Program Files/NVIDIA Corporation/NVIDIA NvDLISR"
+        - "/mnt/c/WINDOWS/system32"
+        - "/mnt/c/WINDOWS"
+        - "/mnt/c/WINDOWS/System32/Wbem"
+        - "/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/"
+        - "/mnt/c/WINDOWS/System32/OpenSSH/"
+        - "/mnt/c/Program Files/nodejs/"
+        - "/mnt/c/Program Files/Git/cmd"
+        - "/mnt/c/Users/TANMAY JAIN/Downloads/win_flex_bison-latest"
+        - "/Docker/host/bin"
+        - "/mnt/c/Program Files/MySQL/MySQL Shell 8.0/bin/"
+        - "/mnt/c/Users/TANMAY JAIN/AppData/Local/Microsoft/WindowsApps"
+        - "/mnt/c/MinGW/bin"
+        - "/mnt/c/Users/TANMAY JAIN/AppData/Local/Programs/Microsoft VS Code/bin"
+        - "/mnt/c/Users/TANMAY JAIN/AppData/Roaming/npm"
+        - "/snap/bin"
+      CMAKE_INSTALL_PREFIX: "/usr/local"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "/usr/local"
+        - "/usr"
+        - "/"
+        - "/usr"
+        - "/usr/local"
+        - "/usr/X11R6"
+        - "/usr/pkg"
+        - "/opt"
+      CMAKE_SYSTEM_INCLUDE_PATH:
+        - "/usr/include/X11"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "CMakeLists.txt:24 (find_library)"
+    mode: "library"
+    variable: "SIMPLEAMQPCLIENT_LIBRARY"
+    description: "Path to a library."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "SimpleAmqpClient"
+      - "simpleamqpclient"
+    candidate_directories:
+      - "/usr/local/lib/"
+      - "/usr/lib/"
+      - "/usr/local/lib/x86_64-linux-gnu/"
+      - "/usr/lib/x86_64-linux-gnu/"
+      - "/home/tanmay_jain/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand/"
+      - "/home/tanmay_jain/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli/"
+      - "/home/tanmay_jain/.vscode-server/bin/1b6a188127eeaf9194f945eb6eb89a657e93c54c/bin/remote-cli/"
+      - "/usr/local/sbin/"
+      - "/usr/local/bin/"
+      - "/usr/sbin/"
+      - "/usr/bin/"
+      - "/sbin/"
+      - "/bin/"
+      - "/usr/games/"
+      - "/usr/local/games/"
+      - "/usr/lib/wsl/lib/"
+      - "/mnt/c/Program Files/Common Files/Oracle/Java/javapath/"
+      - "/mnt/c/Program Files (x86)/Common Files/Oracle/Java/java8path/"
+      - "/mnt/c/Program Files (x86)/Common Files/Oracle/Java/javapath/"
+      - "/mnt/c/windows/system32/"
+      - "/mnt/c/windows/"
+      - "/mnt/c/windows/System32/Wbem/"
+      - "/mnt/c/windows/System32/WindowsPowerShell/v1.0/"
+      - "/mnt/c/windows/System32/OpenSSH/"
+      - "/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common/"
+      - "/mnt/c/Program Files/NVIDIA Corporation/NVIDIA NvDLISR/"
+      - "/mnt/c/WINDOWS/system32/"
+      - "/mnt/c/WINDOWS/"
+      - "/mnt/c/WINDOWS/System32/Wbem/"
+      - "/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/"
+      - "/mnt/c/WINDOWS/System32/OpenSSH/"
+      - "/mnt/c/Program Files/nodejs/"
+      - "/mnt/c/Program Files/Git/cmd/"
+      - "/mnt/c/Users/TANMAY JAIN/Downloads/win_flex_bison-latest/"
+      - "/Docker/host/bin/"
+      - "/mnt/c/Program Files/MySQL/MySQL Shell 8.0/bin/"
+      - "/mnt/c/Users/TANMAY JAIN/AppData/Local/Microsoft/WindowsApps/"
+      - "/mnt/c/MinGW/bin/"
+      - "/mnt/c/Users/TANMAY JAIN/AppData/Local/Programs/Microsoft VS Code/bin/"
+      - "/mnt/c/Users/TANMAY JAIN/AppData/Roaming/npm/"
+      - "/snap/bin/"
+      - "/usr/local/lib/x86_64-linux-gnu/"
+      - "/usr/local/lib/"
+      - "/usr/local/"
+      - "/usr/lib/x86_64-linux-gnu/"
+      - "/usr/lib/"
+      - "/usr/"
+      - "/lib/x86_64-linux-gnu/"
+      - "/lib/"
+      - "/usr/X11R6/lib/x86_64-linux-gnu/"
+      - "/usr/X11R6/lib/"
+      - "/usr/X11R6/"
+      - "/usr/pkg/lib/x86_64-linux-gnu/"
+      - "/usr/pkg/lib/"
+      - "/usr/pkg/"
+      - "/opt/lib/x86_64-linux-gnu/"
+      - "/opt/lib/"
+      - "/opt/"
+      - "/usr/lib/X11/"
+    found: "/usr/local/lib/libSimpleAmqpClient.so"
+    search_context:
+      ENV{PATH}:
+        - "/home/tanmay_jain/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand"
+        - "/home/tanmay_jain/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli"
+        - "/home/tanmay_jain/.vscode-server/bin/1b6a188127eeaf9194f945eb6eb89a657e93c54c/bin/remote-cli"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/sbin"
+        - "/usr/bin"
+        - "/sbin"
+        - "/bin"
+        - "/usr/games"
+        - "/usr/local/games"
+        - "/usr/lib/wsl/lib"
+        - "/mnt/c/Program Files/Common Files/Oracle/Java/javapath"
+        - "/mnt/c/Program Files (x86)/Common Files/Oracle/Java/java8path"
+        - "/mnt/c/Program Files (x86)/Common Files/Oracle/Java/javapath"
+        - "/mnt/c/windows/system32"
+        - "/mnt/c/windows"
+        - "/mnt/c/windows/System32/Wbem"
+        - "/mnt/c/windows/System32/WindowsPowerShell/v1.0/"
+        - "/mnt/c/windows/System32/OpenSSH/"
+        - "/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common"
+        - "/mnt/c/Program Files/NVIDIA Corporation/NVIDIA NvDLISR"
+        - "/mnt/c/WINDOWS/system32"
+        - "/mnt/c/WINDOWS"
+        - "/mnt/c/WINDOWS/System32/Wbem"
+        - "/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/"
+        - "/mnt/c/WINDOWS/System32/OpenSSH/"
+        - "/mnt/c/Program Files/nodejs/"
+        - "/mnt/c/Program Files/Git/cmd"
+        - "/mnt/c/Users/TANMAY JAIN/Downloads/win_flex_bison-latest"
+        - "/Docker/host/bin"
+        - "/mnt/c/Program Files/MySQL/MySQL Shell 8.0/bin/"
+        - "/mnt/c/Users/TANMAY JAIN/AppData/Local/Microsoft/WindowsApps"
+        - "/mnt/c/MinGW/bin"
+        - "/mnt/c/Users/TANMAY JAIN/AppData/Local/Programs/Microsoft VS Code/bin"
+        - "/mnt/c/Users/TANMAY JAIN/AppData/Roaming/npm"
+        - "/snap/bin"
+      CMAKE_INSTALL_PREFIX: "/usr/local"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "/usr/local"
+        - "/usr"
+        - "/"
+        - "/usr"
+        - "/usr/local"
+        - "/usr/X11R6"
+        - "/usr/pkg"
+        - "/opt"
+      CMAKE_SYSTEM_LIBRARY_PATH:
+        - "/usr/lib/X11"
 ...

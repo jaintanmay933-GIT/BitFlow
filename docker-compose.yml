@@ -1,5 +1,3 @@
-
-
 services:
   bitflow-postgres:
     image: postgres:15-alpine
