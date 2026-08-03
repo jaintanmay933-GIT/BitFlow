@@ -3,12 +3,13 @@ FROM ubuntu:22.04 AS builder
 
 ENV DEBIAN_FRONTEND=noninteractive
 
-# 1. Install standard system dependencies
+# 1. Install standard system dependencies (ADDED ffmpeg HERE)
 RUN apt-get update && apt-get install -y \
     build-essential \
     cmake \
     g++ \
     pkg-config \
+    ffmpeg \
     libavcodec-dev \
     libavformat-dev \
     libavutil-dev \
@@ -41,6 +42,8 @@ COPY . .
 
 # 3. Build video_worker binary
 RUN rm -rf build && mkdir -p build && cd build && cmake .. && make -j$(nproc)
+
+# --- (Keep your existing Stage 2 below this line) ---
 
 # --- Stage 2: Runtime Environment ---
 FROM ubuntu:22.04
