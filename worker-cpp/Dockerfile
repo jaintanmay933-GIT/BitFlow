@@ -39,7 +39,7 @@ RUN git clone --depth 1 https://github.com/alanxz/SimpleAmqpClient.git /tmp/Simp
 WORKDIR /app
 COPY . .
 
-# 3. Clean build directory and build video_worker executable
+# 3. Build video_worker binary
 RUN rm -rf build && mkdir -p build && cd build && cmake .. && make -j$(nproc)
 
 # --- Stage 2: Runtime Environment ---
@@ -47,6 +47,7 @@ FROM ubuntu:22.04
 
 ENV DEBIAN_FRONTEND=noninteractive
 
+# Install runtime libraries
 RUN apt-get update && apt-get install -y \
     ffmpeg \
     ca-certificates \
@@ -62,11 +63,11 @@ RUN apt-get update && apt-get install -y \
 
 WORKDIR /app
 
-# Copy built SimpleAmqpClient library and executable from builder stage
+# Copy compiled shared libraries and binary from builder stage
 COPY --from=builder /usr/local/lib /usr/local/lib
 COPY --from=builder /app/build/video_worker /app/video_worker
 
-# Update dynamic linker cache so the system finds SimpleAmqpClient
+# Link the dynamic library
 RUN ldconfig
 
 EXPOSE 8080
