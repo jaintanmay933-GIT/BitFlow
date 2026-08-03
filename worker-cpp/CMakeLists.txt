@@ -10,8 +10,22 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 # -----------------------------------------------------------------
 find_package(Threads REQUIRED)
 find_package(Protobuf REQUIRED)
-find_package(gRPC CONFIG REQUIRED)
-find_package(nlohmann_json 3.2.0 REQUIRED)
+
+# Fix: Attempt gRPC via CMake Config first, fallback to PkgConfig for APT/Ubuntu installs
+find_package(gRPC CONFIG QUIET)
+if(NOT gRPC_FOUND)
+    find_package(PkgConfig REQUIRED)
+    pkg_check_modules(gRPC REQUIRED IMPORTED_TARGET grpc++)
+    if(NOT TARGET gRPC::grpc++)
+        add_library(gRPC::grpc++ ALIAS PkgConfig::gRPC)
+    endif()
+endif()
+
+# Locate nlohmann_json
+find_package(nlohmann_json QUIET)
+if(NOT nlohmann_json_FOUND)
+    find_package(nlohmann_json 3.2.0 REQUIRED)
+endif()
 
 # Find FFmpeg Core Multimedia Components
 find_program(FFMPEG_EXECUTABLE ffmpeg)
@@ -19,18 +33,22 @@ if(NOT FFMPEG_EXECUTABLE)
     message(FATAL_ERROR "FFmpeg runtime binary executable not found on system paths!")
 endif()
 
-# Locate SimpleAmqpClient installed manually in /usr/local
+# Locate SimpleAmqpClient installed manually or via apt
 find_path(SIMPLEAMQPCLIENT_INCLUDE_DIR NAMES SimpleAmqpClient/SimpleAmqpClient.h HINTS /usr/local/include /usr/include)
 find_library(SIMPLEAMQPCLIENT_LIBRARY NAMES SimpleAmqpClient simpleamqpclient HINTS /usr/local/lib /usr/lib /usr/local/lib/x86_64-linux-gnu /usr/lib/x86_64-linux-gnu)
 
 if(NOT SIMPLEAMQPCLIENT_INCLUDE_DIR OR NOT SIMPLEAMQPCLIENT_LIBRARY)
-    message(FATAL_ERROR "SimpleAmqpClient header or library not found in /usr/local! Ensure step 2 installation completed.")
+    message(FATAL_ERROR "SimpleAmqpClient header or library not found! Ensure installation completed.")
 endif()
 
-# Dynamically locate protoc-gen-grpc plugin binary
-find_program(GRPC_CPP_PLUGIN_EXECUTABLE protoc-gen-grpc)
-if(NOT GRPC_CPP_PLUGIN_EXECUTABLE)
+# Fix: Dynamically locate grpc_cpp_plugin binary provided by protobuf-compiler-grpc
+find_program(GRPC_CPP_PLUGIN_EXECUTABLE NAMES grpc_cpp_plugin protoc-gen-grpc HINTS /usr/bin /usr/local/bin)
+if(NOT GRPC_CPP_PLUGIN_EXECUTABLE AND TARGET gRPC::grpc_cpp_plugin)
     set(GRPC_CPP_PLUGIN_EXECUTABLE $<TARGET_FILE:gRPC::grpc_cpp_plugin>)
+endif()
+
+if(NOT GRPC_CPP_PLUGIN_EXECUTABLE)
+    message(FATAL_ERROR "Could not find grpc_cpp_plugin binary on system paths!")
 endif()
 
 # -----------------------------------------------------------------
