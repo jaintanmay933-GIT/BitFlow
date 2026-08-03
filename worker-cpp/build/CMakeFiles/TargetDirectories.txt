@@ -1,3 +1,0 @@
-/mnt/c/Tanmay/BitFlow/worker-cpp/build/CMakeFiles/video_worker.dir
-/mnt/c/Tanmay/BitFlow/worker-cpp/build/CMakeFiles/edit_cache.dir
-/mnt/c/Tanmay/BitFlow/worker-cpp/build/CMakeFiles/rebuild_cache.dir

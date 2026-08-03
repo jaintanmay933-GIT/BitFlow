@@ -23,9 +23,10 @@ bool Transcoder::processVideoJob(const std::string& jobId, const std::string& in
     this->sendGrpcUpdate(jobId, "PROCESSING", 45);
 
     std::stringstream ffmpegCmd;
-    ffmpegCmd << "ffmpeg -y -i \"" << inputPath << "\""
-              << " -vcodec libx264 -b:v 2000k -acodec aac -b:a 128k "
-              << "\"" << outputPath << "\"";
+  ffmpegCmd << "ffmpeg -y -i \"" << inputPath << "\""
+          << " -c:v libx264 -crf 23 -preset medium "
+          << " -c:a aac -b:a 128k "
+          << "\"" << outputPath << "\"";
 
     std::cout << "⚙️  [FFmpeg Execution] Executing binary stream processing..." << std::endl;
 

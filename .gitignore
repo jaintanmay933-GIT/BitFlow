@@ -16,3 +16,4 @@ shared_storage/outputs/*
 # System & IDE
 .vscode/
 *.log
+worker-cpp/build/

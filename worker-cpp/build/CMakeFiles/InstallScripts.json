@@ -1,7 +1,0 @@
-{
-	"InstallScripts" : 
-	[
-		"/mnt/c/Tanmay/BitFlow/worker-cpp/build/cmake_install.cmake"
-	],
-	"Parallel" : false
-}
