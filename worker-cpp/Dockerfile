@@ -3,6 +3,7 @@ FROM ubuntu:22.04 AS builder
 
 ENV DEBIAN_FRONTEND=noninteractive
 
+# 1. Install standard system dependencies
 RUN apt-get update && apt-get install -y \
     build-essential \
     cmake \
@@ -19,16 +20,26 @@ RUN apt-get update && apt-get install -y \
     libprotobuf-dev \
     libcurl4-openssl-dev \
     nlohmann-json3-dev \
-    libsimpleamqpclient-dev \
     librabbitmq-dev \
+    libboost-system-dev \
+    libboost-chrono-dev \
     curl \
     git \
     && rm -rf /var/lib/apt/lists/*
 
+# 2. Build SimpleAmqpClient from source
+RUN git clone --depth 1 https://github.com/alanxz/SimpleAmqpClient.git /tmp/SimpleAmqpClient && \
+    cd /tmp/SimpleAmqpClient && \
+    mkdir build && cd build && \
+    cmake .. -DCMAKE_INSTALL_PREFIX=/usr/local -DBUILD_SHARED_LIBS=ON -DBUILD_TESTS=OFF && \
+    make -j$(nproc) && \
+    make install && \
+    rm -rf /tmp/SimpleAmqpClient
+
 WORKDIR /app
 COPY . .
 
-# Force clean build directory and build video_worker
+# 3. Clean build directory and build video_worker executable
 RUN rm -rf build && mkdir -p build && cd build && cmake .. && make -j$(nproc)
 
 # --- Stage 2: Runtime Environment ---
@@ -43,14 +54,20 @@ RUN apt-get update && apt-get install -y \
     libgrpc++1 \
     libprotobuf23 \
     libcurl4 \
-    libsimpleamqpclient2 \
     librabbitmq4 \
+    libboost-system1.74.0 \
+    libboost-chrono1.74.0 \
     python3 \
     && rm -rf /var/lib/apt/lists/*
 
 WORKDIR /app
 
+# Copy built SimpleAmqpClient library and executable from builder stage
+COPY --from=builder /usr/local/lib /usr/local/lib
 COPY --from=builder /app/build/video_worker /app/video_worker
+
+# Update dynamic linker cache so the system finds SimpleAmqpClient
+RUN ldconfig
 
 EXPOSE 8080
 
