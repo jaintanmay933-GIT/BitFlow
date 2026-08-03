@@ -3,13 +3,12 @@ FROM ubuntu:22.04 AS builder
 
 ENV DEBIAN_FRONTEND=noninteractive
 
-# 1. Install standard system dependencies (ADDED ffmpeg HERE)
+# Install dependencies 
 RUN apt-get update && apt-get install -y \
     build-essential \
     cmake \
     g++ \
     pkg-config \
-    ffmpeg \
     libavcodec-dev \
     libavformat-dev \
     libavutil-dev \
@@ -28,7 +27,7 @@ RUN apt-get update && apt-get install -y \
     git \
     && rm -rf /var/lib/apt/lists/*
 
-# 2. Build SimpleAmqpClient from source
+# Build SimpleAmqpClient
 RUN git clone --depth 1 https://github.com/alanxz/SimpleAmqpClient.git /tmp/SimpleAmqpClient && \
     cd /tmp/SimpleAmqpClient && \
     mkdir build && cd build && \
@@ -37,20 +36,20 @@ RUN git clone --depth 1 https://github.com/alanxz/SimpleAmqpClient.git /tmp/Simp
     make install && \
     rm -rf /tmp/SimpleAmqpClient
 
+# Set context to root of the repository
 WORKDIR /app
 COPY . .
 
-# 3. Build video_worker binary
+# Move into worker-cpp to run the build
+WORKDIR /app/worker-cpp
 RUN rm -rf build && mkdir -p build && cd build && cmake .. && make -j$(nproc)
-
-# --- (Keep your existing Stage 2 below this line) ---
 
 # --- Stage 2: Runtime Environment ---
 FROM ubuntu:22.04
 
 ENV DEBIAN_FRONTEND=noninteractive
 
-# Install runtime libraries
+# Install runtime dependencies 
 RUN apt-get update && apt-get install -y \
     ffmpeg \
     ca-certificates \
@@ -66,11 +65,11 @@ RUN apt-get update && apt-get install -y \
 
 WORKDIR /app
 
-# Copy compiled shared libraries and binary from builder stage
+# Copy built files (Note the updated path from builder)
 COPY --from=builder /usr/local/lib /usr/local/lib
-COPY --from=builder /app/build/video_worker /app/video_worker
+COPY --from=builder /app/worker-cpp/build/video_worker /app/video_worker
 
-# Link the dynamic library
+# Update linker
 RUN ldconfig
 
 EXPOSE 8080
