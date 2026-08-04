@@ -27,6 +27,7 @@ RUN apt-get update && apt-get install -y \
     git \
     && rm -rf /var/lib/apt/lists/*
 
+# Build SimpleAmqpClient with native TLS/SSL support
 RUN git clone --depth 1 https://github.com/alanxz/SimpleAmqpClient.git /tmp/SimpleAmqpClient && \
     cd /tmp/SimpleAmqpClient && \
     mkdir build && cd build && \
@@ -41,7 +42,7 @@ COPY . .
 WORKDIR /app/worker-cpp
 RUN rm -rf build && mkdir -p build && cd build && cmake .. && make -j$(nproc)
 
-# --- Stage 2: Runtime Environment with Local TLS Proxy ---
+# --- Stage 2: Clean Runtime Environment ---
 FROM ubuntu:22.04
 
 ENV DEBIAN_FRONTEND=noninteractive
@@ -49,7 +50,6 @@ ENV DEBIAN_FRONTEND=noninteractive
 RUN apt-get update && apt-get install -y \
     ffmpeg \
     ca-certificates \
-    stunnel4 \
     libssl3 \
     libstdc++6 \
     libgrpc++1 \
@@ -61,20 +61,9 @@ RUN apt-get update && apt-get install -y \
     python3 \
     && rm -rf /var/lib/apt/lists/*
 
-# Create stunnel configuration with SNI and stdout logging enabled
-RUN mkdir -p /etc/stunnel /var/run/stunnel && \
-    echo "pid = /tmp/stunnel.pid" > /etc/stunnel/stunnel.conf && \
-    echo "output = /dev/stdout" >> /etc/stunnel/stunnel.conf && \
-    echo "debug = 7" >> /etc/stunnel/stunnel.conf && \
-    echo "[rabbitmq]" >> /etc/stunnel/stunnel.conf && \
-    echo "client = yes" >> /etc/stunnel/stunnel.conf && \
-    echo "accept = 127.0.0.1:5672" >> /etc/stunnel/stunnel.conf && \
-    echo "connect = campbell.lmq.cloudamqp.com:5671" >> /etc/stunnel/stunnel.conf && \
-    echo "sni = campbell.lmq.cloudamqp.com" >> /etc/stunnel/stunnel.conf && \
-    echo "verifyChain = no" >> /etc/stunnel/stunnel.conf
-
 WORKDIR /app
 
+# Copy built shared libraries and worker binary from Stage 1
 COPY --from=builder /usr/local/lib /usr/local/lib
 COPY --from=builder /app/worker-cpp/build/video_worker /app/video_worker
 
@@ -82,5 +71,5 @@ RUN ldconfig
 
 EXPOSE 8080
 
-# Launch stunnel in background, wait 2 seconds for binding, then start python HTTP server and C++ worker
-CMD stunnel /etc/stunnel/stunnel.conf & sleep 2 && python3 -m http.server 8080 & /app/video_worker
+# Launch HTTP health check server and C++ worker directly
+CMD python3 -m http.server 8080 & /app/video_worker
