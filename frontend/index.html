@@ -47,6 +47,9 @@
     </div>
 
     <script>
+        // Centralized API Configuration
+        const API_BASE_URL = 'https://bitflow-backend-047r.onrender.com';
+
         const form = document.getElementById('transcodeForm');
         const queueContainer = document.getElementById('jobQueue');
         const emptyState = document.getElementById('emptyState');
@@ -70,7 +73,7 @@
             formData.append('video', file); 
 
             try {
-                const response = await fetch('http://localhost:5000/api/transcode', {
+                const response = await fetch(`${API_BASE_URL}/api/transcode`, {
                     method: 'POST',
                     body: formData
                 });
@@ -86,7 +89,7 @@
                 }
             } catch (err) {
                 console.error("Pipeline target connection error:", err);
-                alert('Server connection failed. Ensure Express server is running on port 5000.');
+                alert('Server connection failed. Could not reach backend API at ' + API_BASE_URL);
             } finally {
                 submitBtn.disabled = false;
                 submitBtn.innerText = 'Dispatch to Cluster';
@@ -126,7 +129,7 @@
 
             const pollInterval = setInterval(async () => {
                 try {
-                    const response = await fetch(`http://localhost:5000/api/status/${id}`);
+                    const response = await fetch(`${API_BASE_URL}/api/status/${id}`);
                     const data = await response.json();
 
                     if (!data.success) return;
