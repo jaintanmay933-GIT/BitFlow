@@ -3,7 +3,6 @@ FROM ubuntu:22.04 AS builder
 
 ENV DEBIAN_FRONTEND=noninteractive
 
-# Install dependencies 
 RUN apt-get update && apt-get install -y \
     build-essential \
     cmake \
@@ -28,7 +27,6 @@ RUN apt-get update && apt-get install -y \
     git \
     && rm -rf /var/lib/apt/lists/*
 
-# Build SimpleAmqpClient
 RUN git clone --depth 1 https://github.com/alanxz/SimpleAmqpClient.git /tmp/SimpleAmqpClient && \
     cd /tmp/SimpleAmqpClient && \
     mkdir build && cd build && \
@@ -48,7 +46,6 @@ FROM ubuntu:22.04
 
 ENV DEBIAN_FRONTEND=noninteractive
 
-# Install runtime dependencies including stunnel4
 RUN apt-get update && apt-get install -y \
     ffmpeg \
     ca-certificates \
@@ -64,8 +61,10 @@ RUN apt-get update && apt-get install -y \
     python3 \
     && rm -rf /var/lib/apt/lists/*
 
-# Configure stunnel to route local 127.0.0.1:5672 to CloudAMQP 5671
-RUN echo "[rabbitmq]" > /etc/stunnel/stunnel.conf && \
+# Create stunnel directory & configuration
+RUN mkdir -p /etc/stunnel /var/run/stunnel && \
+    echo "pid = /tmp/stunnel.pid" > /etc/stunnel/stunnel.conf && \
+    echo "[rabbitmq]" >> /etc/stunnel/stunnel.conf && \
     echo "client = yes" >> /etc/stunnel/stunnel.conf && \
     echo "accept = 127.0.0.1:5672" >> /etc/stunnel/stunnel.conf && \
     echo "connect = campbell.lmq.cloudamqp.com:5671" >> /etc/stunnel/stunnel.conf && \
@@ -80,5 +79,5 @@ RUN ldconfig
 
 EXPOSE 8080
 
-# Start stunnel, the HTTP server, and the C++ worker
-CMD stunnel /etc/stunnel/stunnel.conf & python3 -m http.server 8080 & /app/video_worker
+# Start stunnel, wait 1 second for it to bind, then launch HTTP server & C++ worker
+CMD stunnel /etc/stunnel/stunnel.conf && sleep 1 && python3 -m http.server 8080 & /app/video_worker
