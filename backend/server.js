@@ -10,7 +10,7 @@ const fs = require('fs');
 
 const app = express();
 
-// Enable CORS for all incoming requests (Vercel frontend)
+// Enable CORS for all incoming requests (e.g., Vercel frontend)
 app.use(cors());
 app.use(express.json());
 
@@ -31,7 +31,7 @@ const OUTPUT_DIR = path.resolve(__dirname, '../shared_storage/outputs');
 if (!fs.existsSync(INPUT_DIR)) fs.mkdirSync(INPUT_DIR, { recursive: true });
 if (!fs.existsSync(OUTPUT_DIR)) fs.mkdirSync(OUTPUT_DIR, { recursive: true });
 
-// Expose inputs directory so the C++ worker container can fetch uploaded files via HTTP
+// Expose inputs directory so external worker containers can fetch uploaded videos via HTTP
 app.use('/inputs', express.static(INPUT_DIR));
 
 // Expose static stream directory for processed MP4 video playback on frontend
@@ -113,7 +113,7 @@ app.post('/api/transcode', upload.single('video'), async (req, res) => {
         const originalFilename = req.file.originalname;
         const uploadedFilename = req.file.filename;
 
-        // Create public HTTP URL so external C++ worker container can access FFmpeg stream
+        // Create public HTTP URL so external C++ worker container can stream input via FFmpeg
         const publicInputUrl = `${BACKEND_URL}/inputs/${uploadedFilename}`;
 
         // Insert new record into PostgreSQL
@@ -126,7 +126,7 @@ app.post('/api/transcode', upload.single('video'), async (req, res) => {
         const videoId = dbResult.rows[0].id;
         const finalOutputLocation = path.join(OUTPUT_DIR, `${videoId}.mp4`);
 
-        // Job Payload consumed by C++ Worker (inputPath is an accessible HTTP URL)
+        // Job Payload consumed by C++ Worker
         const jobPayload = {
             jobId: videoId,
             inputPath: publicInputUrl,
@@ -179,18 +179,66 @@ app.get('/api/status/:id', async (req, res) => {
     }
 });
 
+// 3. HTTP Telemetry Endpoint (Bypasses gRPC port 50051 blocks on Cloud Host Ingress)
+app.post('/api/progress', async (req, res) => {
+    const { jobId, percentage, status, errorMessage } = req.body;
+
+    if (!jobId || !isUUID(jobId)) {
+        return res.status(400).json({ error: 'Invalid UUID format provided' });
+    }
+
+    try {
+        await pool.query(
+            `UPDATE videos 
+             SET progress = $1, status = $2::video_status, error_message = $3, updated_at = CURRENT_TIMESTAMP 
+             WHERE id = $4`,
+            [percentage, status, errorMessage || null, jobId]
+        );
+
+        console.log(`🔄 [HTTP Telemetry] Job ${jobId} -> ${status} (${percentage}%)`);
+        return res.json({ success: true });
+    } catch (err) {
+        console.error(`❌ [HTTP Telemetry DB Update Failed]: ${err.message}`);
+        return res.status(500).json({ error: err.message });
+    }
+});
+
+// 4. Output Receiver Endpoint (Saves completed MP4 file sent back from Worker container)
+app.post('/api/upload-output/:jobId', upload.single('video'), (req, res) => {
+    const { jobId } = req.params;
+
+    if (!req.file) {
+        return res.status(400).json({ error: 'No video file provided' });
+    }
+
+    const targetPath = path.join(OUTPUT_DIR, `${jobId}.mp4`);
+
+    fs.rename(req.file.path, targetPath, (err) => {
+        if (err) {
+            console.error(`❌ [Output Upload Error]: ${err.message}`);
+            return res.status(500).json({ error: err.message });
+        }
+        console.log(`✅ [Storage] Saved output video for Job: ${jobId}`);
+        return res.json({ success: true });
+    });
+});
+
 // ==========================================
 // gRPC TELEMETRY CALLBACK SERVER
 // ==========================================
 const protoPath = path.resolve(__dirname, '../pb/video_service.proto');
-const packageDefinition = protoLoader.loadSync(protoPath, {
-    keepCase: true,
-    longs: String,
-    enums: String,
-    defaults: true,
-    oneofs: true
-});
-const bitflowProto = grpc.loadPackageDefinition(packageDefinition).bitflow;
+let bitflowProto = null;
+
+if (fs.existsSync(protoPath)) {
+    const packageDefinition = protoLoader.loadSync(protoPath, {
+        keepCase: true,
+        longs: String,
+        enums: String,
+        defaults: true,
+        oneofs: true
+    });
+    bitflowProto = grpc.loadPackageDefinition(packageDefinition).bitflow;
+}
 
 async function updateProgress(call, callback) {
     const job_id = call.request.job_id || call.request.jobId;
@@ -220,10 +268,15 @@ async function updateProgress(call, callback) {
 }
 
 function startGrpcServer() {
+    if (!bitflowProto) {
+        console.warn('⚠️ [gRPC Server]: Proto definition file not found, skipping gRPC listener startup.');
+        return;
+    }
+
     const grpcServer = new grpc.Server();
     grpcServer.addService(bitflowProto.BitFlowCallbackService.service, { updateProgress });
 
-    // Bind to 0.0.0.0 so external containers/workers can connect
+    // Bind to 0.0.0.0 so worker containers can connect where secondary TCP ports are supported
     grpcServer.bindAsync(`0.0.0.0:${GRPC_PORT}`, grpc.ServerCredentials.createInsecure(), (err, port) => {
         if (!err) {
             console.log(`📡 [gRPC Server] Live and listening on 0.0.0.0:${port}`);
