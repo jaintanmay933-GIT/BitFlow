@@ -61,13 +61,16 @@ RUN apt-get update && apt-get install -y \
     python3 \
     && rm -rf /var/lib/apt/lists/*
 
-# Create stunnel directory & configuration
+# Create stunnel configuration with SNI and stdout logging enabled
 RUN mkdir -p /etc/stunnel /var/run/stunnel && \
     echo "pid = /tmp/stunnel.pid" > /etc/stunnel/stunnel.conf && \
+    echo "output = /dev/stdout" >> /etc/stunnel/stunnel.conf && \
+    echo "debug = 7" >> /etc/stunnel/stunnel.conf && \
     echo "[rabbitmq]" >> /etc/stunnel/stunnel.conf && \
     echo "client = yes" >> /etc/stunnel/stunnel.conf && \
     echo "accept = 127.0.0.1:5672" >> /etc/stunnel/stunnel.conf && \
     echo "connect = campbell.lmq.cloudamqp.com:5671" >> /etc/stunnel/stunnel.conf && \
+    echo "sni = campbell.lmq.cloudamqp.com" >> /etc/stunnel/stunnel.conf && \
     echo "verifyChain = no" >> /etc/stunnel/stunnel.conf
 
 WORKDIR /app
@@ -79,5 +82,5 @@ RUN ldconfig
 
 EXPOSE 8080
 
-# Start stunnel, wait 1 second for it to bind, then launch HTTP server & C++ worker
-CMD stunnel /etc/stunnel/stunnel.conf && sleep 1 && python3 -m http.server 8080 & /app/video_worker
+# Launch stunnel in background, wait 2 seconds for binding, then start python HTTP server and C++ worker
+CMD stunnel /etc/stunnel/stunnel.conf & sleep 2 && python3 -m http.server 8080 & /app/video_worker
