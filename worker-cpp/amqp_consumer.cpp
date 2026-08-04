@@ -1,5 +1,6 @@
 #include "amqp_consumer.h"
 #include <iostream>
+#include <cstdlib>
 
 namespace BitFlow {
 
@@ -12,19 +13,39 @@ AmqpConsumer::~AmqpConsumer() {
 
 bool AmqpConsumer::startListening(std::function<void(const std::string&)> messageCallback) {
     try {
-       AmqpClient::Channel::OpenOpts opts;
-opts.host = host_;
-opts.port = port_;
+        AmqpClient::Channel::OpenOpts opts;
 
-// Add your RabbitMQ username and password here
-opts.auth = AmqpClient::Channel::OpenOpts::BasicAuth("guest", "guest"); 
+        // 1. Check if full RABBITMQ_URL environment variable is provided
+        const char* envUrl = std::getenv("RABBITMQ_URL");
+        if (!envUrl) {
+            envUrl = std::getenv("AMQP_URL");
+        }
 
-channel_ = AmqpClient::Channel::Open(opts);
+        if (envUrl && std::string(envUrl).length() > 0) {
+            // Parse full URL (e.g., amqp://user:pass@127.0.0.1:5672/vhost)
+            opts = AmqpClient::Channel::OpenOpts::FromUri(envUrl);
+        } else {
+            // 2. Read individual environment variables or fall back to defaults
+            const char* envUser = std::getenv("RABBITMQ_USER");
+            const char* envPass = std::getenv("RABBITMQ_PASS");
+            const char* envVhost = std::getenv("RABBITMQ_VHOST");
+
+            std::string user = envUser ? envUser : "guest";
+            std::string pass = envPass ? envPass : "guest";
+            std::string vhost = envVhost ? envVhost : "/";
+
+            opts.host = host_;
+            opts.port = port_;
+            opts.vhost = vhost;
+            opts.auth = AmqpClient::Channel::OpenOpts::BasicAuth(user, pass);
+        }
+
+        channel_ = AmqpClient::Channel::Open(opts);
         
         // Ensure destination queue exists (durable = true)
         channel_->DeclareQueue(queue_, false, true, false, false);
         
-        // Subscribe to queue (auto_ack = true for simplicity)
+        // Subscribe to queue
         consumer_tag_ = channel_->BasicConsume(queue_, "", true, true, false);
         
         running_ = true;
@@ -32,7 +53,7 @@ channel_ = AmqpClient::Channel::Open(opts);
 
         while (running_) {
             AmqpClient::Envelope::ptr_t envelope;
-            // Wait up to 1000ms for a message before looping (prevents blocking indefinitely on exit)
+            // Wait up to 1000ms for a message before looping
             if (channel_->BasicConsumeMessage(consumer_tag_, envelope, 1000)) {
                 std::string payload = envelope->Message()->Body();
                 
