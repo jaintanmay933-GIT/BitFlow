@@ -13,7 +13,8 @@ public:
     bool processVideoJob(const std::string& jobId, const std::string& inputPath, const std::string& outputPath);
 
 private:
-    void sendGrpcUpdate(const std::string& jobId, const std::string& status, int percentage, const std::string& errorMessage = "");
+    void sendHttpUpdate(const std::string& jobId, const std::string& status, int percentage, const std::string& errorMessage = "");
+    bool uploadOutputVideo(const std::string& jobId, const std::string& outputPath);
 };
 
 } // namespace BitFlow
