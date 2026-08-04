@@ -13,34 +13,26 @@ AmqpConsumer::~AmqpConsumer() {
 
 bool AmqpConsumer::startListening(std::function<void(const std::string&)> messageCallback) {
     try {
-        AmqpClient::Channel::OpenOpts opts;
+        // Read credentials directly from Render Environment Variables
+        const char* envUser = std::getenv("RABBITMQ_USER");
+        const char* envPass = std::getenv("RABBITMQ_PASS");
+        const char* envVhost = std::getenv("RABBITMQ_VHOST");
 
-        // 1. Check if full RABBITMQ_URL environment variable is provided
-        const char* envUrl = std::getenv("RABBITMQ_URL");
-        if (!envUrl) {
-            envUrl = std::getenv("AMQP_URL");
-        }
+        std::string user = envUser ? envUser : "guest";
+        std::string pass = envPass ? envPass : "guest";
+        std::string vhost = envVhost ? envVhost : "/";
 
-        if (envUrl && std::string(envUrl).length() > 0) {
-            // Parse full URL (e.g., amqp://user:pass@127.0.0.1:5672/vhost)
-            opts = AmqpClient::Channel::OpenOpts::FromUri(envUrl);
-        } else {
-            // 2. Read individual environment variables or fall back to defaults
-            const char* envUser = std::getenv("RABBITMQ_USER");
-            const char* envPass = std::getenv("RABBITMQ_PASS");
-            const char* envVhost = std::getenv("RABBITMQ_VHOST");
-
-            std::string user = envUser ? envUser : "guest";
-            std::string pass = envPass ? envPass : "guest";
-            std::string vhost = envVhost ? envVhost : "/";
-
-            opts.host = host_;
-            opts.port = port_;
-            opts.vhost = vhost;
-            opts.auth = AmqpClient::Channel::OpenOpts::BasicAuth(user, pass);
-        }
-
-        channel_ = AmqpClient::Channel::Open(opts);
+        // IMPORTANT: CreateSecure handles TLS natively on port 5671 without crashing over missing client certs
+        channel_ = AmqpClient::Channel::CreateSecure(
+            "",        // CA Cert Path (Empty uses the OS system default)
+            host_,     // CloudAMQP Host (passed from main.cpp)
+            "",        // Client Cert Path (Empty because CloudAMQP doesn't need it)
+            "",        // Client Key Path
+            port_,     // Port (5671 passed from main.cpp)
+            user,      // Username
+            pass,      // Password
+            vhost      // Vhost
+        );
         
         // Ensure destination queue exists (durable = true)
         channel_->DeclareQueue(queue_, false, true, false, false);
@@ -49,7 +41,7 @@ bool AmqpConsumer::startListening(std::function<void(const std::string&)> messag
         consumer_tag_ = channel_->BasicConsume(queue_, "", true, true, false);
         
         running_ = true;
-        std::cout << "[AMQP] Successfully subscribed to queue: " << queue_ << std::endl;
+        std::cout << "✅ [AMQP] Successfully connected securely to CloudAMQP and subscribed to: " << queue_ << std::endl;
 
         while (running_) {
             AmqpClient::Envelope::ptr_t envelope;
@@ -64,7 +56,7 @@ bool AmqpConsumer::startListening(std::function<void(const std::string&)> messag
         }
         return true;
     } catch (const std::exception& e) {
-        std::cerr << "[AMQP Error] " << e.what() << std::endl;
+        std::cerr << "❌ [AMQP SSL Error] " << e.what() << std::endl;
         return false;
     }
 }
@@ -80,7 +72,7 @@ void AmqpConsumer::stop() {
     } catch (...) {
         // Suppress cleanup exceptions during shutdown
     }
-    std::cout << "[AMQP] Consumer stopped gracefully." << std::endl;
+    std::cout << "🛑 [AMQP] Consumer stopped gracefully." << std::endl;
 }
 
 } // namespace BitFlow
