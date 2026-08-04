@@ -17,18 +17,22 @@ bool AmqpConsumer::startListening(std::function<void(const std::string&)> messag
         const char* envUser = std::getenv("RABBITMQ_USER");
         const char* envPass = std::getenv("RABBITMQ_PASS");
         const char* envVhost = std::getenv("RABBITMQ_VHOST");
+        const char* envCaPath = std::getenv("RABBITMQ_CA_PATH");
 
         std::string user = envUser ? envUser : "guest";
         std::string pass = envPass ? envPass : "guest";
         std::string vhost = envVhost ? envVhost : "/";
+        
+        // Point OpenSSL / librabbitmq to Linux system CA bundle
+        std::string caPath = envCaPath ? envCaPath : "/etc/ssl/certs/ca-certificates.crt";
 
-        // IMPORTANT: CreateSecure handles TLS natively on port 5671 without crashing over missing client certs
+        // Pass caPath as parameter 1 so OpenSSL can verify CloudAMQP's TLS cert
         channel_ = AmqpClient::Channel::CreateSecure(
-            "",        // CA Cert Path (Empty uses the OS system default)
-            host_,     // CloudAMQP Host (passed from main.cpp)
-            "",        // Client Cert Path (Empty because CloudAMQP doesn't need it)
+            caPath,    // CA Cert Path (points to Linux system trusted root bundle)
+            host_,     // CloudAMQP Host
             "",        // Client Key Path
-            port_,     // Port (5671 passed from main.cpp)
+            "",        // Client Cert Path
+            port_,     // Port (5671)
             user,      // Username
             pass,      // Password
             vhost      // Vhost
