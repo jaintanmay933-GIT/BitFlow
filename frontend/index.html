@@ -54,7 +54,32 @@
         const queueContainer = document.getElementById('jobQueue');
         const emptyState = document.getElementById('emptyState');
         const submitBtn = document.getElementById('submitBtn');
+        const activePolls = {};
 
+        // 1. Fetch Existing Tasks on Page Load / Refresh
+        async function loadExistingJobs() {
+            try {
+                const response = await fetch(`${API_BASE_URL}/api/jobs`);
+                const data = await response.json();
+
+                if (data.jobs && data.jobs.length > 0) {
+                    data.jobs.forEach(job => {
+                        appendJobToDashboard(job.jobId, job.title, job.status, job.progress || 0, false);
+
+                        if (job.status === 'PENDING' || job.status === 'PROCESSING') {
+                            trackJobProgress(job.jobId);
+                        }
+                    });
+                }
+            } catch (err) {
+                console.error("Failed to restore task queue from database:", err);
+            }
+        }
+
+        // Initialize queue recovery on DOM load
+        document.addEventListener('DOMContentLoaded', loadExistingJobs);
+
+        // 2. Submit New Transcoding Task
         form.addEventListener('submit', async (e) => {
             e.preventDefault();
             
@@ -64,7 +89,6 @@
 
             if (!file) return;
 
-            // Disable button during network upload
             submitBtn.disabled = true;
             submitBtn.innerText = 'Uploading to Cluster...';
 
@@ -82,7 +106,7 @@
                 
                 if (data.success) {
                     form.reset();
-                    appendJobToDashboard(data.videoId, title);
+                    appendJobToDashboard(data.videoId, title, 'PENDING', 0, true);
                     trackJobProgress(data.videoId);
                 } else {
                     alert('Upload failed: ' + (data.error || 'Unknown error'));
@@ -96,8 +120,12 @@
             }
         });
 
-        function appendJobToDashboard(id, title) {
-            if (emptyState) emptyState.remove();
+        // 3. Append or Render Task Card
+        function appendJobToDashboard(id, title, initialStatus = 'PENDING', initialProgress = 0, isNewSubmission = false) {
+            const emptyStateNode = document.getElementById('emptyState');
+            if (emptyStateNode) emptyStateNode.remove();
+
+            if (document.getElementById(`job-${id}`)) return;
 
             const card = document.createElement('div');
             card.id = `job-${id}`;
@@ -108,64 +136,96 @@
                         <h4 class="text-sm font-semibold text-slate-200">${title}</h4>
                         <span class="text-[10px] font-mono text-slate-500">${id}</span>
                     </div>
-                    <span id="status-${id}" class="text-[10px] font-bold tracking-wider uppercase bg-amber-500/10 text-amber-400 px-2 py-0.5 rounded border border-amber-500/20">
-                        PENDING
+                    <span id="status-${id}" class="text-[10px] font-bold tracking-wider uppercase px-2 py-0.5 rounded border">
+                        ${initialStatus}
                     </span>
                 </div>
                 <div class="w-full bg-slate-900 rounded-full h-1.5 overflow-hidden">
-                    <div id="progress-${id}" class="bg-cyan-500 h-1.5 w-0 transition-all duration-300"></div>
+                    <div id="progress-${id}" class="bg-cyan-500 h-1.5 transition-all duration-300" style="width: ${initialProgress}%"></div>
                 </div>
                 <!-- 🎬 Stream Container for completed video player -->
                 <div id="stream-container-${id}" class="hidden pt-2"></div>
             `;
-            queueContainer.prepend(card);
+
+            if (isNewSubmission) {
+                queueContainer.prepend(card);
+            } else {
+                queueContainer.appendChild(card);
+            }
+
+            applyStatusStyle(id, initialStatus, initialProgress);
+
+            if (initialStatus === 'COMPLETED') {
+                showStreamPlayer(id, `${API_BASE_URL}/stream/${id}.mp4`);
+            }
         }
 
-        // Live Database Status Polling Loop
-        function trackJobProgress(id) {
-            const progressFill = document.getElementById(`progress-${id}`);
+        // 4. Update Status Badges and Progress Bar UI
+        function applyStatusStyle(id, status, progress) {
             const statusBadge = document.getElementById(`status-${id}`);
-            const streamContainer = document.getElementById(`stream-container-${id}`);
+            const progressFill = document.getElementById(`progress-${id}`);
 
-            const pollInterval = setInterval(async () => {
+            if (progressFill) progressFill.style.width = `${progress}%`;
+
+            if (!statusBadge) return;
+
+            statusBadge.innerText = `${status} (${progress}%)`;
+
+            if (status === 'PROCESSING') {
+                statusBadge.className = "text-[10px] font-bold tracking-wider uppercase bg-blue-500/10 text-blue-400 px-2 py-0.5 rounded border border-blue-500/20";
+            } else if (status === 'COMPLETED') {
+                statusBadge.className = "text-[10px] font-bold tracking-wider uppercase bg-emerald-500/10 text-emerald-400 px-2 py-0.5 rounded border border-emerald-500/20";
+            } else if (status === 'FAILED') {
+                statusBadge.className = "text-[10px] font-bold tracking-wider uppercase bg-rose-500/10 text-rose-400 px-2 py-0.5 rounded border border-rose-500/20";
+            } else {
+                statusBadge.className = "text-[10px] font-bold tracking-wider uppercase bg-amber-500/10 text-amber-400 px-2 py-0.5 rounded border border-amber-500/20";
+            }
+        }
+
+        // 5. Inject Playable Video Stream Element
+        function showStreamPlayer(id, streamUrl) {
+            const streamContainer = document.getElementById(`stream-container-${id}`);
+            if (streamContainer && streamUrl) {
+                streamContainer.classList.remove('hidden');
+                streamContainer.innerHTML = `
+                    <div class="mt-2 space-y-1">
+                        <span class="text-[10px] font-semibold text-emerald-400 uppercase tracking-wider">Stream Ready</span>
+                        <video controls class="w-full rounded-lg border border-slate-800 bg-black max-h-64">
+                            <source src="${streamUrl}" type="video/mp4">
+                            Your browser does not support video playback.
+                        </video>
+                    </div>
+                `;
+            }
+        }
+
+        // 6. Live Status Polling Loop
+        function trackJobProgress(id) {
+            if (activePolls[id]) return;
+
+            activePolls[id] = setInterval(async () => {
                 try {
                     const response = await fetch(`${API_BASE_URL}/api/status/${id}`);
                     const data = await response.json();
 
                     if (!data.success) return;
 
-                    // Update UI components dynamically
-                    if (progressFill) progressFill.style.width = `${data.progress}%`;
-                    if (statusBadge) statusBadge.innerText = `${data.status} (${data.progress}%)`;
-                    
-                    if (data.status === 'PROCESSING') {
-                        statusBadge.className = "text-[10px] font-bold tracking-wider uppercase bg-blue-500/10 text-blue-400 px-2 py-0.5 rounded border border-blue-500/20";
-                    } else if (data.status === 'COMPLETED') {
-                        statusBadge.className = "text-[10px] font-bold tracking-wider uppercase bg-emerald-500/10 text-emerald-400 px-2 py-0.5 rounded border border-emerald-500/20";
-                        
-                        // 🎬 Inject playable video element upon transcoding completion
-                        if (data.streamUrl && streamContainer) {
-                            streamContainer.classList.remove('hidden');
-                            streamContainer.innerHTML = `
-                                <div class="mt-2 space-y-1">
-                                    <span class="text-[10px] font-semibold text-emerald-400 uppercase tracking-wider">Stream Ready</span>
-                                    <video controls class="w-full rounded-lg border border-slate-800 bg-black max-h-64">
-                                        <source src="${data.streamUrl}" type="video/mp4">
-                                        Your browser does not support video playback.
-                                    </video>
-                                </div>
-                            `;
-                        }
+                    applyStatusStyle(id, data.status, data.progress);
 
-                        clearInterval(pollInterval);
+                    if (data.status === 'COMPLETED') {
+                        if (data.streamUrl) {
+                            showStreamPlayer(id, data.streamUrl);
+                        }
+                        clearInterval(activePolls[id]);
+                        delete activePolls[id];
                     } else if (data.status === 'FAILED') {
-                        statusBadge.className = "text-[10px] font-bold tracking-wider uppercase bg-rose-500/10 text-rose-400 px-2 py-0.5 rounded border border-rose-500/20";
-                        clearInterval(pollInterval); 
+                        clearInterval(activePolls[id]);
+                        delete activePolls[id];
                     }
                 } catch (err) {
                     console.error("Polling database checkpoint failure:", err);
                 }
-            }, 1000); // Check progress every 1 second
+            }, 1000);
         }
     </script>
 </body>

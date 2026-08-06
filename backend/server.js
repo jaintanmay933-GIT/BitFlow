@@ -101,7 +101,23 @@ const isUUID = (str) => /^[0-9a-f]{8}-[0-9a-f]{4}-[1-5][0-9a-f]{3}-[89ab][0-9a-f
 // REST API ENDPOINTS
 // ==========================================
 
-// 1. Submit Video Transcoding Job
+// 1. Fetch All Active & Past Jobs (For Frontend Sync / Page Refresh Persistence)
+app.get('/api/jobs', async (req, res) => {
+    try {
+        const result = await pool.query(
+            `SELECT id AS "jobId", title, status, progress, error_message AS "errorMessage", created_at 
+             FROM videos 
+             ORDER BY created_at DESC 
+             LIMIT 20`
+        );
+        return res.json({ jobs: result.rows });
+    } catch (err) {
+        console.error('❌ [API /jobs Error]:', err.message);
+        return res.status(500).json({ error: 'Database query failure fetching jobs' });
+    }
+});
+
+// 2. Submit Video Transcoding Job
 app.post('/api/transcode', upload.single('video'), async (req, res) => {
     const { title } = req.body;
 
@@ -146,7 +162,7 @@ app.post('/api/transcode', upload.single('video'), async (req, res) => {
     }
 });
 
-// 2. Query Transcoding Progress & Status
+// 3. Query Transcoding Progress & Status
 app.get('/api/status/:id', async (req, res) => {
     const jobId = req.params.id;
 
@@ -179,7 +195,7 @@ app.get('/api/status/:id', async (req, res) => {
     }
 });
 
-// 3. HTTP Telemetry Endpoint (Bypasses gRPC port 50051 blocks on Cloud Host Ingress)
+// 4. HTTP Telemetry Endpoint
 app.post('/api/progress', async (req, res) => {
     const { jobId, percentage, status, errorMessage } = req.body;
 
@@ -203,7 +219,7 @@ app.post('/api/progress', async (req, res) => {
     }
 });
 
-// 4. Output Receiver Endpoint (Saves completed MP4 file sent back from Worker container)
+// 5. Output Receiver Endpoint (Saves completed MP4 file sent back from Worker container)
 app.post('/api/upload-output/:jobId', upload.single('video'), (req, res) => {
     const { jobId } = req.params;
 
@@ -224,7 +240,7 @@ app.post('/api/upload-output/:jobId', upload.single('video'), (req, res) => {
 });
 
 // ==========================================
-// gRPC TELEMETRY CALLBACK SERVER
+// gRPC TELEMETRY CALLBACK SERVER (OPTIONAL)
 // ==========================================
 const protoPath = path.resolve(__dirname, '../pb/video_service.proto');
 let bitflowProto = null;
@@ -276,7 +292,6 @@ function startGrpcServer() {
     const grpcServer = new grpc.Server();
     grpcServer.addService(bitflowProto.BitFlowCallbackService.service, { updateProgress });
 
-    // Bind to 0.0.0.0 so worker containers can connect where secondary TCP ports are supported
     grpcServer.bindAsync(`0.0.0.0:${GRPC_PORT}`, grpc.ServerCredentials.createInsecure(), (err, port) => {
         if (!err) {
             console.log(`📡 [gRPC Server] Live and listening on 0.0.0.0:${port}`);

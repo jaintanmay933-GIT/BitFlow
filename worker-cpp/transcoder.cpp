@@ -3,10 +3,12 @@
 #include <cstdlib>
 #include <sstream>
 #include <string>
+#include <curl/curl.h>
+#include <nlohmann/json.hpp>
 
 namespace BitFlow {
 
-// Helper function to resolve the backend API URL dynamically from environment
+// Helper: Dynamically resolve backend base URL
 static std::string getBackendUrl() {
     const char* envUrl = std::getenv("BACKEND_URL");
     if (envUrl && std::string(envUrl).length() > 0) {
@@ -17,11 +19,25 @@ static std::string getBackendUrl() {
     return "https://bitflow-backend-047r.onrender.com";
 }
 
-Transcoder::Transcoder() {
-    std::cout << "🎞️  [Transcoder Engine] Core Media Drivers Loaded Successfully" << std::endl;
+// Helper: Escape double quotes for shell execution safety
+static std::string escapeShellArg(const std::string& arg) {
+    std::string escaped = arg;
+    size_t pos = 0;
+    while ((pos = escaped.find('"', pos)) != std::string::npos) {
+        escaped.replace(pos, 1, "\\\"");
+        pos += 2;
+    }
+    return escaped;
 }
 
-Transcoder::~Transcoder() {}
+Transcoder::Transcoder() {
+    curl_global_init(CURL_GLOBAL_ALL);
+    std::cout << "🎞️  [Transcoder Engine] Core Media Drivers & libcurl Loaded Successfully" << std::endl;
+}
+
+Transcoder::~Transcoder() {
+    curl_global_cleanup();
+}
 
 bool Transcoder::processVideoJob(const std::string& jobId, const std::string& inputPath, const std::string& outputPath) {
     std::cout << "🎬 [Processing Started] Job ID: " << jobId << " | Target Source Asset: " << inputPath << std::endl;
@@ -30,18 +46,18 @@ bool Transcoder::processVideoJob(const std::string& jobId, const std::string& in
     this->sendHttpUpdate(jobId, "PROCESSING", 10);
 
     // Ensure local output directory structure exists
-    std::string mkdirCmd = "mkdir -p \"$(dirname \"" + outputPath + "\")\"";
+    std::string mkdirCmd = "mkdir -p \"$(dirname \"" + escapeShellArg(outputPath) + "\")\"";
     std::system(mkdirCmd.c_str());
 
     // 2. Telemetry: Transcoding In Progress
     this->sendHttpUpdate(jobId, "PROCESSING", 45);
 
-    // Construct FFmpeg command (Input URL or local file -> Output MP4)
+    // Construct FFmpeg command (Input URL/File -> Output MP4)
     std::stringstream ffmpegCmd;
-    ffmpegCmd << "ffmpeg -y -i \"" << inputPath << "\""
+    ffmpegCmd << "ffmpeg -y -i \"" << escapeShellArg(inputPath) << "\""
               << " -c:v libx264 -crf 23 -preset medium "
               << " -c:a aac -b:a 128k "
-              << "\"" << outputPath << "\"";
+              << "\"" << escapeShellArg(outputPath) << "\"";
 
     std::cout << "⚙️  [FFmpeg Execution] Executing binary stream processing..." << std::endl;
 
@@ -69,46 +85,81 @@ bool Transcoder::processVideoJob(const std::string& jobId, const std::string& in
     }
 }
 
-// Sends progress telemetry updates to the backend via HTTP REST POST
+// Native libcurl HTTP POST for telemetry updates
 void Transcoder::sendHttpUpdate(const std::string& jobId, const std::string& status, int percentage, const std::string& errorMessage) {
     std::cout << "📡 [HTTP Telemetry Dispatch] Job " << jobId << " -> " << status << " (" << percentage << "%)" << std::endl;
 
-    std::string backendUrl = getBackendUrl();
-    std::string endpoint = backendUrl + "/api/progress";
+    std::string endpoint = getBackendUrl() + "/api/progress";
 
-    std::stringstream jsonPayload;
-    jsonPayload << "{"
-                << "\"jobId\":\"" << jobId << "\","
-                << "\"percentage\":" << percentage << ","
-                << "\"status\":\"" << status << "\","
-                << "\"errorMessage\":\"" << errorMessage << "\""
-                << "}";
+    nlohmann::json jsonPayload = {
+        {"jobId", jobId},
+        {"percentage", percentage},
+        {"status", status},
+        {"errorMessage", errorMessage}
+    };
 
-    std::stringstream curlCmd;
-    curlCmd << "curl -s -X POST \"" << endpoint << "\""
-            << " -H \"Content-Type: application/json\""
-            << " -d '" << jsonPayload.str() << "' > /dev/null";
+    std::string payloadStr = jsonPayload.dump();
 
-    int ret = std::system(curlCmd.str().c_str());
-    if (ret != 0) {
-        std::cerr << "⚠️  [HTTP Telemetry Failed] Failed to send status update for Job: " << jobId << std::endl;
+    CURL* curl = curl_easy_init();
+    if (!curl) {
+        std::cerr << "⚠️  [HTTP Telemetry Failed] Could not initialize libcurl handle" << std::endl;
+        return;
     }
+
+    struct curl_slist* headers = NULL;
+    headers = curl_slist_append(headers, "Content-Type: application/json");
+
+    curl_easy_setopt(curl, CURLOPT_URL, endpoint.c_str());
+    curl_easy_setopt(curl, CURLOPT_POSTFIELDS, payloadStr.c_str());
+    curl_easy_setopt(curl, CURLOPT_HTTPHEADER, headers);
+    curl_easy_setopt(curl, CURLOPT_TIMEOUT, 10L);
+
+    CURLcode res = curl_easy_perform(curl);
+    if (res != CURLE_OK) {
+        std::cerr << "⚠️  [HTTP Telemetry Failed] libcurl error: " << curl_easy_strerror(res) << std::endl;
+    }
+
+    curl_slist_free_all(headers);
+    curl_easy_cleanup(curl);
 }
 
-// Uploads the generated MP4 file back to backend disk storage over HTTP
+// Native libcurl multipart/form-data upload for completed output MP4
 bool Transcoder::uploadOutputVideo(const std::string& jobId, const std::string& outputPath) {
     std::cout << "📤 [Output Sync] Transmitting completed video to gateway..." << std::endl;
 
-    std::string backendUrl = getBackendUrl();
-    std::string endpoint = backendUrl + "/api/upload-output/" + jobId;
+    std::string endpoint = getBackendUrl() + "/api/upload-output/" + jobId;
 
-    std::stringstream curlCmd;
-    curlCmd << "curl -s -X POST \"" << endpoint << "\""
-            << " -F \"video=@" << outputPath << "\""
-            << " > /dev/null";
+    CURL* curl = curl_easy_init();
+    if (!curl) {
+        std::cerr << "❌ [Upload Failed] Unable to initialize libcurl" << std::endl;
+        return false;
+    }
 
-    int ret = std::system(curlCmd.str().c_str());
-    return (ret == 0);
+    curl_mime* mime = curl_mime_init(curl);
+    curl_mimepart* part = curl_mime_addpart(mime);
+
+    curl_mime_name(part, "video");
+    curl_mime_filedata(part, outputPath.c_str());
+
+    curl_easy_setopt(curl, CURLOPT_URL, endpoint.c_str());
+    curl_easy_setopt(curl, CURLOPT_MIMEPOST, mime);
+    curl_easy_setopt(curl, CURLOPT_TIMEOUT, 300L); // 5-minute upload timeout for large videos
+
+    CURLcode res = curl_easy_perform(curl);
+    long responseCode = 0;
+    curl_easy_getinfo(curl, CURLINFO_RESPONSE_CODE, &responseCode);
+
+    bool success = (res == CURLE_OK && responseCode >= 200 && responseCode < 300);
+
+    if (!success) {
+        std::cerr << "❌ [Upload Failed] libcurl status: " << curl_easy_strerror(res) 
+                  << " | HTTP Code: " << responseCode << std::endl;
+    }
+
+    curl_mime_free(mime);
+    curl_easy_cleanup(curl);
+
+    return success;
 }
 
 } // namespace BitFlow
