@@ -14,9 +14,7 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
-// ==========================================
-// CONFIGURATION & PATHS
-// ==========================================
+
 const HTTP_PORT = process.env.PORT || 5000;
 const GRPC_PORT = process.env.GRPC_PORT || 50051;
 const RABBITMQ_URL = process.env.RABBITMQ_URL || 'amqp://127.0.0.1:5672';
@@ -27,19 +25,15 @@ const QUEUE_NAME = 'video_jobs';
 const INPUT_DIR = path.resolve(__dirname, '../shared_storage/inputs');
 const OUTPUT_DIR = path.resolve(__dirname, '../shared_storage/outputs');
 
-// Ensure storage directories exist at startup
 if (!fs.existsSync(INPUT_DIR)) fs.mkdirSync(INPUT_DIR, { recursive: true });
 if (!fs.existsSync(OUTPUT_DIR)) fs.mkdirSync(OUTPUT_DIR, { recursive: true });
 
-// Expose inputs directory so external worker containers can fetch uploaded videos via HTTP
+
 app.use('/inputs', express.static(INPUT_DIR));
 
-// Expose static stream directory for processed MP4 video playback on frontend
+
 app.use('/stream', express.static(OUTPUT_DIR));
 
-// ==========================================
-// MULTER FILE UPLOAD CONFIGURATION
-// ==========================================
 const storage = multer.diskStorage({
     destination: (req, file, cb) => cb(null, INPUT_DIR),
     filename: (req, file, cb) => {
@@ -49,9 +43,6 @@ const storage = multer.diskStorage({
 });
 const upload = multer({ storage: storage });
 
-// ==========================================
-// DATABASE (POSTGRESQL / NEON) POOL
-// ==========================================
 const dbConfig = process.env.DATABASE_URL
     ? {
         connectionString: process.env.DATABASE_URL,
@@ -67,9 +58,6 @@ const dbConfig = process.env.DATABASE_URL
 
 const pool = new Pool(dbConfig);
 
-// ==========================================
-// RABBITMQ BROKER CONNECTION
-// ==========================================
 let channel;
 async function connectRabbitMQ() {
     try {
@@ -94,14 +82,9 @@ async function connectRabbitMQ() {
 }
 connectRabbitMQ();
 
-// Helper: UUID v4 regex validation to prevent Postgres 22P02 syntax errors
+
 const isUUID = (str) => /^[0-9a-f]{8}-[0-9a-f]{4}-[1-5][0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$/i.test(str);
 
-// ==========================================
-// REST API ENDPOINTS
-// ==========================================
-
-// 1. Fetch All Active & Past Jobs (For Frontend Sync / Page Refresh Persistence)
 app.get('/api/jobs', async (req, res) => {
     try {
         const result = await pool.query(
@@ -117,7 +100,6 @@ app.get('/api/jobs', async (req, res) => {
     }
 });
 
-// 2. Submit Video Transcoding Job
 app.post('/api/transcode', upload.single('video'), async (req, res) => {
     const { title } = req.body;
 
@@ -129,10 +111,8 @@ app.post('/api/transcode', upload.single('video'), async (req, res) => {
         const originalFilename = req.file.originalname;
         const uploadedFilename = req.file.filename;
 
-        // Create public HTTP URL so external C++ worker container can stream input via FFmpeg
         const publicInputUrl = `${BACKEND_URL}/inputs/${uploadedFilename}`;
 
-        // Insert new record into PostgreSQL
         const dbResult = await pool.query(
             `INSERT INTO videos (title, original_filename, s3_raw_key, status) 
              VALUES ($1, $2, $3, 'PENDING') RETURNING id`,
@@ -239,9 +219,6 @@ app.post('/api/upload-output/:jobId', upload.single('video'), (req, res) => {
     });
 });
 
-// ==========================================
-// gRPC TELEMETRY CALLBACK SERVER (OPTIONAL)
-// ==========================================
 const protoPath = path.resolve(__dirname, '../pb/video_service.proto');
 let bitflowProto = null;
 
@@ -302,7 +279,5 @@ function startGrpcServer() {
 }
 startGrpcServer();
 
-// ==========================================
-// HTTP SERVER LIFECYCLE
-// ==========================================
+
 app.listen(HTTP_PORT, () => console.log(`🌐 [HTTP Gateway] Active on port ${HTTP_PORT}`));
